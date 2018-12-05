@@ -904,7 +904,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1003: Student logs in and accesses the dashboard (My Private Learning)" enabled="true">
-            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_private.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_Private.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
