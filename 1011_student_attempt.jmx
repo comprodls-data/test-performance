@@ -181,6 +181,16 @@
               <stringProp name="Argument.value">${__P(productid,906b9965-f8c0-11e8-afa0-0242ac110003)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="itemcode" elementType="Argument">
+              <stringProp name="Argument.name">itemcode</stringProp>
+              <stringProp name="Argument.value">${__P(itemcode,1528285334091/1528285634672/1528286714281)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="task" elementType="Argument">
+              <stringProp name="Argument.name">task</stringProp>
+              <stringProp name="Argument.value">${__P(task_code,1528285334091/1528285634672/1528286714281)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
