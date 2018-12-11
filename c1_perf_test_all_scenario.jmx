@@ -28,7 +28,7 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="startTime" elementType="Argument">
               <stringProp name="Argument.name">startTime</stringProp>
-              <stringProp name="Argument.value">1544542178000</stringProp>
+              <stringProp name="Argument.value">1504224000000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="minWait" elementType="Argument">
@@ -153,7 +153,7 @@
             </elementProp>
             <elementProp name="product-enddate" elementType="Argument">
               <stringProp name="Argument.name">product-enddate</stringProp>
-              <stringProp name="Argument.value">${__P(end_date,1545552178000)}</stringProp>
+              <stringProp name="Argument.value">${__P(end_date,1575719566000)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classcodeinst" elementType="Argument">
