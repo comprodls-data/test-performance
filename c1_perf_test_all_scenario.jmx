@@ -158,17 +158,17 @@
             </elementProp>
             <elementProp name="classcodeinst" elementType="Argument">
               <stringProp name="Argument.name">classcodeinst</stringProp>
-              <stringProp name="Argument.value">${__P(class_code,7aha-46eQ)}</stringProp>
+              <stringProp name="Argument.value">${__P(class_code,ca8V-b8fg)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classcode" elementType="Argument">
               <stringProp name="Argument.name">classcode</stringProp>
-              <stringProp name="Argument.value">${__P(class_code,jf6c-K8dA)}</stringProp>
+              <stringProp name="Argument.value">${__P(class_code,GjXc-Lfb2)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classcode2" elementType="Argument">
               <stringProp name="Argument.name">classcode2</stringProp>
-              <stringProp name="Argument.value">${__P(class_code,9g72-3dfg)}</stringProp>
+              <stringProp name="Argument.value">${__P(class_code,4PE7-GH3g)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="classname" elementType="Argument">
@@ -178,7 +178,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;6fb4c5ea-fd4c-11e8-9397-0242ac110003&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;c824a0e8-fd73-11e8-9397-0242ac110003&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
