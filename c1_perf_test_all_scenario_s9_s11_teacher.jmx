@@ -46,6 +46,11 @@
               <stringProp name="Argument.value">8000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="asyncWaitEnrollment" elementType="Argument">
+              <stringProp name="Argument.name">asyncWaitEnrollment</stringProp>
+              <stringProp name="Argument.value">15000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="userProgress_max" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max</stringProp>
               <stringProp name="Argument.value">2000</stringProp>
@@ -184,7 +189,7 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1001: Student registers using a access code (and access default or first time dashboard) - New Users" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1001: Student registers using a access code (and access default or first time dashboard) - New Users" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
@@ -308,7 +313,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1002: Student registers using a class key &amp; access code  (and access default or first time dashboard) - New Users" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1002: Student registers using a class key &amp; access code  (and access default or first time dashboard) - New Users" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
@@ -442,7 +447,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1003: Student logs in and accesses the dashboard" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1003: Student logs in and accesses the dashboard" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1012,7 +1017,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1007: Student accesses his profile (My Profile) and updates information" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1007: Student accesses his profile (My Profile) and updates information" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1143,7 +1148,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1255,7 +1260,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1009: Student accesses the learning path of a product as part of a teacher-led class " enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1009: Student accesses the learning path of a product as part of a teacher-led class " enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1371,7 +1376,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1010: Student works/studies  on the learning path  (self-paced)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1010: Student works/studies  on the learning path  (self-paced)" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1521,7 +1526,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>16.0</value>
+            <value>20.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1659,7 +1664,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>16.0</value>
+            <value>20.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1791,7 +1796,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1013: Teacher registers using a Institution code and accesses first time / default dashboard, get access to products in that institution" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1013: Teacher registers using a Institution code and accesses first time / default dashboard, get access to products in that institution" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1911,7 +1916,7 @@ vars.put(&quot;extuserid&quot;, extuserid);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>5.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2110,7 +2115,7 @@ vars.put(&quot;extuserid&quot;, extuserid);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2229,7 +2234,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2303,7 +2308,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1018: Teacher creates a new class in a particular institution" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1018: Teacher creates a new class in a particular institution" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -2525,7 +2530,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2875,7 +2880,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3113,7 +3118,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3199,8 +3204,8 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           </TestAction>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-              <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+              <stringProp name="ConstantTimer.delay">${asyncWaitEnrollment}</stringProp>
+              <stringProp name="RandomTimer.range">${asyncWaitEnrollment}</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
@@ -3263,7 +3268,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3377,7 +3382,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3487,7 +3492,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3609,7 +3614,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3751,7 +3756,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3855,7 +3860,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1030: Teacher registers using a Institution code and accesses first time / default dashboard, get access to products in that institution" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1030: Teacher registers using a Institution code and accesses first time / default dashboard, get access to products in that institution" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
