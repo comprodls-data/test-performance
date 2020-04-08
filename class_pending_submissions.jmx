@@ -24,12 +24,12 @@
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">classid</stringProp>
               </elementProp>
-              <elementProp name="productid" elementType="HTTPArgument">
+              <elementProp name="productcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${productid}</stringProp>
+                <stringProp name="Argument.value">${productcode}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">productid</stringProp>
+                <stringProp name="Argument.name">productcode</stringProp>
               </elementProp>
               <elementProp name="details" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -79,7 +79,7 @@
           <stringProp name="JSONPostProcessor.referenceNames">task</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
+          <stringProp name="JSONPostProcessor.defaultValues">${task}</stringProp>
         </JSONPostProcessor>
         <hashTree/>
       </hashTree>

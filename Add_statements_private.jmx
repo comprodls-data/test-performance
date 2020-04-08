@@ -24,7 +24,7 @@
     &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
   },&#xd;
  &quot;product&quot;: {&#xd;
-      &quot;uuid&quot;: &quot;${shproductid}&quot;&#xd;
+      &quot;code&quot;: &quot;${shproductcode}&quot;&#xd;
     },&#xd;
   &quot;entities&quot;: [{&#xd;
     &quot;verb&quot;: &quot;${verb}&quot;,&#xd;
@@ -78,8 +78,8 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.product.uuid</stringProp>
-            <stringProp name="EXPECTED_VALUE">${shproductid}</stringProp>
+            <stringProp name="JSON_PATH">$.product.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">${shproductcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>

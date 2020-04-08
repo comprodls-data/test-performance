@@ -30,6 +30,10 @@
           <stringProp name="IncludeController.includepath">Get_list_of_all_products_for_a_user.jmx</stringProp>
         </IncludeController>
         <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get list of learner assignments in class - with progress details" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>

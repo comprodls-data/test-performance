@@ -14,7 +14,7 @@
     <hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="1014: Teacher logs in and accesses the dashboard" enabled="true"/>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
           <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
         </IncludeController>
         <hashTree/>
@@ -22,12 +22,16 @@
           <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
         </IncludeController>
         <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
           <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Products of first space" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_products_of_first_space.jmx</stringProp>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get global entitlements of a user" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>

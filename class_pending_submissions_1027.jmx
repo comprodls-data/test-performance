@@ -12,7 +12,7 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="class_pending_submissions" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="class_pending_submissions_1027" enabled="true"/>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="class_pending_submissions" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -26,7 +26,7 @@
               </elementProp>
               <elementProp name="productcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${productcode2}</stringProp>
+                <stringProp name="Argument.value">${productcode}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">productcode</stringProp>
@@ -68,18 +68,18 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="false">
-          <stringProp name="JSONPostProcessor.referenceNames">studentuserid</stringProp>
+        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+          <stringProp name="JSONPostProcessor.referenceNames">studentuserid1</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
+          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
         </JSONPostProcessor>
         <hashTree/>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="false">
-          <stringProp name="JSONPostProcessor.referenceNames">task</stringProp>
+        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
+          <stringProp name="JSONPostProcessor.referenceNames">task1</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
+          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
         </JSONPostProcessor>
         <hashTree/>
       </hashTree>

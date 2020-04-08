@@ -26,18 +26,15 @@
   &quot;product&quot;: {&#xd;
     &quot;code&quot;: &quot;${productcode}&quot;&#xd;
   },&#xd;
-  &quot;entities&quot;: [{&#xd;
-    &quot;verb&quot;: &quot;${verb}&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${task}&quot;,&#xd;
-    &quot;timespent&quot;: 200000,&#xd;
-    &quot;timestamp&quot;: ${__time()},&#xd;
-    &quot;result&quot;: {&#xd;
-      &quot;response&quot;: {&#xd;
-        &quot;text&quot;: &quot;This is a test answer for a pskill activity attempted,submitted during performance test execution_1.This is a test answer for a pskill activity attempted,submitted during performance test execution_2.This is a test answer for a pskill activity attempted,submitted during performance test execution_3.This is a test answer for a pskill activity attempted,submitted during performance test execution_4.This is a test answer for a pskill activity attempted,submitted during performance test execution_5.&quot;&#xd;
-      }&#xd;
+  &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
+  &quot;student_userid&quot;: &quot;${studentuserid1}&quot;,&#xd;
+  &quot;entities&quot;: [&#xd;
+    {&#xd;
+      &quot;timestamp&quot;: ${__time()},&#xd;
+      &quot;verb&quot;: &quot;redo&quot;,&#xd;
+      &quot;item-code&quot;: &quot;${task1}&quot;&#xd;
     }&#xd;
-  }],&#xd;
-  &quot;classid&quot;: &quot;${classid}&quot;&#xd;
+  ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
