@@ -281,6 +281,11 @@
               <stringProp name="Argument.value">1529663905464/1542018926832/1542018983599</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="pushx_url" elementType="Argument">
+              <stringProp name="Argument.name">pushx_url</stringProp>
+              <stringProp name="Argument.value">${__P(pushx_url,dls-asgard-thor-1453383019.us-west-2.elb.amazonaws.com/lb-pushx)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
