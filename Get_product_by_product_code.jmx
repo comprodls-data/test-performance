@@ -15,22 +15,7 @@
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get product by product code" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="details" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">false</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">details</stringProp>
-              </elementProp>
-              <elementProp name="stage" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">final</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">stage</stringProp>
-              </elementProp>
-            </collectionProp>
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.domain">${product_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
@@ -60,28 +45,21 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Product Title" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">title</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.meta.title</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">PRODUCT_TITLE_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract External Product Id" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">ext_product_id</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.meta.ext_product_id</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">EXTERNAL_PRODUCT_ID_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.meta.title</stringProp>
-            <stringProp name="EXPECTED_VALUE"></stringProp>
-            <boolProp name="JSONVALIDATION">false</boolProp>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - productcode" enabled="true">
+            <stringProp name="JSON_PATH">$.productcode</stringProp>
+            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor-CollabortiveProduct" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">isCollabProduct</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.groups.enabled</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">PRODUCT_TYPE_NOT_FOUND</stringProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
