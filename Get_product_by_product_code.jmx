@@ -21,7 +21,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/${orgid}/products/code/${productcode}</stringProp>
+          <stringProp name="HTTPSampler.path">/accounts/${accountid}/products/${productcode}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -45,42 +45,21 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Product Title" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">producttitle</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.meta.title</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">PRODUCT_TITLE_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Product Author" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">productauthor</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.meta.author</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">PRODUCT_AUTHOR_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract External Product Id" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">extproductid</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.uuid</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">EXTERNAL_PRODUCT_ID_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Product Code" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">productcode</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.meta.code</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">PRODUCT_CODE_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.uuid</stringProp>
-            <stringProp name="EXPECTED_VALUE">${productid}</stringProp>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - productcode" enabled="true">
+            <stringProp name="JSON_PATH">$.productcode</stringProp>
+            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor-CollabortiveProduct" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">isCollabProduct</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.groups.enabled</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">PRODUCT_TYPE_NOT_FOUND</stringProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
