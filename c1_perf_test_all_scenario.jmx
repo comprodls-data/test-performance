@@ -153,12 +153,12 @@
             </elementProp>
             <elementProp name="productcode" elementType="Argument">
               <stringProp name="Argument.name">productcode</stringProp>
-              <stringProp name="Argument.value">${__P(product_code,evolve_l1)}</stringProp>
+              <stringProp name="Argument.value">${__P(product_code,evpel1)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="productcode2" elementType="Argument">
               <stringProp name="Argument.name">productcode2</stringProp>
-              <stringProp name="Argument.value">${__P(product_code,evolve_l2)}</stringProp>
+              <stringProp name="Argument.value">${__P(product_code,evpel2)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode" elementType="Argument">
