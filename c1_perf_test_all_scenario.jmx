@@ -218,7 +218,7 @@
             </elementProp>
             <elementProp name="bundle-code" elementType="Argument">
               <stringProp name="Argument.name">bundle-code</stringProp>
-              <stringProp name="Argument.value">${__P(bundle-code,evolve_l1_bundle)}</stringProp>
+              <stringProp name="Argument.value">${__P(bundle-code,evpel1_bundle)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="bundle-code2" elementType="Argument">
