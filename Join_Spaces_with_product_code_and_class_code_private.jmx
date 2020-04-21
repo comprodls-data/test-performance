@@ -25,12 +25,16 @@
   &quot;ext_first_name&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_last_name&quot;: &quot;test&quot;,&#xd;
   &quot;ext_role&quot;: &quot;student&quot;,&#xd;
-  &quot;product_code&quot;: &quot;${productcode}&quot;,&#xd;
-  &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
-  &quot;ext_product_meta&quot;: {&#xd;
-    &quot;startdate&quot;: 1535719566000,&#xd;
-    &quot;enddate&quot;: 1575719566000&#xd;
-  }&#xd;
+  &quot;products&quot;: [&#xd;
+    {&#xd;
+      &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
+      &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
+      &quot;ext_product_meta&quot;: {&#xd;
+        &quot;startdate&quot;: ${startDate},&#xd;
+        &quot;enddate&quot;: ${endDate}&#xd;
+      }&#xd;
+    }&#xd;
+  ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
