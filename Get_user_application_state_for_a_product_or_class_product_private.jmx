@@ -25,7 +25,7 @@
               </elementProp>
               <elementProp name="productcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${shproductcode}</stringProp>
+                <stringProp name="Argument.value">${productcode}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">productcode</stringProp>
@@ -60,17 +60,17 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="ExtractRecentlyAccessedItem" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract RecentlyAccessedItem" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">recently_accessed_item</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.recentlyAccessedItem</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">RECENTLY_ACCESSED_ITEM_NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="false">
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.recentlyAccessedItem</stringProp>
-            <stringProp name="EXPECTED_VALUE">${recently_accessed_item}</stringProp>
-            <boolProp name="JSONVALIDATION">true</boolProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
