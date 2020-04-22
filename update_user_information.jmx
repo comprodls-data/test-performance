@@ -21,7 +21,6 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ext_role&quot;: &quot;${role}&quot;,&#xd;
   &quot;ext_first_name&quot;: &quot;${firstname}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
