@@ -82,6 +82,15 @@
           <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
         </JSONPostProcessor>
         <hashTree/>
+        <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <stringProp name="JSON_PATH">$.countPendingSubmissions</stringProp>
+          <stringProp name="EXPECTED_VALUE"></stringProp>
+          <boolProp name="JSONVALIDATION">false</boolProp>
+          <boolProp name="EXPECT_NULL">false</boolProp>
+          <boolProp name="INVERT">false</boolProp>
+          <boolProp name="ISREGEX">true</boolProp>
+        </JSONPathAssertion>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
