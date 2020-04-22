@@ -218,7 +218,7 @@
             </elementProp>
             <elementProp name="bundle-code" elementType="Argument">
               <stringProp name="Argument.name">bundle-code</stringProp>
-              <stringProp name="Argument.value">${__P(bundle-code,evolve_l1_bundle)}</stringProp>
+              <stringProp name="Argument.value">${__P(bundle-code,evpel1_bundle)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="bundle-code2" elementType="Argument">
@@ -269,6 +269,16 @@
             <elementProp name="itemcode3" elementType="Argument">
               <stringProp name="Argument.name">itemcode3</stringProp>
               <stringProp name="Argument.value">1529663905464/1542018926832/1542018983599</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="startDate" elementType="Argument">
+              <stringProp name="Argument.name">startDate</stringProp>
+              <stringProp name="Argument.value">${__time(,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="endDate" elementType="Argument">
+              <stringProp name="Argument.name">endDate</stringProp>
+              <stringProp name="Argument.value">${__timeShift(,,P365D,,)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -534,6 +544,16 @@
             <elementProp name="itemcode3" elementType="Argument">
               <stringProp name="Argument.name">itemcode3</stringProp>
               <stringProp name="Argument.value">1529663905464/1542018926832/1542018983599</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="startDate" elementType="Argument">
+              <stringProp name="Argument.name">startDate</stringProp>
+              <stringProp name="Argument.value">${__time(,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="endDate" elementType="Argument">
+              <stringProp name="Argument.name">endDate</stringProp>
+              <stringProp name="Argument.value">${__timeShift(,,P365D,,)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
