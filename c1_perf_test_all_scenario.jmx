@@ -281,6 +281,11 @@
               <stringProp name="Argument.value">${__timeShift(,,P365D,,)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="productGroups" elementType="Argument">
+              <stringProp name="Argument.name">productGroups</stringProp>
+              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
