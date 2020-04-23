@@ -54,34 +54,44 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-          <collectionProp name="HeaderManager.headers">
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">accept</stringProp>
-              <stringProp name="Header.value">application/json</stringProp>
-            </elementProp>
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">${access_token}</stringProp>
-            </elementProp>
-          </collectionProp>
-        </HeaderManager>
-        <hashTree/>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
-          <stringProp name="JSONPostProcessor.referenceNames">studentuserid1</stringProp>
-          <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
-          <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
-        </JSONPostProcessor>
-        <hashTree/>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
-          <stringProp name="JSONPostProcessor.referenceNames">task1</stringProp>
-          <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
-          <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-          <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
-        </JSONPostProcessor>
-        <hashTree/>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">accept</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">studentuserid1</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">task1</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.entities[0].item.item-code</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
       </hashTree>
     </hashTree>
   </hashTree>
