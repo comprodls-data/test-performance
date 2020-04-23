@@ -281,6 +281,16 @@
               <stringProp name="Argument.value">${__timeShift(,,P365D,,)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="workflow_type" elementType="Argument">
+              <stringProp name="Argument.name">workflow_type</stringProp>
+              <stringProp name="Argument.value">institution_request</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="status" elementType="Argument">
+              <stringProp name="Argument.name">status</stringProp>
+              <stringProp name="Argument.value">pending</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
