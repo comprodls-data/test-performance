@@ -289,7 +289,8 @@
             <elementProp name="status" elementType="Argument">
               <stringProp name="Argument.name">status</stringProp>
               <stringProp name="Argument.value">pending</stringProp>
-			  <stringProp name="Argument.metadata">=</stringProp>
+			        <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="productGroups" elementType="Argument">
               <stringProp name="Argument.name">productGroups</stringProp>
               <stringProp name="Argument.value">true</stringProp>
