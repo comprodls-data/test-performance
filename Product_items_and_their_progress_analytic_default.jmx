@@ -14,7 +14,7 @@
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Product items and their progress analytic (default)." enabled="true"/>
       <hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-          <stringProp name="IfController.condition">&quot;${classProductType}&quot; == &quot;single&quot;</stringProp>
+          <stringProp name="IfController.condition">&quot;${productType}&quot; == &quot;single&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
