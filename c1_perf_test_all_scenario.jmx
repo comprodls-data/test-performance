@@ -296,21 +296,6 @@
               <stringProp name="Argument.value">true</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="limit" elementType="Argument">
-              <stringProp name="Argument.name">limit</stringProp>
-              <stringProp name="Argument.value">120</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="sortField" elementType="Argument">
-              <stringProp name="Argument.name">sortField</stringProp>
-              <stringProp name="Argument.value">last_name</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="sortOrder" elementType="Argument">
-              <stringProp name="Argument.name">sortOrder</stringProp>
-              <stringProp name="Argument.value">asc</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
