@@ -289,7 +289,7 @@
             <elementProp name="status" elementType="Argument">
               <stringProp name="Argument.name">status</stringProp>
               <stringProp name="Argument.value">pending</stringProp>
-			        <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="productGroups" elementType="Argument">
               <stringProp name="Argument.name">productGroups</stringProp>
@@ -4568,7 +4568,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_members_of _a_class_teacher.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
