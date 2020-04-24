@@ -23,7 +23,8 @@
   &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ref_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_first_name&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ext_last_name&quot;: &quot;test&quot;,&#xd;
+  &quot;ext_last_name&quot;: &quot;Perf Test&quot;,&#xd;
+  &quot;ext_email&quot;: &quot;${extuserid}@yopmail.com&quot;,&#xd;
   &quot;ext_role&quot;: &quot;student&quot;,&#xd;
   &quot;products&quot;: [&#xd;
     {&#xd;
