@@ -908,6 +908,16 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="productType" elementType="Argument">
+                <stringProp name="Argument.name">productType</stringProp>
+                <stringProp name="Argument.value">single</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
@@ -924,6 +934,10 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
             <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
           </IncludeController>
@@ -932,8 +946,12 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get list of all products for a user" enabled="false">
-            <stringProp name="IncludeController.includepath">Get_list_of_all_products_for_a_user.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product items and their progress analytic (default)" enabled="true">
+            <stringProp name="IncludeController.includepath">Product_items_and_their_progress_analytic_default.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get list of learner assignments in class - with progress details" enabled="true">
