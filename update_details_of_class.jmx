@@ -21,9 +21,8 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;title&quot;: &quot;${newclassname}&quot;,&#xd;
-  &quot;startdate&quot;: ${startdate},&#xd;
-  &quot;enddate&quot;: ${enddate},&#xd;
-  &quot;disableSharedProgress&quot;: true&#xd;
+  &quot;startdate&quot;: ${startDate},&#xd;
+  &quot;enddate&quot;: ${endDate}&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -65,25 +64,10 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Class ID" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">classid</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.uuid</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
-            <stringProp name="Scope.variable"></stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Space Role" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">space_role</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].space_role</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="false">
-            <stringProp name="JSON_PATH">$.entities[0].dls_account_id</stringProp>
-            <stringProp name="EXPECTED_VALUE">${accountid}</stringProp>
-            <boolProp name="JSONVALIDATION">true</boolProp>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.status</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
