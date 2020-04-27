@@ -727,16 +727,24 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="productType" elementType="Argument">
+                <stringProp name="Argument.name">productType</stringProp>
+                <stringProp name="Argument.value">single</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">prefix0 = vars.get(&quot;testrun&quot;);
-prefix1 = &quot;std1002&quot;;
-prefix2 = vars.get(&quot;date&quot;);
-prefix3 = ctx.getThread().getThreadNum() + 1;
+            <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
+prefix2 = ctx.getThread().getThreadNum() + 1;
 
-extuserid = prefix0 + &quot;_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; + prefix3 + &quot;_&quot; +  vars.get(&quot;pinstance&quot;); ;
+extuserid = &quot;std_&quot; + prefix1 + &quot;_&quot; + prefix2;
 vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
@@ -754,20 +762,40 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </hashTree>
           <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
           <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="false">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_no_spaces.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
+              <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_product_details_by_isbn_evolvel1.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular bundle" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="true">
               <stringProp name="filename">1002${__P(InstanceID)}.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="delimiter">,</stringProp>
-              <stringProp name="variableNames">classcodeinst</stringProp>
+              <stringProp name="variableNames">classcode</stringProp>
               <boolProp name="randomOrder">true</boolProp>
               <boolProp name="ignoreFirstLine">true</boolProp>
               <boolProp name="rewindOnTheEndOfList">true</boolProp>
               <boolProp name="independentListPerThread">false</boolProp>
             </com.blazemeter.jmeter.RandomCSVDataSetConfig>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Validate class code" enabled="true">
+              <stringProp name="IncludeController.includepath">validate_classcode.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class.jmx</stringProp>
+            </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Join Spaces with product_code and class_code" enabled="true">
               <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code.jmx</stringProp>
@@ -785,24 +813,32 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
               <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
               <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get list of all products for a user" enabled="false">
-              <stringProp name="IncludeController.includepath">Get_list_of_all_products_for_a_user.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product Items and their Progress Analytics (default)" enabled="true">
+              <stringProp name="IncludeController.includepath">Product_items_and_their_progress_analytic_default.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
