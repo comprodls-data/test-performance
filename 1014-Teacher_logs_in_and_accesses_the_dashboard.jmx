@@ -28,7 +28,7 @@
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get global entitlements of a user" enabled="false">
           <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
-          <stringProp name="TestPlan.comments">Not valid for teacher, as teacher has no entitlements</stringProp>
+          <stringProp name="TestPlan.comments">Not valid for teacher, as only private teacher can have entitlements</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
