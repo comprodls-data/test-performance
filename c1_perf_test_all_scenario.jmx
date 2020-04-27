@@ -3429,21 +3429,6 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="startdate" elementType="Argument">
-                <stringProp name="Argument.name">startdate</stringProp>
-                <stringProp name="Argument.value">${__P(Start_Date,1535799974000)}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="enddate" elementType="Argument">
-                <stringProp name="Argument.name">enddate</stringProp>
-                <stringProp name="Argument.value">${__P(End_Date,1567335974000)}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </Arguments>
-          <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
@@ -3460,17 +3445,19 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">prefix0 = vars.get(&quot;testrun&quot;);
-prefix1 = &quot;perf_class_1018&quot;;
-prefix2 = vars.get(&quot;date&quot;);
-prefix3 = ctx.getThread().getThreadNum() + 1;
+            <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
+prefix2 = ctx.getThread().getThreadNum() + 1;
 
-classname = prefix0 + &quot;_&quot; + prefix1 + &quot;_&quot; +  prefix2 + &quot;_&quot; + prefix3;
+classname = &quot;class_&quot; + prefix1 + &quot;_&quot; + prefix2;
 vars.put(&quot;classname&quot;, classname);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
             <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create a new Instructor-led class" enabled="true">
@@ -3501,26 +3488,6 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get global entitlements of a user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
