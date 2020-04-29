@@ -4624,16 +4624,6 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="flag" elementType="Argument">
-                <stringProp name="Argument.name">flag</stringProp>
-                <stringProp name="Argument.value">${__P(Details,true)}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </Arguments>
-          <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
@@ -4662,14 +4652,49 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_(product)_in_that_class" enabled="true">
-            <stringProp name="IncludeController.includepath">Analytics_for_users_in_a_class_aggregrated_over_all_the_items_materials_product_in_that_class.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_members_of_a_class.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="class_pending_submissions" enabled="true">
+            <stringProp name="IncludeController.includepath">class_pending_submissions_1027.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API will return the students whose manual graded items have been evaluated once" enabled="true">
+            <stringProp name="IncludeController.includepath">API_will_return_the_students_whose_manual_graded_items_have_been_evaluated_once.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Details For a Specific Class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+            <stringProp name="IfController.condition">${isCollabProduct}</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+            <boolProp name="IfController.useExpression">true</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups whose manual graded items have been evaluated once." enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the groups by path" enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for users in a class, aggregrated over all the items &amp; materials (product) in that class." enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time before reviewing classprogress of one user" enabled="true">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
@@ -4682,14 +4707,6 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="class_pending_submissions" enabled="true">
-            <stringProp name="IncludeController.includepath">class_pending_submissions_1027.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API will return the students whose manual graded items have been evaluated once" enabled="true">
-            <stringProp name="IncludeController.includepath">API_will_return_the_students_whose_manual_graded_items_have_been_evaluated_once.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="teacher_view_student_pskill_Item_progress_analytics" enabled="true">
             <stringProp name="IncludeController.includepath">teacher_view_student_pskill_Item_progress_analytics.jmx</stringProp>
           </IncludeController>
@@ -4698,6 +4715,18 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_with_item_code_evaluated.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+            <stringProp name="IfController.condition">${isCollabProduct}</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+            <boolProp name="IfController.useExpression">true</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get group Record of a class" enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>

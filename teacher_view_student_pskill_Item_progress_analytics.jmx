@@ -124,6 +124,15 @@
             <stringProp name="script">vars.put(&quot;studentstatementId&quot;, vars.get(&quot;studentstatementIdCount_&quot; + vars.get(&quot;studentstatementIdCount_matchNr&quot;)));</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.result.item-code</stringProp>
+            <stringProp name="EXPECTED_VALUE">${task1}</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>
