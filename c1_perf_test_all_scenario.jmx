@@ -1403,12 +1403,10 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">prefix0 = vars.get(&quot;testrun&quot;);
-prefix1 = &quot;student1007&quot;;
-prefix2 = vars.get(&quot;date&quot;);
+            <stringProp name="script">prefix2 = vars.get(&quot;date&quot;);
 prefix3 = ctx.getThread().getThreadNum() + 1;
 
-firstname = prefix0 + &quot;_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; + prefix3;
+firstname = &quot;std1&quot; + &quot;_&quot; + prefix2 + &quot;_&quot; + prefix3;
 vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
@@ -1482,42 +1480,6 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
         </hashTree>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
