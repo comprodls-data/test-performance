@@ -1879,8 +1879,8 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
-              <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_private.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add a new statement" enabled="true">
+              <stringProp name="IncludeController.includepath">Add_statements_private.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
@@ -1895,10 +1895,6 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add a new statement" enabled="true">
-              <stringProp name="IncludeController.includepath">Add_statements_private.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
               <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_private.jmx</stringProp>
             </IncludeController>
