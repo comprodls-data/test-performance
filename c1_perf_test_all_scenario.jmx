@@ -3462,8 +3462,8 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Associate a product with a class" enabled="true">
