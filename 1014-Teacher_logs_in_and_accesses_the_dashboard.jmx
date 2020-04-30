@@ -43,7 +43,7 @@
           <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="false">
           <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
         </IncludeController>
         <hashTree/>
