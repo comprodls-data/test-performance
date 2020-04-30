@@ -2248,10 +2248,6 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Student views his all Assignments Aggregations" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular assignment of user in a class" enabled="true">
             <stringProp name="IncludeController.includepath">Get_a_particular_assignment_of_user_in_a_class.jmx</stringProp>
           </IncludeController>
@@ -2264,12 +2260,16 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product id" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_product_by_product_id.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get user&apos;s application state for a product or class (product)" enabled="true">
             <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for the learner in a class in case of groups enabled product" enabled="false">
+            <stringProp name="IncludeController.includepath"></stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get user&apos;s application state for a product or class (product) item code" enabled="true">
