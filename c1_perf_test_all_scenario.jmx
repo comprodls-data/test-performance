@@ -3564,6 +3564,10 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
@@ -3584,12 +3588,20 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             <stringProp name="IncludeController.includepath">Get_members_of_a_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="class_pending_submissions" enabled="true">
-            <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get multiple invitations by contextid" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_multiple_invitations_by_context_id.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_items_(product)_in_a_class_aggregrated_over_all_students_in_that_class" enabled="true">
-            <stringProp name="IncludeController.includepath">Analytics_for_items_product_in_a_class_aggregrated_over_all_students_in_that_class.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all groups by group path" enabled="false">
+            <stringProp name="IncludeController.includepath"></stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the members of the group, along with its child groups and their memberships." enabled="false">
+            <stringProp name="IncludeController.includepath"></stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on update class details" enabled="true">
