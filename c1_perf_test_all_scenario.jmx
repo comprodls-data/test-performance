@@ -2063,8 +2063,8 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
-              <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add a new statement" enabled="true">
+              <stringProp name="IncludeController.includepath">Add_statements_pskill.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
@@ -2079,14 +2079,6 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product-pskill-item-progress-analytic" enabled="true">
-              <stringProp name="IncludeController.includepath">Pskill_Item_progress_analytic_progress_true.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add a new statement" enabled="true">
-              <stringProp name="IncludeController.includepath">Add_statements_pskill.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
               <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
             </IncludeController>
@@ -2094,6 +2086,10 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users application state for a product or class(product) with item code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_with_item_code.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product-pskill-item-progress-analytic" enabled="true">
+            <stringProp name="IncludeController.includepath">Pskill_Item_progress_analytic_progress_true.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
