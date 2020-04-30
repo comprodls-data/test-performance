@@ -3716,24 +3716,41 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+            <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="false">
+            <stringProp name="TestPlan.comments">Disbled the api, as class groups are not supported yet</stringProp>
+            <stringProp name="IncludeController.includepath">Group_Pending_Submissions_of_a_Class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all groups by group path" enabled="false">
+            <stringProp name="IncludeController.includepath"></stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the members of the group, along with its child groups and their memberships." enabled="false">
+            <stringProp name="IncludeController.includepath"></stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get multiple invitations by contextid" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_multiple_invitations_by_context_id.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_product_in_that_class" enabled="true">
             <stringProp name="IncludeController.includepath">Analytics_for_users_in_a_class_aggregrated_over_all_the_items_materials_product_in_that_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
             <stringProp name="IncludeController.includepath">Get_members_of_a_class.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="class_pending_submissions" enabled="true">
-            <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_items_(product)_in_a_class_aggregrated_over_all_students_in_that_class" enabled="true">
-            <stringProp name="IncludeController.includepath">Analytics_for_items_product_in_a_class_aggregrated_over_all_students_in_that_class.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on unassociating a class" enabled="true">
@@ -3788,7 +3805,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="false">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -3820,20 +3837,25 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_(product)_in_that_class" enabled="false">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_(product)_in_that_class" enabled="true">
             <stringProp name="IncludeController.includepath">Analytics_for_users_in_a_class_aggregrated_over_all_the_items_materials_NEW_product_in_that_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="false">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
             <stringProp name="IncludeController.includepath">Get_members_of_a_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="class_pending_submissions" enabled="false">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="class_pending_submissions" enabled="true">
             <stringProp name="IncludeController.includepath">class_pending_submissions_NEW_product.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_items_(product)_in_a_class_aggregrated_over_all_students_in_that_class" enabled="false">
-            <stringProp name="IncludeController.includepath">Analytics_for_items_product_in_a_class_aggregrated_over_all_students_in_that_class_NEW_product.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission -- FOR NEW PRODUCT" enabled="false">
+            <stringProp name="TestPlan.comments">Disbled the api, as class groups are not supported yet</stringProp>
+            <stringProp name="IncludeController.includepath">Group_Pending_Submissions_of_a_Class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
