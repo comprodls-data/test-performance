@@ -5042,12 +5042,10 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">prefix0 = vars.get(&quot;testrun&quot;);
-prefix1 = &quot;teacher_1030&quot;;
-prefix2 = vars.get(&quot;date&quot;);
-prefix3 = ctx.getThread().getThreadNum() + 1;
+            <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
+prefix2 = ctx.getThread().getThreadNum() + 1;
 
-extuserid = prefix0 + &quot;_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; + prefix3;
+extuserid = &quot;tch_&quot; + prefix1 + &quot;_&quot; + prefix2;
 
 vars.put(&quot;extuserid&quot;, extuserid);
 </stringProp>
@@ -5055,8 +5053,17 @@ vars.put(&quot;extuserid&quot;, extuserid);
           <hashTree/>
           <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
           <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="false">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_no_spaces.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the workflow requests, made by a particular user" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_workflow_requests_made_by_a_particular_user.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create a new workflow request" enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Not supported yet</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create (registration only) teacher private spaces. Any existing teacher cannot get shared space." enabled="true">
@@ -5079,22 +5086,6 @@ vars.put(&quot;extuserid&quot;, extuserid);
               <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get global entitlements of a user" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
               <intProp name="ActionProcessor.action">1</intProp>
               <intProp name="ActionProcessor.target">0</intProp>
@@ -5107,6 +5098,10 @@ vars.put(&quot;extuserid&quot;, extuserid);
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the workflow requests, made by a particular user" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_workflow_requests_made_by_a_particular_user.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
             <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>

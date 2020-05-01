@@ -23,7 +23,7 @@
   &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_role&quot;: &quot;teacher&quot;,&#xd;
   &quot;ext_first_name&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ext_last_name&quot;: &quot;test&quot;&#xd;
+  &quot;ext_last_name&quot;: &quot;Perf Test&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
