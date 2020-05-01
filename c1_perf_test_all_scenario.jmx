@@ -71,39 +71,9 @@
               <stringProp name="Argument.value">0</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="auth_url" elementType="Argument">
-              <stringProp name="Argument.name">auth_url</stringProp>
-              <stringProp name="Argument.value">${__P(auth_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-auth)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="product_url" elementType="Argument">
-              <stringProp name="Argument.name">product_url</stringProp>
-              <stringProp name="Argument.value">${__P(product_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-product)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="collab_url" elementType="Argument">
-              <stringProp name="Argument.name">collab_url</stringProp>
-              <stringProp name="Argument.value">${__P(collab_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-collab)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="xapi_url" elementType="Argument">
-              <stringProp name="Argument.name">xapi_url</stringProp>
-              <stringProp name="Argument.value">${__P(xapi_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-xapi)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="analytics_url" elementType="Argument">
-              <stringProp name="Argument.name">analytics_url</stringProp>
-              <stringProp name="Argument.value">${__P(analytics_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-analytics)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="activity_url" elementType="Argument">
-              <stringProp name="Argument.name">activity_url</stringProp>
-              <stringProp name="Argument.value">${__P(activity_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-activity)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="pushx_url" elementType="Argument">
-              <stringProp name="Argument.name">pushx_url</stringProp>
-              <stringProp name="Argument.value">${__P(pushx_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com/lb-pushx)}</stringProp>
+            <elementProp name="host_url" elementType="Argument">
+              <stringProp name="Argument.name">host_url</stringProp>
+              <stringProp name="Argument.value">${__P(auth_url,dls-cup-alpha-2093819659.us-west-2.elb.amazonaws.com)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="date" elementType="Argument">
