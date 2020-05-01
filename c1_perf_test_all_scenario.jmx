@@ -228,12 +228,12 @@
             </elementProp>
             <elementProp name="itemcode2" elementType="Argument">
               <stringProp name="Argument.name">itemcode2</stringProp>
-              <stringProp name="Argument.value">1528285348662/1528285498920/1528288231510 </stringProp>
+              <stringProp name="Argument.value">1544521486954/1544521507623/1544521559147</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode3" elementType="Argument">
               <stringProp name="Argument.name">itemcode3</stringProp>
-              <stringProp name="Argument.value">1529663905464/1542018926832/1542018983599</stringProp>
+              <stringProp name="Argument.value">1544521486954/1544521700309/1544521814257</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="startDate" elementType="Argument">
@@ -5141,12 +5141,10 @@ vars.put(&quot;extuserid&quot;, extuserid);
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">prefix0 = vars.get(&quot;testrun&quot;);
-prefix1 = &quot;perf_assignment_1039&quot;;
-prefix2 = vars.get(&quot;date&quot;);
-prefix3 = ctx.getThread().getThreadNum() + 1;
+            <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
+prefix2 = ctx.getThread().getThreadNum() + 1;
 
-assignmenttitle = prefix0 + &quot;_&quot; + prefix1 + &quot;_&quot; +  prefix2 + &quot;_&quot; + prefix3;
+assignmenttitle = &quot;Asgmt_&quot; + prefix1 + &quot;_&quot; +  prefix2;
 vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
@@ -5166,8 +5164,8 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product id" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_product_by_product_id.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -5178,6 +5176,18 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+            <stringProp name="IfController.condition">${isCollabProduct}</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+            <boolProp name="IfController.useExpression">true</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all groups by path" enabled="false">
+              <stringProp name="IncludeController.includepath"></stringProp>
+              <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
             <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class.jmx</stringProp>
           </IncludeController>
