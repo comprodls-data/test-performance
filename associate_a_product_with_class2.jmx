@@ -29,11 +29,11 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${auth_url}</stringProp>
+            <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/org/${orgid}/classes/${classid}/associate-product/${productcode2}</stringProp>
+            <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/associate-product/${productcode2}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -92,11 +92,11 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${auth_url}</stringProp>
+            <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/org/${orgid}/classes/${classid}/associate-product/${productcode2_1}</stringProp>
+            <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/associate-product/${productcode2_1}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -149,11 +149,11 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${auth_url}</stringProp>
+            <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/org/${orgid}/classes/${classid}/associate-product/${productcode2_2}</stringProp>
+            <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/associate-product/${productcode2_2}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
