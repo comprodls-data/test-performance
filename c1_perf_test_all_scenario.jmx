@@ -5036,11 +5036,6 @@ vars.put(&quot;extuserid&quot;, extuserid);
               <stringProp name="IncludeController.includepath">Create_ teacher_private_spaces.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Revoke a workflow request" enabled="false">
-              <stringProp name="IncludeController.includepath">Revoke_a_workflow_request.jmx</stringProp>
-              <stringProp name="TestPlan.comments">This will be updated once &quot;Create a workflow request&quot; is supported. Called only if above step is failed to create private space</stringProp>
-            </IncludeController>
-            <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for space enrollment" enabled="true">
               <intProp name="ActionProcessor.action">1</intProp>
               <intProp name="ActionProcessor.target">0</intProp>
