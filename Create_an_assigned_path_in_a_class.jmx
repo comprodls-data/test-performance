@@ -21,7 +21,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;title&quot;: &quot;${assignmenttitle}&quot;,&#xd;
-  &quot;duedate&quot;: ${assignmentenddate},&#xd;
+  &quot;duedate&quot;: ${endDate},&#xd;
   &quot;items&quot;: [&#xd;
     {&#xd;
       &quot;item-code&quot;: &quot;${itemcode2}&quot;,&#xd;
@@ -34,7 +34,7 @@
       &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
     }&#xd;
   ],&#xd;
-  &quot;startdate&quot;: ${assignmentstartdate},&#xd;
+  &quot;startdate&quot;: ${startDate},&#xd;
   &quot;shared_progress&quot;: true,&#xd;
   &quot;path_type&quot;: &quot;flat&quot;,&#xd;
   &quot;rules&quot;: {}&#xd;
