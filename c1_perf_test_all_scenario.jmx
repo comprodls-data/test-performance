@@ -5481,7 +5481,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid,class_code,classid,invitation_id</stringProp>
+            <stringProp name="variableNames">extuserid,classcode,classid,invitation_id</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Single invitation of a class" enabled="true">
@@ -5496,12 +5496,28 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <stringProp name="IncludeController.includepath">Get_single_invitation_of_a_particular_context.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Join Spaces with Space Code" enabled="false">
+            <stringProp name="IncludeController.includepath">Join_a_space_with_space_code.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get access token of existing teacher" enabled="true">
             <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Enroll self in class" enabled="true">
             <stringProp name="IncludeController.includepath">enroll_self_in_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Validate class_code" enabled="false">
+            <stringProp name="IncludeController.includepath">validate_classcode.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get access token of an existing teacher" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for joining class" enabled="true">
@@ -5518,6 +5534,46 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Complete invitations of user" enabled="true">
             <stringProp name="IncludeController.includepath">complete_invitation_of_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Invitation by Email" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_invitation_by_email.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the workflow requests, made by a particular user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_the_workflow_requests_made_by_a_particular_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="false">
+            <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All bundles" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Pending submission" enabled="true">
+            <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class group recent pending submissions" enabled="true">
+            <stringProp name="IncludeController.includepath">Group_Pending_Submissions_of_a_Class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
