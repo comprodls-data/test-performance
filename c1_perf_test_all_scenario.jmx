@@ -5282,16 +5282,6 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="flag" elementType="Argument">
-                <stringProp name="Argument.name">flag</stringProp>
-                <stringProp name="Argument.value">${__P(Details,true)}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </Arguments>
-          <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
@@ -5357,12 +5347,8 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Teacher submits feedback for pskill activity" enabled="true"/>
           <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_(product)_in_that_class" enabled="true">
-              <stringProp name="IncludeController.includepath">Analytics_for_users_in_a_class_aggregrated_over_all_the_items_materials_product_in_that_class.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_members_of_a_class.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time before reviewing classprogress of one user" enabled="true">
@@ -5383,6 +5369,10 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API will return the students whose manual graded items have been evaluated once" enabled="true">
               <stringProp name="IncludeController.includepath">API_will_return_the_students_whose_manual_graded_items_have_been_evaluated_once.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Details For a Specific Class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="teacher_view_student_pskill_Item_progress_analytics" enabled="true">
@@ -5415,6 +5405,10 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Enable Re-submission for student - REDO statement" enabled="true">
               <stringProp name="IncludeController.includepath">Add_statements_pskill_redo.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="true">
+              <stringProp name="IncludeController.includepath">Deletes_user_application_state_for_a_product_or_class_product_1027.jmx</stringProp>
             </IncludeController>
             <hashTree/>
           </hashTree>
