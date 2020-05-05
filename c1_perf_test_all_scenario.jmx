@@ -2248,6 +2248,10 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Student views his all Assignments Aggregations" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular assignment of user in a class" enabled="true">
             <stringProp name="IncludeController.includepath">Get_a_particular_assignment_of_user_in_a_class.jmx</stringProp>
           </IncludeController>
