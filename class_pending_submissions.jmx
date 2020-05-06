@@ -68,14 +68,14 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="false">
             <stringProp name="JSONPostProcessor.referenceNames">studentuserid</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="false">
             <stringProp name="JSONPostProcessor.referenceNames">task</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
