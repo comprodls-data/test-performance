@@ -6179,23 +6179,20 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="false">
-            <stringProp name="IncludeController.includepath"></stringProp>
-            <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="true">
+            <stringProp name="IncludeController.includepath">class_group_pending_submissions.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Multiple Invitations By Context Id" enabled="true">
             <stringProp name="IncludeController.includepath">Get_multiple_invitations_by_context_id.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all groups by path" enabled="false">
-            <stringProp name="IncludeController.includepath"></stringProp>
-            <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all groups by path" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_the_groups_by_path.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the members of the group, along with its child groups and their memberships." enabled="false">
-            <stringProp name="IncludeController.includepath"></stringProp>
-            <stringProp name="TestPlan.comments">Group fragment Not implemented yet</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the members of the group, along with its child groups and their memberships." enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_members_of_the_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Details For a Specific Class" enabled="true">
