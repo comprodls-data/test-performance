@@ -6260,7 +6260,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">tchextuserid</stringProp>
+            <stringProp name="variableNames">extuserid</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
@@ -6279,10 +6279,6 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
-            <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
             <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
           </IncludeController>
@@ -6295,14 +6291,22 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
-            <stringProp name="IncludeController.includepath">class_pending_submissions_group.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="true">
-            <stringProp name="IncludeController.includepath">class_group_pending_submissions.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="TestPlan.comments">Repeat calls for two of the products associated to this class</stringProp>
+            <stringProp name="IfController.condition"></stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+            <boolProp name="IfController.useExpression">true</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+              <stringProp name="IncludeController.includepath">class_pending_submissions_group.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="true">
+              <stringProp name="IncludeController.includepath">class_group_pending_submissions.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Multiple Invitations By Context Id" enabled="true">
             <stringProp name="IncludeController.includepath">Get_multiple_invitations_by_context_id.jmx</stringProp>
           </IncludeController>
