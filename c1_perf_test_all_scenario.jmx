@@ -474,7 +474,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
 prefix2 = ctx.getThread().getThreadNum() + 1;
 
-extuserid = &quot;std_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; +  vars.get(&quot;pinstance&quot;);
+extuserid = &quot;std_1002_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; +  vars.get(&quot;pinstance&quot;);
 vars.put(&quot;extuserid&quot;, extuserid);
 </stringProp>
           </BeanShellPreProcessor>
