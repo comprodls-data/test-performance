@@ -66,6 +66,11 @@
               <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="group_learning_progress" elementType="Argument">
+              <stringProp name="Argument.name">group_learning_progress</stringProp>
+              <stringProp name="Argument.value">5</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="assigned_path_class_count" elementType="Argument">
               <stringProp name="Argument.name">assigned_path_class_count</stringProp>
               <stringProp name="Argument.value">0</stringProp>
@@ -6279,18 +6284,60 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add Group statements" enabled="true">
-            <stringProp name="IncludeController.includepath">Add_group_statements.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1009:Student accesses the learning path of a product as part of a teacher-led class " enabled="true">
+            <stringProp name="IncludeController.includepath">1009-Student_accesses_the_learning_path_of_a_product_as_part_of_a_teacher-led_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
-            <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get user&apos;s application state for a product or class (product)" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="A Student simulating reading (Multiple pages) and post the statements" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${group_learning_progress}</stringProp>
+          </LoopController>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+              <stringProp name="filename">p_group.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames">task,verb</stringProp>
+              <boolProp name="ignoreFirstLine">false</boolProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.group</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add Group statements" enabled="true">
+              <stringProp name="IncludeController.includepath">Add_group_statements.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
+              <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users application state for a product or class(product) with item code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_with_item_code.jmx</stringProp>
           </IncludeController>
