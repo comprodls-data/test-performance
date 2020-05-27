@@ -6260,7 +6260,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">tchextuserid,groupid</stringProp>
+            <stringProp name="variableNames">extuserid,groupid</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
@@ -6279,10 +6279,6 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
-            <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
             <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
           </IncludeController>
