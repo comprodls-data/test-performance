@@ -4721,7 +4721,7 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
             <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
 prefix2 = ctx.getThread().getThreadNum() + 1;
 
-extuserid = &quot;tch300406_&quot; + prefix1 + &quot;_&quot; + prefix2 +  vars.get(&quot;pinstance&quot;);
+extuserid = &quot;tch300406_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; +  vars.get(&quot;pinstance&quot;);
 
 vars.put(&quot;extuserid&quot;, extuserid);
 </stringProp>
