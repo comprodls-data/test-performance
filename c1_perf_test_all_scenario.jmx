@@ -295,14 +295,23 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable" enabled="true">
+            <stringProp name="maximumValue">10000</stringProp>
+            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <boolProp name="perThread">true</boolProp>
+            <stringProp name="randomSeed"></stringProp>
+            <stringProp name="variableName">randNum_1001</stringProp>
+          </RandomVariableConfig>
+          <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
 prefix2 = ctx.getThread().getThreadNum() + 1;
-
-extuserid = &quot;std10406_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; +  vars.get(&quot;pinstance&quot;);
+prefix3 = vars.get(&quot;randNum_1001&quot;);
+extuserid = &quot;std10406_&quot; + prefix1 + &quot;_&quot; + prefix2  + &quot;_&quot; +  prefix3 + &quot;_&quot; + vars.get(&quot;pinstance&quot;);
 vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
@@ -467,14 +476,24 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable" enabled="true">
+            <stringProp name="maximumValue">10000</stringProp>
+            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <boolProp name="perThread">true</boolProp>
+            <stringProp name="randomSeed"></stringProp>
+            <stringProp name="variableName">randNum_1002</stringProp>
+          </RandomVariableConfig>
+          <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
 prefix2 = ctx.getThread().getThreadNum() + 1;
+prefix3 = vars.get(&quot;randNum_1002&quot;);
 
-extuserid = &quot;std20406_&quot; + prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; +  vars.get(&quot;pinstance&quot;);
+extuserid = &quot;std20406_&quot; + prefix1 + &quot;_&quot; + prefix2  + &quot;_&quot; +  prefix3 + &quot;_&quot; + vars.get(&quot;pinstance&quot;);
 vars.put(&quot;extuserid&quot;, extuserid);
 </stringProp>
           </BeanShellPreProcessor>
@@ -4714,14 +4733,24 @@ vars.put(&quot;classname&quot;, classname);</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable" enabled="true">
+            <stringProp name="maximumValue">10000</stringProp>
+            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <boolProp name="perThread">true</boolProp>
+            <stringProp name="randomSeed"></stringProp>
+            <stringProp name="variableName">randNum_1030</stringProp>
+          </RandomVariableConfig>
+          <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="script">prefix1 = vars.get(&quot;date&quot;);
 prefix2 = ctx.getThread().getThreadNum() + 1;
+prefix3 = vars.get(&quot;randNum_1030&quot;);
 
-extuserid = &quot;tch300406_&quot; + prefix1 + &quot;_&quot; + prefix2 +  vars.get(&quot;pinstance&quot;);
+extuserid = &quot;tch300406_&quot; + prefix1 + &quot;_&quot; + prefix2  + &quot;_&quot; +  prefix3 + &quot;_&quot; + vars.get(&quot;pinstance&quot;);
 
 vars.put(&quot;extuserid&quot;, extuserid);
 </stringProp>
