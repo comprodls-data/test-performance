@@ -276,6 +276,16 @@
               <stringProp name="Argument.value">1544521486954/1544521507623/1544521559147</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="multiproduct1" elementType="Argument">
+              <stringProp name="Argument.name">multiproduct1</stringProp>
+              <stringProp name="Argument.value">perf_alpha_pe1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="multiproduct2" elementType="Argument">
+              <stringProp name="Argument.name">multiproduct2</stringProp>
+              <stringProp name="Argument.value">perf_alpha_pw1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -6246,7 +6256,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>100.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -6288,7 +6298,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get members of a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_members_of_a_class_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -6320,7 +6330,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Information of specific user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_information_for_a_specific_user.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_information_for_a_specific_user_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Enroll users in a group" enabled="true">
