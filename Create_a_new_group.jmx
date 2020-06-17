@@ -33,7 +33,8 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;title&quot;: &quot;${grpTitle}&quot;,&#xd;
   &quot;startdate&quot;: ${startDate},&#xd;
-  &quot;enddate&quot;: ${endDate}&#xd;
+  &quot;enddate&quot;: ${endDate},&#xd;
+  &quot;path&quot;: &quot;${classid}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -64,10 +65,14 @@
                 <stringProp name="Header.name">Authorization</stringProp>
                 <stringProp name="Header.value">${access_token}</stringProp>
               </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Json Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.entities[0].uuid</stringProp>
             <stringProp name="EXPECTED_VALUE"></stringProp>
             <boolProp name="JSONVALIDATION">false</boolProp>
@@ -75,6 +80,12 @@
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract groupid" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">groupid</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].uuid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
