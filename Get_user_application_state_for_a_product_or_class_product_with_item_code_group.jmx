@@ -25,7 +25,7 @@
               </elementProp>
               <elementProp name="productcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${groupproductcode}</stringProp>
+                <stringProp name="Argument.value">${multiproduct1}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">productcode</stringProp>
