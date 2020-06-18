@@ -6279,6 +6279,14 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
+            <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get members of a class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
             <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
           </IncludeController>
@@ -6292,7 +6300,11 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="true">
-            <stringProp name="IncludeController.includepath">class_group_pending_submissions.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">class_group_pending_submissions_details_true.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Multiple Invitations By Context Id" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_multiple_invitations_by_context_id.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups whose manual graded items have been evaluated once." enabled="true">
@@ -6305,6 +6317,18 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for users in a class, aggregrated over all the items &amp; materials (product) in that class." enabled="true">
             <stringProp name="IncludeController.includepath">Analytics_for_users_in_a_class_aggregrated_over_all_the_items_materials_product_in_that_class_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the members of the group, along with its child groups and their memberships." enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_members_of_the_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the memberships of a specific group" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_memberships_of_a_specific_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get group record of a class" enabled="true">
