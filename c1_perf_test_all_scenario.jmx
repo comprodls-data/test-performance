@@ -281,6 +281,11 @@
               <stringProp name="Argument.value">1544521486954/1544521507623/1544521559147</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="grouptask" elementType="Argument">
+              <stringProp name="Argument.name">grouptask</stringProp>
+              <stringProp name="Argument.value">1591682031312/1591682585541/1592290089703</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -6259,7 +6264,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">1055${__P(InstanceID)}.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">extuserid</stringProp>
+            <stringProp name="variableNames">extuserid,groupid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -6269,8 +6274,16 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1003: Student logs in and accesses the dashboard" enabled="true">
-            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_group.jmx</stringProp>
           </IncludeController>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+            <stringProp name="BeanShellSampler.query">studentuserid = vars.get(&quot;userid&quot;);
+vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
             <intProp name="ActionProcessor.action">1</intProp>
@@ -6285,7 +6298,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <hashTree/>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1009:Student accesses the learning path of a product as part of a teacher-led class " enabled="true">
-            <stringProp name="IncludeController.includepath">1009-Student_accesses_the_learning_path_of_a_product_as_part_of_a_teacher-led_class.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">1009-Student_accesses_the_learning_path_of_a_product_as_part_of_a_teacher-led_class_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="A Student simulating reading (Multiple pages) and post the statements" enabled="true">
@@ -6296,13 +6309,13 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
               <stringProp name="filename">p_group.csv</stringProp>
               <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="variableNames">task,verb</stringProp>
+              <stringProp name="variableNames">grouptask,verb</stringProp>
               <boolProp name="ignoreFirstLine">false</boolProp>
               <stringProp name="delimiter">,</stringProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">true</boolProp>
               <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.group</stringProp>
+              <stringProp name="shareMode">shareMode.thread</stringProp>
             </CSVDataSet>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
@@ -6334,12 +6347,12 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
               <hashTree/>
             </hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
-              <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_group.jmx</stringProp>
             </IncludeController>
             <hashTree/>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users application state for a product or class(product) with item code" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_with_item_code.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_with_item_code_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get group Record of a class" enabled="true">
@@ -6348,7 +6361,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the memberships of the specific group" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_the_memberships_of_the_specific_group.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_all_memberships_of_a_specific_group.jmx</stringProp>
             <stringProp name="TestPlan.comments">	</stringProp>
           </IncludeController>
           <hashTree/>
