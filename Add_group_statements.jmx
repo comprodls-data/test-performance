@@ -24,11 +24,11 @@
     &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
   },&#xd;
  &quot;product&quot;: {&#xd;
-      &quot;code&quot;: &quot;${productcode}&quot;&#xd;
+      &quot;code&quot;: &quot;${multiproduct2}&quot;&#xd;
     },&#xd;
   &quot;entities&quot;: [{&#xd;
     &quot;verb&quot;: &quot;${verb}&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${task}&quot;,&#xd;
+    &quot;item-code&quot;: &quot;${grouptask}&quot;,&#xd;
     &quot;timespent&quot;: 200000,&#xd;
     &quot;timestamp&quot;:${__time()},&#xd;
      &quot;result&quot;: {&#xd;
@@ -83,7 +83,7 @@
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.product.code</stringProp>
-            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
+            <stringProp name="EXPECTED_VALUE">${multiproduct2}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
