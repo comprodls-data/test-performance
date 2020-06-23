@@ -85,6 +85,7 @@
             <stringProp name="JSONPostProcessor.referenceNames">groupid</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].uuid</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">GROUP_ID_NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>

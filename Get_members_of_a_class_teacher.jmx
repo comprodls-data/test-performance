@@ -84,34 +84,6 @@
             <stringProp name="JSONPostProcessor.defaultValues">NO_STUDENT_IN_CLASS1</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract name of first student" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">studentName</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].name</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">NO_STUDENT_IN_CLASS1</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract email of first student" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">studentName</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].email</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">NO_STUDENT_IN_CLASS1</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract first name of first student" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">studentFirstName</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].first_name</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">NO_STUDENT_IN_CLASS1</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract last name of first student" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">studentLastName</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].last_name</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">NO_STUDENT_IN_CLASS1</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>
