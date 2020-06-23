@@ -27,6 +27,7 @@
     &quot;code&quot;: &quot;${productcode}&quot;&#xd;
   },&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
+  &quot;space_key&quot;: &quot;${spacekey}&quot;,&#xd;
   &quot;student_userid&quot;: &quot;${studentuserid1}&quot;,&#xd;
   &quot;entities&quot;: [&#xd;
     {&#xd;
