@@ -2736,12 +2736,24 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Join Spaces with class_code" enabled="true">
-            <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create student spaces (Register only) using product code" enabled="true">
+            <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code_private.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create student spaces (Register only) using product code" enabled="false">
-            <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code_private.jmx</stringProp>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Activation" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
+              <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Join Spaces with class_code" enabled="true">
+            <stringProp name="IncludeController.includepath">Join_Spaces_with_class_code_invitation.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Activation" enabled="true">
@@ -2789,7 +2801,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_assigned_paths_of_a_user_in_class_noAssignedPaths.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
