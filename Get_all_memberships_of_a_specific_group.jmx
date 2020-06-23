@@ -59,6 +59,7 @@
             <stringProp name="JSONPostProcessor.referenceNames">studentuserid</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].dls_user_id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">STUDENTUSERID_NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
