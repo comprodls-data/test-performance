@@ -5400,7 +5400,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -6322,7 +6322,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1054: Teacher can mark group ps activities" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1054: Teacher can mark group ps activities" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -6378,7 +6378,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API will return the students whose manual graded items have been evaluated once." enabled="true">
-            <stringProp name="IncludeController.includepath">API_will_return_the_students_whose_manual_graded_items_have_been_evaluated_once _group.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">API_will_return_the_students_whose_manual_graded_items_have_been_evaluated_once_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="true">
@@ -6431,6 +6431,10 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="true">
             <stringProp name="IncludeController.includepath">Deletes_user_application_state_for_a_product_or_class_product_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
