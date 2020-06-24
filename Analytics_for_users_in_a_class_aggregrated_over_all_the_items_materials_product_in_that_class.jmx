@@ -15,7 +15,7 @@
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_(product)_in_that_class" enabled="true"/>
       <hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Single Product" enabled="true">
-          <stringProp name="IfController.condition">&quot;${classProductType}&quot; != &quot;multi&quot;</stringProp>
+          <stringProp name="IfController.condition">&quot;${productType}&quot; != &quot;multi&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
@@ -78,7 +78,7 @@
           </hashTree>
         </hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Multi Product" enabled="true">
-          <stringProp name="IfController.condition">&quot;${classProductType}&quot; == &quot;multi&quot;</stringProp>
+          <stringProp name="IfController.condition">&quot;${productType}&quot; == &quot;multi&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>

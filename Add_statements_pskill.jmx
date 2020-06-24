@@ -27,8 +27,8 @@
     &quot;code&quot;: &quot;${productcode}&quot;&#xd;
   },&#xd;
   &quot;entities&quot;: [{&#xd;
-    &quot;verb&quot;: &quot;${verb}&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${task}&quot;,&#xd;
+    &quot;verb&quot;: &quot;${psverb}&quot;,&#xd;
+    &quot;item-code&quot;: &quot;${pstask}&quot;,&#xd;
     &quot;timespent&quot;: 200000,&#xd;
     &quot;timestamp&quot;: ${__time()},&#xd;
     &quot;result&quot;: {&#xd;
