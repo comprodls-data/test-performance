@@ -2947,7 +2947,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">1042${__P(InstanceID)}.csv</stringProp>
+            <stringProp name="filename">1042${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">true</boolProp>
