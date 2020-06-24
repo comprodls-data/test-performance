@@ -281,6 +281,11 @@
               <stringProp name="Argument.value">1544521486954/1544521507623/1544521559147</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="grouptask" elementType="Argument">
+              <stringProp name="Argument.name">grouptask</stringProp>
+              <stringProp name="Argument.value">1591682031312/1591682585541/1592290089703</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="multiproduct1" elementType="Argument">
               <stringProp name="Argument.name">multiproduct1</stringProp>
               <stringProp name="Argument.value">perf_alpha_pe1</stringProp>
