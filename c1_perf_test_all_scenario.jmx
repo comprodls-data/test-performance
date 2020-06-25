@@ -2897,7 +2897,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_assigned_paths_of_a_user_in_class_noAssignedPaths.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
