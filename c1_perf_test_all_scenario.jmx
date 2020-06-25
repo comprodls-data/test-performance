@@ -6244,7 +6244,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid</stringProp>
+            <stringProp name="variableNames">extuserid,studentuserid1</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
@@ -6272,7 +6272,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get members of a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_members_of_a_class_group.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_members_of_a_class_group_1052.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
