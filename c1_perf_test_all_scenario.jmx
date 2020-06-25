@@ -6557,7 +6557,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the memberships of the specific group" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_memberships_of_a_specific_group.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_all_memberships_of_a_specific_group_1055.jmx</stringProp>
             <stringProp name="TestPlan.comments">	</stringProp>
           </IncludeController>
           <hashTree/>
