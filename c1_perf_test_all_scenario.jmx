@@ -6408,7 +6408,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="true">
-            <stringProp name="IncludeController.includepath">class_group_pending_submissions_details_true.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">class_group_pending_submissions_details_true_1054.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Multiple Invitations By Context Id" enabled="true">
@@ -6420,7 +6420,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all groups by path" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_the_groups_by_path.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_all_the_groups_by_path_1054.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for users in a class, aggregrated over all the items &amp; materials (product) in that class." enabled="true">
