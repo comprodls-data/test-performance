@@ -2912,7 +2912,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_assigned_paths_of_a_user_in_class_noAssignedPaths.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
@@ -6259,7 +6259,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid,studentuserid1</stringProp>
+            <stringProp name="variableNames">extuserid</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
@@ -6287,7 +6287,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get members of a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_members_of_a_class_group_1052.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_members_of_a_class_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -6515,7 +6515,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit collaborate/group ps activities" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit group ps activities" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -6605,8 +6605,160 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add Group statements" enabled="true">
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add Group pskill statements" enabled="true">
               <stringProp name="IncludeController.includepath">Add_group_statements.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
+              <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_group.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users application state for a product or class(product) with item code" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_with_item_code_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit group collab activities" enabled="true">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">1</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">1055${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">extuserid,groupid</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1003: Group Student logs in and accesses the dashboard" enabled="true">
+            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+            <stringProp name="BeanShellSampler.query">studentuserid = vars.get(&quot;userid&quot;);
+vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1009:Student accesses the learning path of a product as part of a teacher-led class " enabled="true">
+            <stringProp name="IncludeController.includepath">1009-Student_accesses_the_learning_path_of_a_product_as_part_of_a_teacher-led_class_group.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get group Record of a class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_group_record_of_a_class.jmx</stringProp>
+            <stringProp name="TestPlan.comments">	</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the memberships of the specific group" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_memberships_of_a_specific_group_1055.jmx</stringProp>
+            <stringProp name="TestPlan.comments">	</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="A Student simulating reading (Multiple pages) and post the statements" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${group_learning_progress}</stringProp>
+          </LoopController>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+              <stringProp name="filename">p_group_collab.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames">collabtask,collabverb</stringProp>
+              <boolProp name="ignoreFirstLine">false</boolProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.thread</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add Group collab statements" enabled="true">
+              <stringProp name="IncludeController.includepath">Add_statements_collab.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="true">
@@ -6896,10 +7048,6 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for learner in a class in case of group enabled product" enabled="true">
             <stringProp name="IncludeController.includepath">Get_all_my_memberships_by_path.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for the learner in a class in case of groups enabled product" enabled="false">
-            <stringProp name="IncludeController.includepath"></stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get user&apos;s application state for a product or class (product) item code" enabled="true">
