@@ -6715,6 +6715,10 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
             <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for learner in a class in case of group enabled product" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_my_memberships_by_path.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for the learner in a class in case of groups enabled product" enabled="false">
             <stringProp name="IncludeController.includepath"></stringProp>
           </IncludeController>
