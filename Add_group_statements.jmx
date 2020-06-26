@@ -32,12 +32,9 @@
     &quot;timespent&quot;: 200000,&#xd;
     &quot;timestamp&quot;:${__time()},&#xd;
      &quot;result&quot;: {&#xd;
-	    &quot;score&quot;: {&#xd;
-	          &quot;min&quot;: 0,&#xd;
-	          &quot;scaled&quot;: 0.8,&#xd;
-	          &quot;max&quot;: 1,&#xd;
-	          &quot;raw&quot;: 0&#xd;
-	        		}&#xd;
+	    &quot;response&quot;: {&#xd;
+        &quot;text&quot;: &quot;This is a test answer for a pskill activity attempted,submitted during performance test execution_1.This is a test answer for a pskill activity attempted,submitted during performance test execution_2.This is a test answer for a pskill activity attempted,submitted during performance test execution_3.This is a test answer for a pskill activity attempted,submitted during performance test execution_4.This is a test answer for a pskill activity attempted,submitted during performance test execution_5.&quot;&#xd;
+      }&#xd;
   			}&#xd;
  		 }],&#xd;
    &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
