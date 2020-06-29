@@ -3470,7 +3470,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">1055${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">extuserid,groupid</stringProp>
+            <stringProp name="variableNames">a,b,extuserid,c,d,e,f,g,h,i,groupid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -3622,7 +3622,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">1055${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">extuserid,groupid</stringProp>
+            <stringProp name="variableNames">a,b,extuserid,c,d,e,f,g,h,i,groupid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -7015,7 +7015,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid</stringProp>
+            <stringProp name="variableNames">a,b,extuserid</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
