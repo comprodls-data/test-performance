@@ -53,12 +53,12 @@
             </elementProp>
             <elementProp name="userProgress_max" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max</stringProp>
-              <stringProp name="Argument.value">2000</stringProp>
+              <stringProp name="Argument.value">3000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userProgress_max_assignedpaths" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max_assignedpaths</stringProp>
-              <stringProp name="Argument.value">5000</stringProp>
+              <stringProp name="Argument.value">8000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="learning_progress" elementType="Argument">
