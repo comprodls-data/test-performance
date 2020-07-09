@@ -3474,9 +3474,9 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
         </ThroughputController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">1055${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
+            <stringProp name="filename">1055ps${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">a,b,extuserid,c,d,e,f,g,h,i,groupid</stringProp>
+            <stringProp name="variableNames">a,b,extuserid,groupid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -3626,9 +3626,9 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
         </ThroughputController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">1055${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
+            <stringProp name="filename">1055nps${__env(TAURUS_SESSIONS_INDEX)}.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">a,b,extuserid,c,d,e,f,g,h,i,groupid</stringProp>
+            <stringProp name="variableNames">a,b,extuserid,groupid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
