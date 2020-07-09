@@ -61,14 +61,34 @@
               <stringProp name="Argument.value">8000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="learning_progress" elementType="Argument">
-              <stringProp name="Argument.name">learning_progress</stringProp>
-              <stringProp name="Argument.value">4</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="learningprogressnps" elementType="Argument">
               <stringProp name="Argument.name">learningprogressnps</stringProp>
               <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="learning_progress" elementType="Argument">
+              <stringProp name="Argument.name">learning_progress</stringProp>
+              <stringProp name="Argument.value">3</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="group_learning_progress" elementType="Argument">
+              <stringProp name="Argument.name">group_learning_progress</stringProp>
+              <stringProp name="Argument.value">8</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="group_learning_progressps" elementType="Argument">
+              <stringProp name="Argument.name">group_learning_progressps</stringProp>
+              <stringProp name="Argument.value">3</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="assignmentlearningprogressscorable" elementType="Argument">
+              <stringProp name="Argument.name">assignmentlearningprogressscorable</stringProp>
+              <stringProp name="Argument.value">4</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="assignmentlearningprogress" elementType="Argument">
+              <stringProp name="Argument.name">assignmentlearningprogress</stringProp>
+              <stringProp name="Argument.value">3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assigned_path_class_count" elementType="Argument">
@@ -168,7 +188,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;67f329a1-ba15-11ea-840b-0242ac110002&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;e933c860-c1a9-11ea-887e-0242ac110002&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -204,26 +224,6 @@
             <elementProp name="counter" elementType="Argument">
               <stringProp name="Argument.name">counter</stringProp>
               <stringProp name="Argument.value">1</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="assignmentlearningprogress" elementType="Argument">
-              <stringProp name="Argument.name">assignmentlearningprogress</stringProp>
-              <stringProp name="Argument.value">3</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="assignmentlearningprogressscorable" elementType="Argument">
-              <stringProp name="Argument.name">assignmentlearningprogressscorable</stringProp>
-              <stringProp name="Argument.value">4</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="group_learning_progress" elementType="Argument">
-              <stringProp name="Argument.name">group_learning_progress</stringProp>
-              <stringProp name="Argument.value">8</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="group_learning_progressps" elementType="Argument">
-              <stringProp name="Argument.name">group_learning_progressps</stringProp>
-              <stringProp name="Argument.value">3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="invitationorgid" elementType="Argument">
