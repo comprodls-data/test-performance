@@ -23,7 +23,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_1055.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">

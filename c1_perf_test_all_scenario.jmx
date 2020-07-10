@@ -1765,7 +1765,7 @@ vars.put(&quot;firstname&quot;, firstname);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="false">
             <stringProp name="BeanShellSampler.query">studentuserid = vars.get(&quot;userid&quot;);
 vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
             <stringProp name="BeanShellSampler.filename"></stringProp>
@@ -3489,7 +3489,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
             <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="false">
             <stringProp name="BeanShellSampler.query">studentuserid = vars.get(&quot;userid&quot;);
 vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
             <stringProp name="BeanShellSampler.filename"></stringProp>
@@ -3641,7 +3641,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
             <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="false">
             <stringProp name="BeanShellSampler.query">studentuserid = vars.get(&quot;userid&quot;);
 vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
             <stringProp name="BeanShellSampler.filename"></stringProp>
