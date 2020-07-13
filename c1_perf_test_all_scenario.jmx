@@ -53,12 +53,12 @@
             </elementProp>
             <elementProp name="userProgress_max" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max</stringProp>
-              <stringProp name="Argument.value">3000</stringProp>
+              <stringProp name="Argument.value">4000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userProgress_max_assignedpaths" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max_assignedpaths</stringProp>
-              <stringProp name="Argument.value">8000</stringProp>
+              <stringProp name="Argument.value">9000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="learningprogressnps" elementType="Argument">
@@ -68,22 +68,22 @@
             </elementProp>
             <elementProp name="learning_progress" elementType="Argument">
               <stringProp name="Argument.name">learning_progress</stringProp>
-              <stringProp name="Argument.value">3</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="group_learning_progress" elementType="Argument">
               <stringProp name="Argument.name">group_learning_progress</stringProp>
-              <stringProp name="Argument.value">8</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="group_learning_progressps" elementType="Argument">
               <stringProp name="Argument.name">group_learning_progressps</stringProp>
-              <stringProp name="Argument.value">3</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assignmentlearningprogressscorable" elementType="Argument">
               <stringProp name="Argument.name">assignmentlearningprogressscorable</stringProp>
-              <stringProp name="Argument.value">4</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assignmentlearningprogress" elementType="Argument">
@@ -722,7 +722,7 @@ vars.put(&quot;extuserid&quot;, extuserid);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>9.0</value>
+            <value>7.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2978,13 +2978,13 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1041: Existing Student joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1041: Existing Student joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3128,13 +3128,13 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1042: NEW Student joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1042: NEW Student joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3772,7 +3772,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -6305,7 +6305,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1044: Existing Teacher joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1044: Existing Teacher joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -6457,7 +6457,7 @@ vars.put(&quot;assignmenttitle&quot;, assignmenttitle);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1045: NEW Teacher joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1045: NEW Teacher joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
