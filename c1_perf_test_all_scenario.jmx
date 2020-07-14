@@ -188,7 +188,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;e933c860-c1a9-11ea-887e-0242ac110002&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;f5e1ebee-c4e5-11ea-acee-0242ac110002&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -722,7 +722,7 @@ vars.put(&quot;extuserid&quot;, extuserid);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>7.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2984,7 +2984,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>3.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3134,7 +3134,7 @@ vars.put(&quot;studentuserid&quot;, studentuserid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
