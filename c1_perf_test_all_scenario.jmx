@@ -38,7 +38,7 @@
             </elementProp>
             <elementProp name="maxWait" elementType="Argument">
               <stringProp name="Argument.name">maxWait</stringProp>
-              <stringProp name="Argument.value">2500</stringProp>
+              <stringProp name="Argument.value">1500</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="invitationwait" elementType="Argument">
@@ -53,12 +53,12 @@
             </elementProp>
             <elementProp name="userProgress_max" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max</stringProp>
-              <stringProp name="Argument.value">4000</stringProp>
+              <stringProp name="Argument.value">2000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userProgress_max_assignedpaths" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max_assignedpaths</stringProp>
-              <stringProp name="Argument.value">8000</stringProp>
+              <stringProp name="Argument.value">5000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="learningprogressnps" elementType="Argument">
@@ -83,7 +83,7 @@
             </elementProp>
             <elementProp name="assignmentlearningprogressscorable" elementType="Argument">
               <stringProp name="Argument.name">assignmentlearningprogressscorable</stringProp>
-              <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.value">4</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assignmentlearningprogress" elementType="Argument">
