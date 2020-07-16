@@ -71,13 +71,13 @@
           </JSONPostProcessor>
           <hashTree/>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">apCount</stringProp>
+            <stringProp name="JSONPostProcessor.referenceNames">assigned_path_class_count</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.count</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>

@@ -14,7 +14,7 @@
     <hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Create a new group" enabled="true"/>
       <hashTree>
-        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="group_name" enabled="true">
+        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="group_name" enabled="false">
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <boolProp name="resetInterpreter">false</boolProp>
@@ -33,7 +33,7 @@ vars.put(&quot;grpTitle&quot;, grouptitle);</stringProp>
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;title&quot;: &quot;${grpTitle}&quot;,&#xd;
+  &quot;title&quot;: &quot;Grp_${studentuserid1}&quot;,&#xd;
   &quot;startdate&quot;: ${startDate},&#xd;
   &quot;enddate&quot;: ${endDate},&#xd;
   &quot;path&quot;: &quot;${classid}&quot;&#xd;
