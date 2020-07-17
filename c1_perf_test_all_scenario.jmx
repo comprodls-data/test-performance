@@ -6034,28 +6034,12 @@
             <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-            <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${assigned_path_class_count}</stringProp>
-          </LoopController>
+          <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+            <stringProp name="ForeachController.inputVal">assignedpathid</stringProp>
+            <stringProp name="ForeachController.returnVal">assigned_path_id</stringProp>
+            <boolProp name="ForeachController.useSeparator">true</boolProp>
+          </ForeachController>
           <hashTree>
-            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-              <stringProp name="CounterConfig.start">1</stringProp>
-              <stringProp name="CounterConfig.end"></stringProp>
-              <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">counter</stringProp>
-              <stringProp name="CounterConfig.format"></stringProp>
-              <boolProp name="CounterConfig.per_user">true</boolProp>
-              <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
-            </CounterConfig>
-            <hashTree/>
-            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Set assigned path id" enabled="true">
-              <stringProp name="BeanShellSampler.query">vars.put(&quot;assigned_path_id&quot;, (vars.get(&quot;assignedpathid_&quot; + vars.get(&quot;counter&quot;))));</stringProp>
-              <stringProp name="BeanShellSampler.filename"></stringProp>
-              <stringProp name="BeanShellSampler.parameters"></stringProp>
-              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-            </BeanShellSampler>
-            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get class level aggregations for all items in a assigned-path" enabled="true">
               <stringProp name="IncludeController.includepath">Get_class_level_aggregations_for_all_items_in_a_assigned_path.jmx</stringProp>
             </IncludeController>
