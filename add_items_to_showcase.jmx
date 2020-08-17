@@ -26,8 +26,7 @@
       &quot;item-code&quot;: &quot;${groupItemCode}&quot;,&#xd;
       &quot;link-statementid&quot;: &quot;${statementId}&quot;,&#xd;
       &quot;groupid&quot;: &quot;${groupid}&quot;,&#xd;
-      &quot;type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;data&quot;: {}&#xd;
+      &quot;type&quot;: &quot;dls-internal&quot;&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
