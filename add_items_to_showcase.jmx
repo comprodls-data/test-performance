@@ -27,7 +27,7 @@
       &quot;link-statementid&quot;: &quot;${groupstatementId}&quot;,&#xd;
       &quot;groupid&quot;: &quot;${groupid}&quot;,&#xd;
       &quot;type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;data&quot;: {&quot;timestamp&quot;:${__time()},&quot;text&quot;:&quot;&lt;p&gt;test group pskill&lt;/p&gt;&quot;,&quot;link&quot;:[],&quot;attribs&quot;:{&quot;title&quot;:&quot;Showcase&quot;}}&#xd;
+      &quot;data&quot;: {&quot;timestamp&quot;:${__time()},&quot;text&quot;:&quot;&lt;p&gt;test group pskill&lt;/p&gt;&quot;,&quot;link&quot;:[],&quot;attribs&quot;:{&quot;title&quot;:&quot;Showcase ${__env(TAURUS_SESSIONS_INDEX)}&quot;}}&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
