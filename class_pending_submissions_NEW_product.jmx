@@ -24,12 +24,12 @@
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">classid</stringProp>
               </elementProp>
-              <elementProp name="productid" elementType="HTTPArgument">
+              <elementProp name="productcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${productid2}</stringProp>
+                <stringProp name="Argument.value">${productcode2}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">productid</stringProp>
+                <stringProp name="Argument.name">productcode</stringProp>
               </elementProp>
               <elementProp name="details" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -40,11 +40,11 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${analytics_url}</stringProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/${orgid}/class/product/recent-pending-submissions</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-analytics/${orgid}/class/product/recent-pending-submissions</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -68,19 +68,28 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="false">
           <stringProp name="JSONPostProcessor.referenceNames">studentuserid</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
         </JSONPostProcessor>
         <hashTree/>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
+        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="false">
           <stringProp name="JSONPostProcessor.referenceNames">task</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS</stringProp>
         </JSONPostProcessor>
+        <hashTree/>
+        <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <stringProp name="JSON_PATH">$.countPendingSubmissions</stringProp>
+          <stringProp name="EXPECTED_VALUE"></stringProp>
+          <boolProp name="JSONVALIDATION">false</boolProp>
+          <boolProp name="EXPECT_NULL">false</boolProp>
+          <boolProp name="INVERT">false</boolProp>
+          <boolProp name="ISREGEX">true</boolProp>
+        </JSONPathAssertion>
         <hashTree/>
       </hashTree>
     </hashTree>

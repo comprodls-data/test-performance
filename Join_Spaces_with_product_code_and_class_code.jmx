@@ -23,25 +23,30 @@
   &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ref_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_first_name&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ext_last_name&quot;: &quot;test&quot;,&#xd;
+  &quot;ext_last_name&quot;: &quot;Perf Test&quot;,&#xd;
+  &quot;ext_email&quot;: &quot;${extuserid}@yopmail.com&quot;,&#xd;
   &quot;ext_role&quot;: &quot;student&quot;,&#xd;
-  &quot;class_code&quot;: &quot;${classcodeinst}&quot;,&#xd;
-  &quot;product_code&quot;: &quot;${productcode}&quot;,&#xd;
-  &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
-  &quot;ext_product_meta&quot;: {&#xd;
-    &quot;startdate&quot;: 1535719566000,&#xd;
-    &quot;enddate&quot;: 1575719566000&#xd;
-  }&#xd;
+  &quot;class_code&quot;: &quot;${classcode}&quot;,&#xd;
+  &quot;products&quot;: [&#xd;
+    {&#xd;
+      &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
+      &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
+      &quot;ext_product_meta&quot;: {&#xd;
+        &quot;startdate&quot;: ${startDate},&#xd;
+        &quot;enddate&quot;: ${endDate}&#xd;
+      }&#xd;
+    }&#xd;
+  ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${auth_url}</stringProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/accounts/${accountid}/student/provision-spaces</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-auth/accounts/${accountid}/student/provision-spaces</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -64,16 +69,6 @@
               </elementProp>
             </collectionProp>
           </HeaderManager>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Complete Response Assertion" enabled="false">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="1341898700">{&quot;actor&quot;:{&quot;uuid&quot;:&quot;${userid}&quot;},&quot;product&quot;:{&quot;uuid&quot;:&quot;${productid}&quot;},&quot;entity&quot;:{&quot;verb&quot;:&quot;attempted&quot;,&quot;task&quot;:&quot;${task}&quot;,&quot;timespent&quot;:200000},&quot;status&quot;:&quot;in-process&quot;}</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-          </ResponseAssertion>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.entities[0].dls_account_id</stringProp>

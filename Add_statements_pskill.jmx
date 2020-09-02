@@ -23,26 +23,31 @@
   &quot;actor&quot;: {&#xd;
     &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
   },&#xd;
- &quot;product&quot;: {&#xd;
-      &quot;uuid&quot;: &quot;${productid}&quot;&#xd;
-    },&#xd;
+  &quot;product&quot;: {&#xd;
+    &quot;code&quot;: &quot;${productcode}&quot;&#xd;
+  },&#xd;
   &quot;entities&quot;: [{&#xd;
-    &quot;verb&quot;: &quot;${verb}&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${task}&quot;,&#xd;
+    &quot;verb&quot;: &quot;${psverb}&quot;,&#xd;
+    &quot;item-code&quot;: &quot;${pstask}&quot;,&#xd;
     &quot;timespent&quot;: 200000,&#xd;
-    &quot;timestamp&quot;:${__time()}&#xd;
- 		 }],&#xd;
-   &quot;classid&quot;: &quot;${classid}&quot;&#xd;
+    &quot;timestamp&quot;: ${__time()},&#xd;
+    &quot;result&quot;: {&#xd;
+      &quot;response&quot;: {&#xd;
+        &quot;text&quot;: &quot;This is a test answer for a pskill activity attempted,submitted during performance test execution_1.This is a test answer for a pskill activity attempted,submitted during performance test execution_2.This is a test answer for a pskill activity attempted,submitted during performance test execution_3.This is a test answer for a pskill activity attempted,submitted during performance test execution_4.This is a test answer for a pskill activity attempted,submitted during performance test execution_5.&quot;&#xd;
+      }&#xd;
+    }&#xd;
+  }],&#xd;
+  &quot;classid&quot;: &quot;${classid}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${xapi_url}</stringProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/${orgid}/statements/multi</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-xapi/${orgid}/statements/multi</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -71,8 +76,8 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.product.uuid</stringProp>
-            <stringProp name="EXPECTED_VALUE">${productid}</stringProp>
+            <stringProp name="JSON_PATH">$.product.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>

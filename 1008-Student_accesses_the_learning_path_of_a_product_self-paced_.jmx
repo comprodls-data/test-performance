@@ -14,8 +14,8 @@
     <hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="true"/>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product id" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_product_by_product_id_private.jmx</stringProp>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product items and their progress analytic (default) (My Private Learning)" enabled="true">

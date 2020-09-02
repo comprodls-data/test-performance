@@ -23,36 +23,38 @@
   &quot;actor&quot;: {&#xd;
     &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
   },&#xd;
- &quot;product&quot;: {&#xd;
-      &quot;uuid&quot;: &quot;${productid}&quot;&#xd;
-    },&#xd;
-    &quot;student_userid&quot;: &quot;${studentuserid}&quot;,&#xd;
+  &quot;product&quot;: {&#xd;
+    &quot;code&quot;: &quot;${productcode}&quot;&#xd;
+  },&#xd;
+  &quot;student_userid&quot;: &quot;${studentuserid1}&quot;,&#xd;
+  &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
+  &quot;space_key&quot;: &quot;${spacekey}&quot;,&#xd;
   &quot;entities&quot;: [{&#xd;
     &quot;verb&quot;: &quot;evaluated&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${task}&quot;,&#xd;
+    &quot;item-code&quot;: &quot;${task1}&quot;,&#xd;
     &quot;timespent&quot;: 200000,&#xd;
-    &quot;timestamp&quot;:${__time()},&#xd;
-    &quot;result&quot;:{&#xd;
-               &quot;score&quot;:{&#xd;
-                        &quot;min&quot;: 0,&#xd;
-                         &quot;scaled&quot;: 0.8,&#xd;
-                         &quot;max&quot;: 1,&#xd;
-                         &quot;raw&quot;:0&#xd;
-                        }&#xd;
-      },&#xd;
-       &quot;link-statementid&quot;: &quot;${studentstatementId}&quot;&#xd;
- 		 }],&#xd;
-   &quot;classid&quot;: &quot;${classid}&quot;&#xd;
+    &quot;timestamp&quot;: ${__time()},&#xd;
+    &quot;result&quot;: {&#xd;
+      &quot;comment&quot;: &quot;Performance test teacher adding comment when evaluating pskill submitted performance test student_1.Performance test teacher adding comment when evaluating pskill submitted performance test student_2.Performance test teacher adding comment when evaluating pskill submitted performance test student_3.Performance test teacher adding comment when evaluating pskill submitted performance test student_4.Performance test teacher adding comment when evaluating pskill submitted performance test student_5.&quot;,&#xd;
+      &quot;score&quot;: {&#xd;
+        &quot;min&quot;: 0,&#xd;
+        &quot;scaled&quot;: 0.8,&#xd;
+        &quot;max&quot;: 1,&#xd;
+        &quot;raw&quot;: 0&#xd;
+      }&#xd;
+    },&#xd;
+    &quot;link-statementid&quot;: &quot;${__V(studentstatementIdCount_${studentstatementIdCount_matchNr})}&quot;&#xd;
+  }]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${xapi_url}</stringProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/${orgid}/statements/multi</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-xapi/${orgid}/statements/multi</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -81,8 +83,8 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.product.uuid</stringProp>
-            <stringProp name="EXPECTED_VALUE">${productid}</stringProp>
+            <stringProp name="JSON_PATH">$.product.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
