@@ -22,11 +22,11 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular bundle" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_ielts.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user_ielts.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
