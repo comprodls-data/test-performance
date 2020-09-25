@@ -4037,7 +4037,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add IELTS statements" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add IELTS Launched statements" enabled="true">
             <stringProp name="IncludeController.includepath">Add_ielts_statements_launched.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -4180,7 +4180,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ielts.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add IELTS statements" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add IELTS Launched statements" enabled="true">
             <stringProp name="IncludeController.includepath">Add_ielts_statements_launched.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -4319,16 +4319,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Add_new_external_statements.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Student Launches, Performs and Submits LTI Test" enabled="true">
-            <intProp name="ThroughputController.style">1</intProp>
-            <boolProp name="ThroughputController.perThread">false</boolProp>
-            <intProp name="ThroughputController.maxThroughput">1</intProp>
-            <FloatProperty>
-              <name>ThroughputController.percentThroughput</name>
-              <value>50.0</value>
-              <savedValue>0.0</savedValue>
-            </FloatProperty>
-          </ThroughputController>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Launches, Performs and Submits LTI Test" enabled="true"/>
           <hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Generate Oauth Token" enabled="true">
               <stringProp name="IfController.condition">((${__time} - ${currentTime}) &gt; 1800000) &amp;&amp; (&quot;${isReset}&quot; == &quot;False&quot;)  </stringProp>
