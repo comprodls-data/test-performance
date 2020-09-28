@@ -1998,7 +1998,7 @@
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statements" enabled="true">
-            <stringProp name="IncludeController.includepath">Add_group_statements.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Add_group_statements_1009.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Showcase of a class" enabled="true">
