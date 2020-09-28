@@ -941,7 +941,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1316,7 +1316,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1006: Student activates a new product - New Users (Student having access of Evolve 4 product only)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1006: Student activates a new product - New Users (Student having access of Evolve 4 product only)" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1634,7 +1634,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1940,7 +1940,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>12.0</value>
+            <value>10.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2100,7 +2100,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2624,7 +2624,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>6.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2744,7 +2744,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>12.0</value>
+            <value>10.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2970,7 +2970,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>12.0</value>
+            <value>10.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3958,28 +3958,28 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="LTI-1001: NEW Student joins space, select skills and launches new test" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1060: NEW IELTS Student joins space, select skills and launches new test" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>100.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">prefix1 = &quot;ielts&quot;;
-prefix2 = vars.get(&quot;date&quot;);
-prefix3 = ctx.getThread().getThreadNum() + 1;
-
-extuserid = prefix1 + &quot;_&quot; + prefix2 + &quot;_&quot; + prefix3;
-vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
-          </BeanShellPreProcessor>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">1060.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">extuserid</stringProp>
+          </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
             <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_no_spaces.jmx</stringProp>
@@ -4021,7 +4021,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="false">
             <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user_ielts.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -4041,7 +4041,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Add_ielts_statements_launched.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI workflow APIs" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI APIs: Launch a Test" enabled="true"/>
           <hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Invoke Launch Endpoint" enabled="true">
               <stringProp name="IncludeController.includepath">invoke.jmx</stringProp>
@@ -4141,19 +4141,19 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="LTI-1002 &amp; LTI-1003: Student views &apos;My Progress&apos; and resumes an incomplete test from &apos;My Progress&apos;" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1061: IELTS Student views &apos;My Progress&apos; and resumes an incomplete test from &apos;My Progress&apos;" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>100.0</value>
+            <value>8.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">LTI-1002.csv</stringProp>
+            <stringProp name="filename">lti_scenario1.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">extuserid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
@@ -4164,8 +4164,8 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="shareMode">shareMode.all</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite: LTI-1001 - IELTS Student logs in and access the dashboard" enabled="true">
-            <stringProp name="IncludeController.includepath">LTI_1002-Student_logs_in_and_access_the_dashboard.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite: 1060 - IELTS Student logs in and access the dashboard" enabled="true">
+            <stringProp name="IncludeController.includepath">1060-Student_logs_in_and_access_the_dashboard.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product items and their progress analytic" enabled="true">
@@ -4184,7 +4184,7 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="IncludeController.includepath">Add_ielts_statements_launched.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI workflow APIs" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI APIs: Launch a Test" enabled="true"/>
           <hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Invoke Launch Endpoint" enabled="true">
               <stringProp name="IncludeController.includepath">invoke.jmx</stringProp>
@@ -4284,19 +4284,19 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="LTI-1004 &amp; LTI-1005: Student submits a test and views results with pay link " enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063: IELTS Student submits a test and views results with pay link " enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>100.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">LTI-1004.csv</stringProp>
+            <stringProp name="filename">lti_scenario2.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">extuserid</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
@@ -4307,8 +4307,8 @@ vars.put(&quot;extuserid&quot;, extuserid);</stringProp>
             <stringProp name="shareMode">shareMode.all</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite: LTI-1001 - IELTS Student logs in and access the dashboard" enabled="true">
-            <stringProp name="IncludeController.includepath">LTI_1002-Student_logs_in_and_access_the_dashboard.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite: 1060 - IELTS Student logs in and access the dashboard" enabled="true">
+            <stringProp name="IncludeController.includepath">1060-Student_logs_in_and_access_the_dashboard.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add IELTS statements - Closed" enabled="true">
@@ -4393,7 +4393,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <stringProp name="scriptLanguage">groovy</stringProp>
             </JSR223PreProcessor>
             <hashTree/>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Launches and Performs the Test" enabled="true"/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI APIs: Launch a Test" enabled="true"/>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Invoke Launch Endpoint" enabled="true">
                 <stringProp name="IncludeController.includepath">invoke.jmx</stringProp>
@@ -4420,7 +4420,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Submits LTI Test" enabled="true"/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI APIs: Submit a Test" enabled="true"/>
             <hashTree>
               <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Oauth Launch Endpoint" enabled="true">
                 <boolProp name="TransactionController.parent">true</boolProp>
