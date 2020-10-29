@@ -520,12 +520,12 @@
             </elementProp>
             <elementProp name="spacecode" elementType="Argument">
               <stringProp name="Argument.name">spacecode</stringProp>
-              <stringProp name="Argument.value">${__P(space_code,PRF-ALP-ONE)}</stringProp>
+              <stringProp name="Argument.value">${__P(space_code,integ-test1-thor)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="spacecode2" elementType="Argument">
               <stringProp name="Argument.name">spacecode2</stringProp>
-              <stringProp name="Argument.value">${__P(space_code,PRF-ALP-TWO)}</stringProp>
+              <stringProp name="Argument.value">${__P(space_code,LZR-ZUN-ATY)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="spacekey" elementType="Argument">
@@ -550,7 +550,7 @@
             </elementProp>
             <elementProp name="ext_product_id2" elementType="Argument">
               <stringProp name="Argument.name">ext_product_id2</stringProp>
-              <stringProp name="Argument.value">${__P(product_code,9781108414142)}</stringProp>
+              <stringProp name="Argument.value">${__P(product_code,abcdefghijklmnop1)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="productcode" elementType="Argument">
@@ -560,7 +560,7 @@
             </elementProp>
             <elementProp name="productcode2" elementType="Argument">
               <stringProp name="Argument.name">productcode2</stringProp>
-              <stringProp name="Argument.value">${__P(product_code,evpel2)}</stringProp>
+              <stringProp name="Argument.value">${__P(product_code,cambridge_primary_pe_pathway1)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="verb" elementType="Argument">
@@ -605,7 +605,7 @@
             </elementProp>
             <elementProp name="bundle-code2" elementType="Argument">
               <stringProp name="Argument.name">bundle-code2</stringProp>
-              <stringProp name="Argument.value">${__P(bundle-code,)}</stringProp>
+              <stringProp name="Argument.value">${__P(bundle-code,cambridge_primary_pathway1)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assignmentstartdate" elementType="Argument">
@@ -635,27 +635,27 @@
             </elementProp>
             <elementProp name="itemcode1" elementType="Argument">
               <stringProp name="Argument.name">itemcode1</stringProp>
-              <stringProp name="Argument.value">${__P(itemcode,1547180428741/1547180517231/1547180546625)}</stringProp>
+              <stringProp name="Argument.value">${__P(itemcode,1547180428741/1547180438241/1547180458400)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode2" elementType="Argument">
               <stringProp name="Argument.name">itemcode2</stringProp>
-              <stringProp name="Argument.value">1549350043430/1549350050389/1549350300737</stringProp>
+              <stringProp name="Argument.value">1547180428741/1547180438241/1582870394587</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode3" elementType="Argument">
               <stringProp name="Argument.name">itemcode3</stringProp>
-              <stringProp name="Argument.value">1549350043430/1549350050389/1571652843106</stringProp>
+              <stringProp name="Argument.value">1549350043430/1549350050389/1549350096431</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode4" elementType="Argument">
               <stringProp name="Argument.name">itemcode4</stringProp>
-              <stringProp name="Argument.value">1552370450012/1552370452087/1561639206983</stringProp>
+              <stringProp name="Argument.value">1549350043430/1549350050389/1549350082364</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode5" elementType="Argument">
               <stringProp name="Argument.name">itemcode5</stringProp>
-              <stringProp name="Argument.value">1552370450012/1552370452087/1562648721989</stringProp>
+              <stringProp name="Argument.value">1547180428741/1547180517231/1547180546625</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="startDate" elementType="Argument">
@@ -690,12 +690,12 @@
             </elementProp>
             <elementProp name="task" elementType="Argument">
               <stringProp name="Argument.name">task</stringProp>
-              <stringProp name="Argument.value">1547180428741/1547180517231/1547180546625</stringProp>
+              <stringProp name="Argument.value">1547180428741/1547180438241/1547180458400</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="itemcode" elementType="Argument">
               <stringProp name="Argument.name">itemcode</stringProp>
-              <stringProp name="Argument.value">1547180428741/1547180517231/1547180546625</stringProp>
+              <stringProp name="Argument.value">1547180428741/1547180438241/1547180458400</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="grouptask" elementType="Argument">
