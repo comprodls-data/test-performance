@@ -907,7 +907,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>10.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1080,7 +1080,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>10.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1276,7 +1276,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>12.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2435,7 +2435,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>10.0</value>
+            <value>12.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2611,7 +2611,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>12.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2959,7 +2959,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>10.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3079,7 +3079,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>10.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3305,7 +3305,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>16.0</value>
+            <value>12.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -6220,7 +6220,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
