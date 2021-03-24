@@ -423,6 +423,26 @@
               <stringProp name="Argument.value">1544521486954/1544521507623/1544521559147</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="ebookproductcode" elementType="Argument">
+              <stringProp name="Argument.name">ebookproductcode</stringProp>
+              <stringProp name="Argument.value">${__P(product_code,cqaperftestebook)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ebook_bundle-code" elementType="Argument">
+              <stringProp name="Argument.name">ebook_bundle-code</stringProp>
+              <stringProp name="Argument.value">${__P(bundle-code,evpel1_bundle)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pageNum" elementType="Argument">
+              <stringProp name="Argument.name">pageNum</stringProp>
+              <stringProp name="Argument.value">14</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pageNavigationPause" elementType="Argument">
+              <stringProp name="Argument.name">pageNavigationPause</stringProp>
+              <stringProp name="Argument.value">100</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -4597,8 +4617,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </LoopController>
           <hashTree>
             <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-              <stringProp name="CounterConfig.start">2</stringProp>
-              <stringProp name="CounterConfig.end">6</stringProp>
+              <stringProp name="CounterConfig.start">15</stringProp>
+              <stringProp name="CounterConfig.end">19</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
               <stringProp name="CounterConfig.name">pageNum</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
@@ -4606,26 +4626,29 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
             </CounterConfig>
             <hashTree/>
-            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="false">
-              <stringProp name="BeanShellSampler.query">folderid = vars.get(&quot;ebookproductcode&quot;) + &quot;/annotation/p_&quot;+ vars.get(&quot;counter&quot;);
-vars.put(&quot;folderid&quot;, folderid);
-</stringProp>
-              <stringProp name="BeanShellSampler.filename"></stringProp>
-              <stringProp name="BeanShellSampler.parameters"></stringProp>
-              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-            </BeanShellSampler>
-            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
               <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
             </IncludeController>
             <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063_pvt_std: Student Launches an ebook, navigates to other pages and get drawings" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063_pvt_std: Student Launches an ebook, navigates to other pages and get drawings" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -4682,8 +4705,8 @@ vars.put(&quot;folderid&quot;, folderid);
           </LoopController>
           <hashTree>
             <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-              <stringProp name="CounterConfig.start">2</stringProp>
-              <stringProp name="CounterConfig.end">6</stringProp>
+              <stringProp name="CounterConfig.start">15</stringProp>
+              <stringProp name="CounterConfig.end">19</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
               <stringProp name="CounterConfig.name">pageNum</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
@@ -4694,6 +4717,18 @@ vars.put(&quot;folderid&quot;, folderid);
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
               <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
             </IncludeController>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+              <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+            </UniformRandomTimer>
             <hashTree/>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
@@ -8051,7 +8086,7 @@ vars.put(&quot;folderid&quot;, folderid);
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063_tch: Teacher Launches an ebook from My Library a specific page containing drawings" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063_tch: Teacher Launches an ebook from My Library a specific page containing drawings" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -8108,8 +8143,8 @@ vars.put(&quot;folderid&quot;, folderid);
           </LoopController>
           <hashTree>
             <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-              <stringProp name="CounterConfig.start">2</stringProp>
-              <stringProp name="CounterConfig.end">6</stringProp>
+              <stringProp name="CounterConfig.start">15</stringProp>
+              <stringProp name="CounterConfig.end">19</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
               <stringProp name="CounterConfig.name">pageNum</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
@@ -8121,6 +8156,18 @@ vars.put(&quot;folderid&quot;, folderid);
               <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
             </IncludeController>
             <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
             <stringProp name="IncludeController.includepath">D:\Office\Cup\GITRepos\Performance\Script\IeltsScenario\test-performance\Get_all_documents_of_a_folder.jmx</stringProp>
