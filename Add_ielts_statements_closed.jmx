@@ -24,11 +24,11 @@
     &quot;uuid&quot;: &quot;&quot;&#xd;
   },&#xd;
  &quot;product&quot;: {&#xd;
-      &quot;code&quot;: &quot;${productcode}&quot;&#xd;
+      &quot;code&quot;: &quot;${ielts_productcode}&quot;&#xd;
     },&#xd;
   &quot;entities&quot;: [{&#xd;
     &quot;verb&quot;: &quot;closed&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${itemcode}&quot;,&#xd;
+    &quot;item-code&quot;: &quot;${ielts_itemcode}&quot;,&#xd;
     &quot;timestamp&quot;:${__time()}&#xd;
  		 }],&#xd;
     &quot;space_key&quot;: &quot;user_${extuserid}&quot;&#xd;
@@ -71,7 +71,7 @@
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.product.code</stringProp>
-            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
+            <stringProp name="EXPECTED_VALUE">${ielts_productcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
