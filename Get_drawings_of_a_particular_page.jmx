@@ -50,9 +50,9 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.entities</stringProp>
+            <stringProp name="JSON_PATH">$.entities[0].userid</stringProp>
             <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
-            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>

@@ -4588,7 +4588,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_product_by_product_code_ereader.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular bundle" enabled="true">
@@ -4676,7 +4676,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_product_by_product_code_ereader.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular bundle" enabled="true">
@@ -4691,12 +4691,12 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
             <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
@@ -8114,7 +8114,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_product_by_product_code_ereader.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular bundle" enabled="true">
@@ -8170,7 +8170,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
-            <stringProp name="IncludeController.includepath">D:\Office\Cup\GITRepos\Performance\Script\IeltsScenario\test-performance\Get_all_documents_of_a_folder.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
