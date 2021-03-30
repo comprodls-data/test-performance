@@ -4966,6 +4966,170 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </hashTree>
             </hashTree>
           </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">${count}==3</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">${pageNavigationLoopCount}</stringProp>
+            </LoopController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">${page}</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">pageNum</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">true</boolProp>
+                <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddNotesLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add notes" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_notes_statements_250chr.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddDrawingLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add drawing" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_statements_drawing_20kB.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">${count}==4</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">${pageNavigationLoopCount}</stringProp>
+            </LoopController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">${page}</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">pageNum</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">true</boolProp>
+                <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddNotesLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add notes" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_notes_statements_250chr.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddDrawingLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add drawing" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_statements_drawing_20kB.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
@@ -5148,6 +5312,170 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                   </collectionProp>
                   <boolProp name="UserParameters.per_iteration">false</boolProp>
                 </UserParameters>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddDrawingLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add drawing" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_statements_drawing_20kB.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">${count}==3</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">${pageNavigationLoopCount}</stringProp>
+            </LoopController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">${page}</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">pageNum</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">true</boolProp>
+                <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddNotesLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add notes" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_notes_statements_250chr.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddDrawingLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add drawing" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_statements_drawing_20kB.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">${count}==4</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">${pageNavigationLoopCount}</stringProp>
+            </LoopController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">${page}</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">pageNum</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">true</boolProp>
+                <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddNotesLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add notes" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_notes_statements_250chr.jmx</stringProp>
+                </IncludeController>
                 <hashTree/>
               </hashTree>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -6019,7 +6347,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1020 + 1024: Teacher changes/edits date &amp; metadata of the class and enrolls and removes other teachers from the class" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1024: Teacher changes/edits date &amp; metadata of the class and enrolls and removes other teachers from the class" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -9036,6 +9364,170 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                   </collectionProp>
                   <boolProp name="UserParameters.per_iteration">false</boolProp>
                 </UserParameters>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddDrawingLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add drawing" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_statements_drawing_20kB.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">${count}==3</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">${pageNavigationLoopCount}</stringProp>
+            </LoopController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">${page}</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">pageNum</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">true</boolProp>
+                <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddNotesLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add notes" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_notes_statements_250chr.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddDrawingLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add drawing" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_statements_drawing_20kB.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
+                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">${count}==4</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">${pageNavigationLoopCount}</stringProp>
+            </LoopController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">${page}</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">pageNum</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">true</boolProp>
+                <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${AddNotesLoopCount}</stringProp>
+              </LoopController>
+              <hashTree>
+                <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                  <collectionProp name="UserParameters.names">
+                    <stringProp name="-814940266">documentId</stringProp>
+                  </collectionProp>
+                  <collectionProp name="UserParameters.thread_values">
+                    <collectionProp name="1084943350">
+                      <stringProp name="1454846734">${__RandomString(16,abcdefghijklmnopqrstuvwxyz1234567890,)}</stringProp>
+                    </collectionProp>
+                  </collectionProp>
+                  <boolProp name="UserParameters.per_iteration">false</boolProp>
+                </UserParameters>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add notes" enabled="true">
+                  <stringProp name="IncludeController.includepath">Add_notes_statements_250chr.jmx</stringProp>
+                </IncludeController>
                 <hashTree/>
               </hashTree>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
