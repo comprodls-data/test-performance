@@ -11,28 +11,15 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add IELTS statements - Closed" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add statements Drawing - 50kB" enabled="true"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add IELTS statements - Closed" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add statements Drawing - 50kB" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;actor&quot;: {&#xd;
-    &quot;uuid&quot;: &quot;&quot;&#xd;
-  },&#xd;
- &quot;product&quot;: {&#xd;
-      &quot;code&quot;: &quot;${ielts_productcode}&quot;&#xd;
-    },&#xd;
-  &quot;entities&quot;: [{&#xd;
-    &quot;verb&quot;: &quot;closed&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${ielts_itemcode}&quot;,&#xd;
-    &quot;timestamp&quot;:${__time()}&#xd;
- 		 }],&#xd;
-    &quot;space_key&quot;: &quot;user_${extuserid}&quot;&#xd;
-}</stringProp>
+                <stringProp name="Argument.value">${__eval(${__FileToString(drawing_50kb.txt,,)})}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -40,7 +27,7 @@
           <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/lb-xapi/${orgid}/statements/multi</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -71,7 +58,7 @@
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.product.code</stringProp>
-            <stringProp name="EXPECTED_VALUE">${ielts_productcode}</stringProp>
+            <stringProp name="EXPECTED_VALUE">${ebookproductcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
