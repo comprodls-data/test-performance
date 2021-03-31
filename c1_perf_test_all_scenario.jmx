@@ -4855,7 +4855,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
@@ -4895,7 +4895,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -4977,7 +4977,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5059,7 +5059,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5141,7 +5141,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5267,7 +5267,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
@@ -5303,7 +5303,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5385,7 +5385,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5467,7 +5467,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5549,7 +5549,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -9363,7 +9363,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
@@ -9403,7 +9403,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -9485,7 +9485,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -9567,7 +9567,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -9649,7 +9649,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </CounterConfig>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_no_assertion.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
