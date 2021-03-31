@@ -4602,6 +4602,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
@@ -4626,6 +4638,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
             <stringProp name="LoopController.loops">5</stringProp>
@@ -4652,8 +4676,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -4690,6 +4714,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_private_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
@@ -4714,6 +4750,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
             <stringProp name="LoopController.loops">5</stringProp>
@@ -4733,18 +4781,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-          </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-              <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
@@ -4778,6 +4826,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
@@ -4802,6 +4862,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">${count}==1</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
@@ -4877,8 +4949,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -4959,8 +5031,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -5041,8 +5113,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -5123,8 +5195,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -5162,6 +5234,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_private_ebook.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
@@ -5186,6 +5270,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">${count}==1</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
@@ -5261,8 +5357,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -5343,8 +5439,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -5425,8 +5521,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -5507,8 +5603,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -9126,6 +9222,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
@@ -9150,6 +9258,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Page Navigation" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
             <stringProp name="LoopController.loops">5</stringProp>
@@ -9176,8 +9296,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -9214,6 +9334,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ebook.jmx</stringProp>
           </IncludeController>
@@ -9238,6 +9370,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on ebook launch" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">${count}==1</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
@@ -9313,8 +9457,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -9395,8 +9539,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -9477,8 +9621,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -9559,8 +9703,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${pageNavigationPause}</stringProp>
-                  <stringProp name="RandomTimer.range">${pageNavigationPause}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${userProgress_max_assignedpaths}</stringProp>
+                  <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
