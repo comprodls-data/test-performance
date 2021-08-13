@@ -79,7 +79,7 @@
           <hashTree/>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract user id of first student" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">studentuserid1</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].uuid </stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].dls_user_id </stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">NO_STUDENT_IN_CLASS1</stringProp>
           </JSONPostProcessor>
