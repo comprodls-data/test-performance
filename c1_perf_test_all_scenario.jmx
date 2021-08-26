@@ -260,7 +260,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;4bca9b89-915c-11eb-9a2d-0242ac110003&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;2b3aa4eb-cd50-4624-9aa7-a5d9504950f9&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -456,6 +456,11 @@
             <elementProp name="AddDrawingLoopCount" elementType="Argument">
               <stringProp name="Argument.name">AddDrawingLoopCount</stringProp>
               <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="record_size" elementType="Argument">
+              <stringProp name="Argument.name">record_size</stringProp>
+              <stringProp name="Argument.value">20</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -7078,6 +7083,14 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
             <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users in an org" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_users_of_an_org.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes in an org" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_classes_of_an_org.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
