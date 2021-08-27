@@ -463,6 +463,11 @@
               <stringProp name="Argument.value">20</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="orgid_es" elementType="Argument">
+              <stringProp name="Argument.name">orgid_es</stringProp>
+              <stringProp name="Argument.value">${__P(orgid_es,mqa-sierra-alpha)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>

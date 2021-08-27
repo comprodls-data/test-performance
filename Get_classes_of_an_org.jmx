@@ -18,7 +18,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="query" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22orgid%3A%5C%22${orgid}%5C%22%22%7D%7D%2C%22sort%22%3A%5B%7B%22created%22%3A%22asc%22%7D%5D%2C%22size%22%3A${record_size}%7D</stringProp>
+                <stringProp name="Argument.value">%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22orgid%3A%5C%22${orgid_es}%5C%22%22%7D%7D%2C%22sort%22%3A%5B%7B%22created%22%3A%22asc%22%7D%5D%2C%22size%22%3A${record_size}%7D</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">query</stringProp>
@@ -49,12 +49,14 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Class Id" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">classid</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].classid </stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">CLASSID_NOT_FOUND</stringProp>
-          </JSONPostProcessor>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.hits.total</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
           <hashTree/>
         </hashTree>
       </hashTree>
