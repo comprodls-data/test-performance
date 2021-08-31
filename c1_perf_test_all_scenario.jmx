@@ -438,6 +438,11 @@
               <stringProp name="Argument.value">14</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="pageNum_read" elementType="Argument">
+              <stringProp name="Argument.name">pageNum_read</stringProp>
+              <stringProp name="Argument.value">14</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="pageNavigationPause" elementType="Argument">
               <stringProp name="Argument.name">pageNavigationPause</stringProp>
               <stringProp name="Argument.value">100</stringProp>
@@ -4641,7 +4646,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_readscenario.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
@@ -4669,14 +4674,14 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <stringProp name="CounterConfig.start">15</stringProp>
               <stringProp name="CounterConfig.end">19</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">pageNum</stringProp>
+              <stringProp name="CounterConfig.name">pageNum_read</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
               <boolProp name="CounterConfig.per_user">true</boolProp>
               <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
             </CounterConfig>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_readscenario.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
@@ -4753,7 +4758,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_readscenario.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
@@ -4781,14 +4786,14 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <stringProp name="CounterConfig.start">15</stringProp>
               <stringProp name="CounterConfig.end">19</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">pageNum</stringProp>
+              <stringProp name="CounterConfig.name">pageNum_read</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
               <boolProp name="CounterConfig.per_user">true</boolProp>
               <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
             </CounterConfig>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_readscenario.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
@@ -9269,7 +9274,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_readscenario.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
@@ -9297,14 +9302,14 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <stringProp name="CounterConfig.start">15</stringProp>
               <stringProp name="CounterConfig.end">19</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">pageNum</stringProp>
+              <stringProp name="CounterConfig.name">pageNum_read</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
               <boolProp name="CounterConfig.per_user">true</boolProp>
               <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
             </CounterConfig>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get drawings of a particular page" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Get_drawings_of_a_particular_page_readscenario.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time during page navigation" enabled="true">
