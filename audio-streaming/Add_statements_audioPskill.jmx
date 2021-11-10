@@ -11,26 +11,54 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="start_recording" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add statements" enabled="true"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="start_recording" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add statements" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;PartitionKey&quot;:&quot;${accountId}/${productcode}/${extuserid}/${itemcode}/${attemptNumber}&quot;,&#xd;
-&quot;Data&quot;: &quot;{\&quot;M\&quot;:{\&quot;I\&quot;:1,\&quot;FE\&quot;:\&quot;mp4\&quot;,\&quot;CR\&quot;:false,\&quot;SB\&quot;:false},\&quot;D\&quot;:\&quot;${__FileToString(start_recording_windows,,)}\&quot;}&quot;&#xd;
+                <stringProp name="Argument.value">{&#xd;
+  &quot;actor&quot;: {&#xd;
+    &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
+  },&#xd;
+  &quot;platform&quot;: {&#xd;
+    &quot;ua&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36&quot;&#xd;
+  },&#xd;
+  &quot;entities&quot;: [&#xd;
+    {&#xd;
+      &quot;verb&quot;: &quot;launched&quot;,&#xd;
+      &quot;item-code&quot;: &quot;${itemcode}&quot;,&#xd;
+      &quot;timestamp&quot;: 1636113884677&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;verb&quot;: &quot;submitted&quot;,&#xd;
+      &quot;item-code&quot;: &quot;${itemcode}&quot;,&#xd;
+      &quot;timestamp&quot;: 1636113914665,&#xd;
+      &quot;timespent&quot;: 20000,&#xd;
+      &quot;result&quot;: {&#xd;
+        &quot;response&quot;: {&#xd;
+          &quot;audioPath&quot;: &quot;https://asgard-thor-content.comprodls.com/submissions/${accountId}/${productcode}/${extuserid}/&lt;itemcode&gt;/&lt;attemptNumber&gt;.mp3&quot;&#xd;
+        }&#xd;
+      }&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;product&quot;: {&#xd;
+    &quot;code&quot;: &quot;${productcode}&quot;&#xd;
+  },&#xd;
+  &quot;space_key&quot;: &quot;${spacekey}&quot;,&#xd;
+  &quot;classid&quot;: &quot;{classid}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${audioStreamUrl}</stringProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">/putAudioPart</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/lb-xapi/${orgid}/statements/multi</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -44,36 +72,23 @@
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">origin</stringProp>
-                <stringProp name="Header.value">${appOrigin}</stringProp>
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">${access_token}</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
               </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">x-api-key</stringProp>
-                <stringProp name="Header.value">${xapiKey}</stringProp>
-              </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="validate_SequenceNumber_exists" enabled="true">
-            <stringProp name="JSON_PATH">$.SequenceNumber</stringProp>
-            <stringProp name="EXPECTED_VALUE"></stringProp>
-            <boolProp name="JSONVALIDATION">false</boolProp>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.product.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">${productcode}</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
-            <boolProp name="ISREGEX">true</boolProp>
-          </JSONPathAssertion>
-          <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="validate_ShardId_exists" enabled="true">
-            <stringProp name="JSON_PATH">$.ShardId</stringProp>
-            <stringProp name="EXPECTED_VALUE"></stringProp>
-            <boolProp name="JSONVALIDATION">false</boolProp>
-            <boolProp name="EXPECT_NULL">false</boolProp>
-            <boolProp name="INVERT">false</boolProp>
-            <boolProp name="ISREGEX">true</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
           <hashTree/>
         </hashTree>

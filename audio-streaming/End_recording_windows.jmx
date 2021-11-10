@@ -20,7 +20,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&quot;PartitionKey&quot;:&quot;${accountId}/${productcode}/${extuserid}/${itemcode}/${attemptNumber}&quot;,&#xd;
-&quot;Data&quot;:&quot;${__FileToString(end_recording_windows,,)}&quot;&#xd;
+&quot;Data&quot;: &quot;{\&quot;M\&quot;:{\&quot;I\&quot;:${endCount},\&quot;FE\&quot;:\&quot;mp4\&quot;,\&quot;CR\&quot;:true,\&quot;SB\&quot;:true},\&quot;D\&quot;:\&quot;${__FileToString(end_recording_windows,,)}\&quot;}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -45,7 +45,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">origin</stringProp>
-                <stringProp name="Header.value">https://micro-nemo.comprodls.com</stringProp>
+                <stringProp name="Header.value">${appOrigin}</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -53,7 +53,7 @@
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">x-api-key</stringProp>
-                <stringProp name="Header.value">qa1YxIm3ZJ9M21obCf1ua1I1dV1cAhSRNeBbvwDd</stringProp>
+                <stringProp name="Header.value">${xapiKey}</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
