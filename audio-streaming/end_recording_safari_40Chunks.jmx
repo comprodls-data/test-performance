@@ -20,7 +20,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&quot;PartitionKey&quot;:&quot;${accountId}/${productcode}/${extuserid}/${itemcode}/${attemptNumber}&quot;,&#xd;
-&quot;Data&quot;: &quot;{\&quot;M\&quot;:{\&quot;I\&quot;:${endCount4},\&quot;FE\&quot;:\&quot;mp4\&quot;,\&quot;CR\&quot;:true,\&quot;SB\&quot;:true},\&quot;D\&quot;:\&quot;${__FileToString(end_recording_mp4,,)}\&quot;}&quot;&#xd;
+&quot;Data&quot;: &quot;{\&quot;M\&quot;:{\&quot;I\&quot;:${endCount6},\&quot;FE\&quot;:\&quot;mp4\&quot;,\&quot;CR\&quot;:true,\&quot;SB\&quot;:true},\&quot;D\&quot;:\&quot;${__FileToString(audio_chunk_safari,,)}\&quot;}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>

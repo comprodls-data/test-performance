@@ -190,90 +190,14 @@
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (Windows)" enabled="true">
-          <intProp name="ThroughputController.style">1</intProp>
-          <boolProp name="ThroughputController.perThread">false</boolProp>
-          <intProp name="ThroughputController.maxThroughput">1</intProp>
-          <FloatProperty>
-            <name>ThroughputController.percentThroughput</name>
-            <value>100.0</value>
-            <savedValue>0.0</savedValue>
-          </FloatProperty>
-        </ThroughputController>
-        <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="delimiter">,</stringProp>
-            <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">audioPskill_frontEndUser.csv</stringProp>
-            <boolProp name="ignoreFirstLine">true</boolProp>
-            <boolProp name="quotedData">false</boolProp>
-            <boolProp name="recycle">true</boolProp>
-            <stringProp name="shareMode">shareMode.group</stringProp>
-            <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid,itemcode,classid</stringProp>
-          </CSVDataSet>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="start_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">start_recording_mp4.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${minWait}</stringProp>
-              <stringProp name="RandomTimer.range">${maxWait}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
-          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-            <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${interLoopCount}</stringProp>
-          </LoopController>
-          <hashTree>
-            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-              <stringProp name="CounterConfig.start">2</stringProp>
-              <stringProp name="CounterConfig.end">${InterCountMax}</stringProp>
-              <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">interCount</stringProp>
-              <stringProp name="CounterConfig.format"></stringProp>
-              <boolProp name="CounterConfig.per_user">true</boolProp>
-              <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
-            </CounterConfig>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="intermediate_recording" enabled="true">
-              <stringProp name="IncludeController.includepath">inter_recording_mp4.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
-              <intProp name="ActionProcessor.action">1</intProp>
-              <intProp name="ActionProcessor.target">0</intProp>
-              <stringProp name="ActionProcessor.duration">0</stringProp>
-            </TestAction>
-            <hashTree>
-              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${minWait}</stringProp>
-                <stringProp name="RandomTimer.range">${maxWait}</stringProp>
-              </UniformRandomTimer>
-              <hashTree/>
-            </hashTree>
-          </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">end_recording_chrome_firstController.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="get access token for an external user" enabled="true">
-            <stringProp name="IncludeController.includepath">D:\Office\Cup\GITRepos\Performance\Script\Git Copy\test-performance\Get_an_access_token_for_an_external_user.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement" enabled="true">
-            <stringProp name="IncludeController.includepath">D:\Office\Cup\GITRepos\Performance\Script\Git Copy\test-performance\audio-streaming\Add_statements_audioPskill.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-        </hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="get access token for an external user" enabled="true">
+          <stringProp name="IncludeController.includepath">D:\Office\Cup\GITRepos\Performance\Script\Git Copy\test-performance\Get_an_access_token_for_an_external_user.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement" enabled="true">
+          <stringProp name="IncludeController.includepath">D:\Office\Cup\GITRepos\Performance\Script\Git Copy\test-performance\audio-streaming\Add_statements_audioPskill.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="comproDLS- new data" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -281,14 +205,14 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">40</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">1200</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - Audio Pskill - Thor" enabled="true">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - Audio Pskill - Thor" enabled="false">
           <collectionProp name="Arguments.arguments">
             <elementProp name="audioStreamUrl" elementType="Argument">
               <stringProp name="Argument.name">audioStreamUrl</stringProp>
@@ -297,7 +221,7 @@
             </elementProp>
             <elementProp name="minWait" elementType="Argument">
               <stringProp name="Argument.name">minWait</stringProp>
-              <stringProp name="Argument.value">3000</stringProp>
+              <stringProp name="Argument.value">5000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="maxWait" elementType="Argument">
@@ -333,7 +257,7 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - Audio Pskill-Alpha" enabled="false">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - Audio Pskill-Alpha" enabled="true">
           <collectionProp name="Arguments.arguments">
             <elementProp name="audioStreamUrl" elementType="Argument">
               <stringProp name="Argument.name">audioStreamUrl</stringProp>
@@ -375,50 +299,35 @@
               <stringProp name="Argument.value">aBqdQQUMVr80Md72XRFjW11jJbORbSSq56lF9hzG</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="interLoopCount" elementType="Argument">
-              <stringProp name="Argument.name">interLoopCount</stringProp>
-              <stringProp name="Argument.value">18</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="InterCountMax" elementType="Argument">
-              <stringProp name="Argument.name">InterCountMax</stringProp>
-              <stringProp name="Argument.value">19</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="endCount" elementType="Argument">
-              <stringProp name="Argument.name">endCount</stringProp>
-              <stringProp name="Argument.value">20</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (chrome)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (chrome) - 40 chunks" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>25.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
           <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="endCount1" elementType="Argument">
-                <stringProp name="Argument.name">endCount1</stringProp>
-                <stringProp name="Argument.value">4</stringProp>
+              <elementProp name="endCount5" elementType="Argument">
+                <stringProp name="Argument.name">endCount5</stringProp>
+                <stringProp name="Argument.value">40</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="interCountMax1" elementType="Argument">
-                <stringProp name="Argument.name">interCountMax1</stringProp>
-                <stringProp name="Argument.value">3</stringProp>
+              <elementProp name="interCountMax5" elementType="Argument">
+                <stringProp name="Argument.name">interCountMax5</stringProp>
+                <stringProp name="Argument.value">39</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="interLoopCount1" elementType="Argument">
-                <stringProp name="Argument.name">interLoopCount1</stringProp>
-                <stringProp name="Argument.value">2</stringProp>
+              <elementProp name="interLoopCount5" elementType="Argument">
+                <stringProp name="Argument.name">interLoopCount5</stringProp>
+                <stringProp name="Argument.value">38</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -427,7 +336,103 @@
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">audioPskill.csv</stringProp>
+            <stringProp name="filename">audioPskill_chrome_40Chunks.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">extuserid,itemcode</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="start_recording" enabled="true">
+            <stringProp name="IncludeController.includepath">start_recording_chrome.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${minWait}</stringProp>
+              <stringProp name="RandomTimer.range">${maxWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${interLoopCount5}</stringProp>
+          </LoopController>
+          <hashTree>
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+              <stringProp name="CounterConfig.start">2</stringProp>
+              <stringProp name="CounterConfig.end">${interCountMax5}</stringProp>
+              <stringProp name="CounterConfig.incr">1</stringProp>
+              <stringProp name="CounterConfig.name">interCount</stringProp>
+              <stringProp name="CounterConfig.format"></stringProp>
+              <boolProp name="CounterConfig.per_user">true</boolProp>
+              <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+            </CounterConfig>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="intermediate_recording" enabled="true">
+              <stringProp name="IncludeController.includepath">inter_recording_chrome.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${minWait}</stringProp>
+                <stringProp name="RandomTimer.range">${maxWait}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
+            <stringProp name="IncludeController.includepath">end_recording_chrome_40Chunks.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+        </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (chrome) - 20 chunks" enabled="true">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">1</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>35.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="endCount1" elementType="Argument">
+                <stringProp name="Argument.name">endCount1</stringProp>
+                <stringProp name="Argument.value">20</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="interCountMax1" elementType="Argument">
+                <stringProp name="Argument.name">interCountMax1</stringProp>
+                <stringProp name="Argument.value">19</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="interLoopCount1" elementType="Argument">
+                <stringProp name="Argument.name">interLoopCount1</stringProp>
+                <stringProp name="Argument.value">18</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">audioPskill_chrome_20Chunks.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">true</boolProp>
@@ -485,17 +490,17 @@
             </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">end_recording_chrome_firstController.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">end_recording_chrome_20Chunks.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (chrome)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (chrome) - 10 chunks" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>25.0</value>
+            <value>45.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -504,17 +509,17 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="endCount2" elementType="Argument">
                 <stringProp name="Argument.name">endCount2</stringProp>
-                <stringProp name="Argument.value">5</stringProp>
+                <stringProp name="Argument.value">10</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="interCountMax2" elementType="Argument">
                 <stringProp name="Argument.name">interCountMax2</stringProp>
-                <stringProp name="Argument.value">4</stringProp>
+                <stringProp name="Argument.value">9</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="interLoopCount2" elementType="Argument">
                 <stringProp name="Argument.name">interLoopCount2</stringProp>
-                <stringProp name="Argument.value">3</stringProp>
+                <stringProp name="Argument.value">8</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -523,7 +528,7 @@
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">audioPskill.csv</stringProp>
+            <stringProp name="filename">audioPskill_chrome_10Chunks.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">true</boolProp>
@@ -581,36 +586,36 @@
             </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">end_recording_chrome_secondController.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">end_recording_chrome_10Chunks.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (mp4)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (safari) - 40 chunks" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>25.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
           <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="endCount3" elementType="Argument">
-                <stringProp name="Argument.name">endCount3</stringProp>
-                <stringProp name="Argument.value">4</stringProp>
+              <elementProp name="endCount6" elementType="Argument">
+                <stringProp name="Argument.name">endCount6</stringProp>
+                <stringProp name="Argument.value">40</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="interCountMax3" elementType="Argument">
-                <stringProp name="Argument.name">interCountMax3</stringProp>
-                <stringProp name="Argument.value">3</stringProp>
+              <elementProp name="interCountMax6" elementType="Argument">
+                <stringProp name="Argument.name">interCountMax6</stringProp>
+                <stringProp name="Argument.value">39</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="interLoopCount3" elementType="Argument">
-                <stringProp name="Argument.name">interLoopCount3</stringProp>
-                <stringProp name="Argument.value">2</stringProp>
+              <elementProp name="interLoopCount6" elementType="Argument">
+                <stringProp name="Argument.name">interLoopCount6</stringProp>
+                <stringProp name="Argument.value">38</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -619,7 +624,7 @@
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">audioPskill.csv</stringProp>
+            <stringProp name="filename">audioPskill_safari_40Chunks.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">true</boolProp>
@@ -629,7 +634,103 @@
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="start_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">start_recording_mp4.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">start_recording_safari.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${minWait}</stringProp>
+              <stringProp name="RandomTimer.range">${maxWait}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${interLoopCount6}</stringProp>
+          </LoopController>
+          <hashTree>
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+              <stringProp name="CounterConfig.start">2</stringProp>
+              <stringProp name="CounterConfig.end">${interCountMax6}</stringProp>
+              <stringProp name="CounterConfig.incr">1</stringProp>
+              <stringProp name="CounterConfig.name">interCount</stringProp>
+              <stringProp name="CounterConfig.format"></stringProp>
+              <boolProp name="CounterConfig.per_user">true</boolProp>
+              <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+            </CounterConfig>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="intermediate_recording" enabled="true">
+              <stringProp name="IncludeController.includepath">inter_recording_safari.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${minWait}</stringProp>
+                <stringProp name="RandomTimer.range">${maxWait}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
+            <stringProp name="IncludeController.includepath">end_recording_safari_40Chunks.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+        </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (safari) - 20 chunks" enabled="true">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">1</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>5.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="endCount3" elementType="Argument">
+                <stringProp name="Argument.name">endCount3</stringProp>
+                <stringProp name="Argument.value">20</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="interCountMax3" elementType="Argument">
+                <stringProp name="Argument.name">interCountMax3</stringProp>
+                <stringProp name="Argument.value">19</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="interLoopCount3" elementType="Argument">
+                <stringProp name="Argument.name">interLoopCount3</stringProp>
+                <stringProp name="Argument.value">18</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">audioPskill_safari_20Chunks.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">extuserid,itemcode</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="start_recording" enabled="true">
+            <stringProp name="IncludeController.includepath">start_recording_safari.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
@@ -660,7 +761,7 @@
             </CounterConfig>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="intermediate_recording" enabled="true">
-              <stringProp name="IncludeController.includepath">inter_recording_mp4.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">inter_recording_safari.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
@@ -677,17 +778,17 @@
             </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">end_recording_mp4_thirdController.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">end_recording_safari_20Chunks.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (mp4)" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Audio Pskill (safari) - 10 chunks" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>25.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -696,17 +797,17 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="endCount4" elementType="Argument">
                 <stringProp name="Argument.name">endCount4</stringProp>
-                <stringProp name="Argument.value">5</stringProp>
+                <stringProp name="Argument.value">10</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="interCountMax4" elementType="Argument">
                 <stringProp name="Argument.name">interCountMax4</stringProp>
-                <stringProp name="Argument.value">4</stringProp>
+                <stringProp name="Argument.value">9</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="interLoopCount4" elementType="Argument">
                 <stringProp name="Argument.name">interLoopCount4</stringProp>
-                <stringProp name="Argument.value">3</stringProp>
+                <stringProp name="Argument.value">8</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -715,7 +816,7 @@
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">audioPskill.csv</stringProp>
+            <stringProp name="filename">audioPskill_safari_10Chunks.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">true</boolProp>
@@ -725,7 +826,7 @@
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="start_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">start_recording_mp4.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">start_recording_safari.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
@@ -756,7 +857,7 @@
             </CounterConfig>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="intermediate_recording" enabled="true">
-              <stringProp name="IncludeController.includepath">inter_recording_mp4.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">inter_recording_safari.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="wait_time" enabled="true">
@@ -773,7 +874,7 @@
             </hashTree>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="end_recording" enabled="true">
-            <stringProp name="IncludeController.includepath">end_recording_mp4_fourthController.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">end_recording_safari_10Chunks.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
