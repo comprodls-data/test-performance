@@ -14,12 +14,41 @@
     <hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="1014: Teacher logs in and accesses the dashboard" enabled="true"/>
       <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="folderid" elementType="Argument">
+              <stringProp name="Argument.name">folderid</stringProp>
+              <stringProp name="Argument.value">settings/global-prefs/teacher/dashboard</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="documentid" elementType="Argument">
+              <stringProp name="Argument.name">documentid</stringProp>
+              <stringProp name="Argument.value">classes</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="folderid_alldocs" elementType="Argument">
+              <stringProp name="Argument.name">folderid_alldocs</stringProp>
+              <stringProp name="Argument.value">library/umbrella</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="extuseridGetDocument" elementType="Argument">
+              <stringProp name="Argument.name">extuseridGetDocument</stringProp>
+              <stringProp name="Argument.value">tch_20200602-104742_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
           <stringProp name="IncludeController.includepath">API_to_grant_authkey_on_refid.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces (details:true)" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_detailsTrue.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the workflow requests, made by a particular user" enabled="true">
@@ -39,8 +68,33 @@
           <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
         </IncludeController>
         <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular document of a folder" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
           <stringProp name="IncludeController.includepath">Get_all_bundles.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all product families" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_product_families.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">documentid = &quot;training&quot;;
+vars.put (&quot;documentid&quot;, documentid)
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular document of a folder" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all documents of a folder" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder_generic.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="false">
