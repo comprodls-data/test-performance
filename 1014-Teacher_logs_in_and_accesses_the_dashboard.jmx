@@ -21,11 +21,6 @@
               <stringProp name="Argument.value">settings/global-prefs/teacher/dashboard</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="documentid" elementType="Argument">
-              <stringProp name="Argument.name">documentid</stringProp>
-              <stringProp name="Argument.value">classes</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="folderid_alldocs" elementType="Argument">
               <stringProp name="Argument.name">folderid_alldocs</stringProp>
               <stringProp name="Argument.value">library/umbrella</stringProp>
@@ -69,7 +64,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular document of a folder" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder_class.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all bundles" enabled="true">
@@ -80,17 +75,8 @@
           <stringProp name="IncludeController.includepath">Get_all_product_families.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
-          <stringProp name="BeanShellSampler.query">documentid = &quot;training&quot;;
-vars.put (&quot;documentid&quot;, documentid)
-</stringProp>
-          <stringProp name="BeanShellSampler.filename"></stringProp>
-          <stringProp name="BeanShellSampler.parameters"></stringProp>
-          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-        </BeanShellSampler>
-        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular document of a folder" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder_training.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all documents of a folder" enabled="true">
