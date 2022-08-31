@@ -29,14 +29,14 @@
     &quot;entities&quot;: [&#xd;
       {&#xd;
         &quot;verb&quot;: &quot;settings-updated&quot;,&#xd;
-    &quot;item-code&quot;: &quot;hideTOCOnLaunch&quot;,&#xd;
+    &quot;item-code&quot;: &quot;classes&quot;,&#xd;
         &quot;timestamp&quot;: ${__time()},&#xd;
         &quot;user_data&quot;: {&#xd;
               &quot;type&quot;: &quot;settings-updated&quot;,&#xd;
               &quot;action&quot;: &quot;create&quot;,&#xd;
-              &quot;folderid&quot;: &quot;settings/org/${orgid}/class/${classid}/product/${multiproduct1}/prefs&quot;,&#xd;
-              &quot;documentid&quot;: &quot;hideTOCOnLaunch&quot;,&#xd;
-              &quot;payload&quot;: &quot;{\&quot;value\&quot;:true}&quot;&#xd;
+              &quot;folderid&quot;: &quot;settings/global-prefs/teacher/dashboard&quot;,&#xd;
+              &quot;documentid&quot;: &quot;classes&quot;,&#xd;
+              &quot;payload&quot;: &quot;{}&quot;&#xd;
 &#xd;
          }&#xd;
       }&#xd;

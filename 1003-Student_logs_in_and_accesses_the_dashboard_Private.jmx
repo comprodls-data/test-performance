@@ -18,6 +18,10 @@
           <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
         </IncludeController>
         <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
           <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
         </IncludeController>
