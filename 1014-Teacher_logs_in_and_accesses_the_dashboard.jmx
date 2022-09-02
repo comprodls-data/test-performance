@@ -79,10 +79,6 @@
           <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder_training.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all documents of a folder" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder_generic.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="false">
           <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
         </IncludeController>
@@ -90,6 +86,14 @@
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="false">
           <stringProp name="TestPlan.comments">Disbled the api, as class groups are not supported yet</stringProp>
           <stringProp name="IncludeController.includepath">Group_Pending_Submissions_of_a_Class.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular document of a folder" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder_training.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all documents of a folder" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder_generic.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
