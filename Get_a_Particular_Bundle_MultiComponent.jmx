@@ -52,7 +52,7 @@
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.bundle-code</stringProp>
             <stringProp name="EXPECTED_VALUE">${bundle-code}</stringProp>
-            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
