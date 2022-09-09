@@ -4710,6 +4710,10 @@
             <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get MicroEntitlement For A Product" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_MicroEntitlement_For_A_Product_Without_Payment.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="false">
             <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user_ielts.jmx</stringProp>
           </IncludeController>
@@ -5141,10 +5145,6 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product by product code" enabled="true">
             <stringProp name="IncludeController.includepath">Get_product_by_product_code_ielts.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get MicroEntitlement For A Product" enabled="false">
-            <stringProp name="IncludeController.includepath">Get_MicroEntitlement_For_A_Product_Without_Payment.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product items and their progress analytic" enabled="true">
@@ -10038,11 +10038,11 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="false">
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="false">
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -10050,7 +10050,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all notes of a product" enabled="false">
             <stringProp name="IncludeController.includepath">Get_all_documents_of_a_folder.jmx</stringProp>
           </IncludeController>
           <hashTree/>
