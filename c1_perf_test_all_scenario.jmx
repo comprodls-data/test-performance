@@ -8233,6 +8233,10 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
               <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_evaluated.jmx</stringProp>
             </IncludeController>
             <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
+              <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Evaluate pskill - EVALUATE statement" enabled="true">
               <stringProp name="IncludeController.includepath">Add_statements_pskill_evaluated_contributesToCompletion.jmx</stringProp>
             </IncludeController>
