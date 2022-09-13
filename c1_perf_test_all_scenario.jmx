@@ -123,6 +123,11 @@
               <stringProp name="Argument.value">8000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="asyncWait1" elementType="Argument">
+              <stringProp name="Argument.name">asyncWait1</stringProp>
+              <stringProp name="Argument.value">6000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="userProgress_max" elementType="Argument">
               <stringProp name="Argument.name">userProgress_max</stringProp>
               <stringProp name="Argument.value">2000</stringProp>
@@ -140,7 +145,7 @@
             </elementProp>
             <elementProp name="learning_progress" elementType="Argument">
               <stringProp name="Argument.name">learning_progress</stringProp>
-              <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.value">16</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="group_learning_progress" elementType="Argument">
@@ -150,7 +155,7 @@
             </elementProp>
             <elementProp name="group_learning_progressps" elementType="Argument">
               <stringProp name="Argument.name">group_learning_progressps</stringProp>
-              <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.value">16</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assignmentlearningprogressscorable" elementType="Argument">
@@ -160,7 +165,7 @@
             </elementProp>
             <elementProp name="assignmentlearningprogress" elementType="Argument">
               <stringProp name="Argument.name">assignmentlearningprogress</stringProp>
-              <stringProp name="Argument.value">3</stringProp>
+              <stringProp name="Argument.value">4</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assigned_path_class_count" elementType="Argument">
@@ -565,7 +570,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiMGY4ZDdiODAwZDMwN2Y1N2Y4NjRkYWJjMmYxN2NiYTEiLCJpYXQiOjE2NjI5NzgyNzQsImV4cCI6MTY2MzA2NDY3NH0.pran7CsxigvnzvCeYxu8vfi2vQuwW5um3CmreCc4zLvWnduZCbJLrqZBWBeUPoBVmwanPh8Etrco9DRuVMpNq6dmq0hQULve9FmTHmE4Z_5ey37X_6iBydsQ5SwuJ5Ui7Ja74Uasejo__6vX8N5AZJcnzaEToqdFoQ0hAd8aVeKDVnmml0oJ5sJnGW-Ag_jKb48xk3-zg4l_tDp8eXTG8h5mAA_QOuMMse28aNRFuXBCinm-C66TQDJTzlkfr8ptt1fQguhWmT94aRX8X1V-MCn_6369GP78ZMeRKd89ndBpz-xIFIxbAaVyHXaRynYI83fKA-Msc49WtjMS_nsW1A</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiMDNkZWYzZjc2ZDRkZjk2MTI1ZDk5OWZhMTBkNTQ1NTciLCJpYXQiOjE2NjI5ODI0MTYsImV4cCI6MTY2MzA2ODgxNn0.jExyU784sO_xP93rW5vBT9mhY_lNwiBMrpTUktwBOGyfkzUnATh8j6x6wrGuiL8FHQ5--okP3zBCJMcgFNHjgUNlvk0Wmxj_e131aRltdzWF2ITMzhTGz9d1OiLHqJbyvZxiD85UQqJf-62eNG0nWyNZM4JBlsDz9GBJpeGCA6ANw3T4vH7FmUij8QsoHo2bP_jjO3twIUwMFQFbKYSIPdZRZ9fAIPQNlwx4DAiumGlZ6BXb386pZ0VYIDlm04OFeu0hTgcKQ389i711-eTXpnhqCfm5pY5-fJZ9E3tfb7v0AiSqTLPlqhvkEu3l6gvB6-RML1likPTC2MtYTxtEbg</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -1030,7 +1035,7 @@
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_institutional.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
@@ -1038,7 +1043,7 @@
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_institutional.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Join spaces with class code" enabled="true">
@@ -1057,16 +1062,16 @@
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
               <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
               <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get All the User Spaces" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces_institutional.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
@@ -1183,7 +1188,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1480,8 +1485,16 @@
                 <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m1.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
-                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
+                <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
@@ -1496,16 +1509,8 @@
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
-                <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
+                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
@@ -1531,36 +1536,28 @@
                 <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m1.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
-                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
                 <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
-                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
+                <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m3.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
@@ -1575,16 +1572,12 @@
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
+                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
-                <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m3.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
+                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
@@ -1610,64 +1603,40 @@
                 <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m1.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
-                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
                 <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
-                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
-              </IncludeController>
-              <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
                 <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m3.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
-                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
+                <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m4.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
@@ -1682,16 +1651,16 @@
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle - MultiComponent" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle_MultiComponent.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
+                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_details_by_isbn.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
+                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
-                <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m4.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
+                <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
@@ -2641,7 +2610,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2821,7 +2790,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>8.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3173,7 +3142,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>3.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3519,7 +3488,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>8.0</value>
+            <value>10.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3745,7 +3714,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -3876,8 +3845,16 @@
               <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m1.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entitlement" enabled="true">
-              <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement_1041.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
+              <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_product_details_by_isbn_evolvel1.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Entitlement" enabled="true">
@@ -3892,16 +3869,8 @@
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_product_details_by_isbn_evolvel1.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
-              <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entitlement" enabled="true">
+              <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement_1041.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entitlement" enabled="true">
@@ -3958,7 +3927,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -4109,8 +4078,16 @@
               <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m1.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entitlement" enabled="true">
-              <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement_1042.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
+              <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_product_details_by_isbn_evolvel1.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time for Product Activation" enabled="true">
@@ -4125,16 +4102,8 @@
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular Bundle" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_a_Particular_Bundle.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Product details using ISBN" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_product_details_by_isbn_evolvel1.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
-              <stringProp name="IncludeController.includepath">Entitle_User_With_Product_Code_m2.jmx</stringProp>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entitlement" enabled="true">
+              <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement_1042.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entitlement" enabled="true">
@@ -5230,7 +5199,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>10.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -5454,7 +5423,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>10.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -6549,7 +6518,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="false">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
             <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -6989,8 +6958,8 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           </TestAction>
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-              <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
+              <stringProp name="RandomTimer.range">${minWait}</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
@@ -7002,7 +6971,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
             <hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Associate a product with a class Evpel1" enabled="true">
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Associate a product with a class Evpel2" enabled="true">
                 <stringProp name="IncludeController.includepath">associate_a_product_with_class2.jmx</stringProp>
               </IncludeController>
               <hashTree/>
@@ -7013,8 +6982,8 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
               </TestAction>
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${minWait}</stringProp>
+                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -7054,6 +7023,18 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <stringProp name="IncludeController.includepath">associate_a_product_with_class_m1.jmx</stringProp>
               </IncludeController>
               <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on associating a class" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
             </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
               <stringProp name="IfController.condition">${noOfBundles}==2
@@ -7069,6 +7050,18 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <stringProp name="IncludeController.includepath">associate_a_product_with_class_m2.jmx</stringProp>
               </IncludeController>
               <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on associating a class" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
             </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
               <stringProp name="IfController.condition">${noOfBundles}==3
@@ -7088,6 +7081,18 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <stringProp name="IncludeController.includepath">associate_a_product_with_class_m3.jmx</stringProp>
               </IncludeController>
               <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on associating a class" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
             </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
               <stringProp name="IfController.condition">${noOfBundles}==4
@@ -7111,19 +7116,19 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <stringProp name="IncludeController.includepath">associate_a_product_with_class_m4.jmx</stringProp>
               </IncludeController>
               <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on associating a class" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
             </hashTree>
-          </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on associating a class" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
-              <stringProp name="RandomTimer.range">${minWait}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">${noOfBundles}!=0
