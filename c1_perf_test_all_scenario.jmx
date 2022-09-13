@@ -118,6 +118,11 @@
               <stringProp name="Argument.value">20000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="invitationwait1" elementType="Argument">
+              <stringProp name="Argument.name">invitationwait1</stringProp>
+              <stringProp name="Argument.value">10000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="asyncWait" elementType="Argument">
               <stringProp name="Argument.name">asyncWait</stringProp>
               <stringProp name="Argument.value">8000</stringProp>
@@ -843,18 +848,6 @@
               <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code_private_multiprod3.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
               <intProp name="ActionProcessor.action">1</intProp>
               <intProp name="ActionProcessor.target">0</intProp>
@@ -867,6 +860,18 @@
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the User Spaces" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_the_User_Spaces.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Global Entitlements of a user" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
               <stringProp name="IncludeController.includepath">Get_classes_of_an_user_noClasses.jmx</stringProp>
             </IncludeController>
@@ -1026,7 +1031,7 @@
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
                 <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+                <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -1058,7 +1063,7 @@
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
                 <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+                <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -1402,7 +1407,7 @@
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
               <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-              <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+              <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
@@ -1505,7 +1510,7 @@
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
                   <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -1568,7 +1573,7 @@
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
                   <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -1647,7 +1652,7 @@
               <hashTree>
                 <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
                   <stringProp name="ConstantTimer.delay">${asyncWait}</stringProp>
-                  <stringProp name="RandomTimer.range">${asyncWait}</stringProp>
+                  <stringProp name="RandomTimer.range">${asyncWait1}</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
@@ -4008,7 +4013,7 @@
           <hashTree>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
               <stringProp name="ConstantTimer.delay">${invitationwait}</stringProp>
-              <stringProp name="RandomTimer.range">${invitationwait}</stringProp>
+              <stringProp name="RandomTimer.range">${invitationwait1}</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
@@ -4098,7 +4103,7 @@
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
                 <stringProp name="ConstantTimer.delay">${invitationwait}</stringProp>
-                <stringProp name="RandomTimer.range">${invitationwait}</stringProp>
+                <stringProp name="RandomTimer.range">${invitationwait1}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
