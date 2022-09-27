@@ -270,7 +270,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;31edc6a7-62ac-4b73-8245-48eb839cb757&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;8ef2ca09-6275-4f4a-a9cd-29fc27621ed6&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -380,7 +380,7 @@
             </elementProp>
             <elementProp name="grouptask" elementType="Argument">
               <stringProp name="Argument.name">grouptask</stringProp>
-              <stringProp name="Argument.value">1591682031312/1591682585541/1592290089703</stringProp>
+              <stringProp name="Argument.value">1591701928122/1591701946681/1592291282828</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="multiproduct1" elementType="Argument">
@@ -503,6 +503,31 @@
               <stringProp name="Argument.value">std_1616493208993_6</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="userProgress_min_1011" elementType="Argument">
+              <stringProp name="Argument.name">userProgress_min_1011</stringProp>
+              <stringProp name="Argument.value">1500</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="userProgress_max_1011" elementType="Argument">
+              <stringProp name="Argument.name">userProgress_max_1011</stringProp>
+              <stringProp name="Argument.value">1000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="learningprogressnps_1011" elementType="Argument">
+              <stringProp name="Argument.name">learningprogressnps_1011</stringProp>
+              <stringProp name="Argument.value">16</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="userProgress_min_1038nps" elementType="Argument">
+              <stringProp name="Argument.name">userProgress_min_1038nps</stringProp>
+              <stringProp name="Argument.value">1700</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="userProgress_max_1038nps" elementType="Argument">
+              <stringProp name="Argument.name">userProgress_max_1038nps</stringProp>
+              <stringProp name="Argument.value">800</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -575,7 +600,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiMDNkZWYzZjc2ZDRkZjk2MTI1ZDk5OWZhMTBkNTQ1NTciLCJpYXQiOjE2NjI5ODI0MTYsImV4cCI6MTY2MzA2ODgxNn0.jExyU784sO_xP93rW5vBT9mhY_lNwiBMrpTUktwBOGyfkzUnATh8j6x6wrGuiL8FHQ5--okP3zBCJMcgFNHjgUNlvk0Wmxj_e131aRltdzWF2ITMzhTGz9d1OiLHqJbyvZxiD85UQqJf-62eNG0nWyNZM4JBlsDz9GBJpeGCA6ANw3T4vH7FmUij8QsoHo2bP_jjO3twIUwMFQFbKYSIPdZRZ9fAIPQNlwx4DAiumGlZ6BXb386pZ0VYIDlm04OFeu0hTgcKQ389i711-eTXpnhqCfm5pY5-fJZ9E3tfb7v0AiSqTLPlqhvkEu3l6gvB6-RML1likPTC2MtYTxtEbg</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiZDdlNDJiMDdiYmI2MjYxYmQwZDY4OTA0Yjg0MDg4ZTQiLCJpYXQiOjE2NjQyNjU2MTgsImV4cCI6MTY2NDM1MjAxOH0.fJxqPvKV9YCfqtxNVqVBxjSDYcp5PFEf86RWK6nMDTPMQ6Q4_0V9E-m8-_QpHjskqfO9IKgUJXijEWfEzg54XY7zU83akg_gCJlvvAh7ujVnH9Ue9iYxHd1Ka7rXlCEqAW4A3_BfEs-_zF6XNKPMqBXm60kor-SdXSjzGIj-WsKINcC2HFbpFH0aJje0f8Vqj_nvMbSCDnaoosq-q5LFj6GeZYuUX5ImBiCLZ_KLQX0sm4nUVKc3Khtg2uY1ahrrGR09jzigJKoGS8ZRKRtwiqURivr4DWhQe9zEXKx8Wpr8XN3Wx6fgIxxsPtH0Nu0r0u9PhGx_1QjbGEAgjkpNUg</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -2846,7 +2871,7 @@
           <hashTree/>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="A Student simulating reading (Multiple pages) and post the statements" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${learningprogressnps}</stringProp>
+            <stringProp name="LoopController.loops">${learningprogressnps_1011}</stringProp>
           </LoopController>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
@@ -2868,8 +2893,8 @@
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
-                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+                <stringProp name="ConstantTimer.delay">${userProgress_min_1011}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max_1011}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -2884,8 +2909,8 @@
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
-                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+                <stringProp name="ConstantTimer.delay">${userProgress_min_1011}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max_1011}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -3618,8 +3643,8 @@
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
-                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+                <stringProp name="ConstantTimer.delay">${userProgress_min_1038nps}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max_1038nps}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -3634,8 +3659,8 @@
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${userProgress_max}</stringProp>
-                <stringProp name="RandomTimer.range">${userProgress_max}</stringProp>
+                <stringProp name="ConstantTimer.delay">${userProgress_min_1038nps}</stringProp>
+                <stringProp name="RandomTimer.range">${userProgress_max_1038nps}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
