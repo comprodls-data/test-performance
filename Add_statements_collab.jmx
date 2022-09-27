@@ -29,6 +29,9 @@
   &quot;entities&quot;: [{&#xd;
     &quot;verb&quot;: &quot;${collabverb}&quot;,&#xd;
     &quot;item-code&quot;: &quot;${collabtask}&quot;,&#xd;
+    &quot;meta&quot;: {&#xd;
+		&quot;contributesToCompletion&quot;: true&#xd;
+	},&#xd;
     &quot;timespent&quot;: 200000,&#xd;
     &quot;timestamp&quot;:${__time()},&#xd;
      &quot;result&quot;: {&#xd;
