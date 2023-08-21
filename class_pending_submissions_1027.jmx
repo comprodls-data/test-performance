@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="class_pending_submissions" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -68,6 +68,13 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">task1</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">studentuserid1</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
@@ -75,9 +82,23 @@
             <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring product taskId   for pending request" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">task1</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].item.item-code</stringProp>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">studentuserid2</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[1].user.uuid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">studentuserid3</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].user.uuid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extractring student userId for pending request" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">studentuserid4</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[3].user.uuid</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">NO_PENDING REQUESTS1</stringProp>
           </JSONPostProcessor>
