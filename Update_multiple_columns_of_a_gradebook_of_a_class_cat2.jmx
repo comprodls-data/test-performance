@@ -24,7 +24,7 @@
   {&#xd;
     &quot;column_id&quot;: &quot;${cat2pe3}&quot;,&#xd;
     &quot;type&quot;: &quot;product&quot;,&#xd;
-    &quot;weightage&quot;: &quot;100&quot;,&#xd;
+    &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
     &quot;bundle-codes&quot;: [&#xd;
       &quot;${cat2b2}&quot;&#xd;
     ],&#xd;
@@ -33,7 +33,7 @@
   {&#xd;
     &quot;column_id&quot;: &quot;${cat2pe4}&quot;,&#xd;
     &quot;type&quot;: &quot;product&quot;,&#xd;
-    &quot;weightage&quot;: &quot;100&quot;,&#xd;
+    &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
     &quot;bundle-codes&quot;: [&#xd;
       &quot;${cat2b2}&quot;&#xd;
     ],&#xd;
@@ -42,7 +42,7 @@
    {&#xd;
     &quot;column_id&quot;: &quot;${cat2pe5}&quot;,&#xd;
     &quot;type&quot;: &quot;product&quot;,&#xd;
-    &quot;weightage&quot;: &quot;100&quot;,&#xd;
+    &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
     &quot;bundle-codes&quot;: [&#xd;
       &quot;${cat2b2}&quot;&#xd;
     ],&#xd;
@@ -51,7 +51,7 @@
   {&#xd;
     &quot;column_id&quot;: &quot;${cat2pe6}&quot;,&#xd;
     &quot;type&quot;: &quot;product&quot;,&#xd;
-    &quot;weightage&quot;: &quot;100&quot;,&#xd;
+    &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
     &quot;bundle-codes&quot;: [&#xd;
       &quot;${cat2b2}&quot;&#xd;
     ],&#xd;
@@ -67,7 +67,7 @@
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/gradebooks/${gradebook_id}/columns</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -95,9 +95,9 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.entities[0].classid</stringProp>
-            <stringProp name="EXPECTED_VALUE">${classid}</stringProp>
-            <boolProp name="JSONVALIDATION">true</boolProp>
+            <stringProp name="JSON_PATH">$.success</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>

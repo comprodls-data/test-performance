@@ -63,7 +63,7 @@
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">637004c5-eb6e-4a18-8cea-ab3bcf672115</stringProp>
+                <stringProp name="Header.value">${access_token}</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>

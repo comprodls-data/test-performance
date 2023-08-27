@@ -55,7 +55,7 @@
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statements (settings-updated)" enabled="true">
-            <stringProp name="IncludeController.includepath">Add_statements_settingsUpdated_institutional.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Add_statements_settingsUpdated_private.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>

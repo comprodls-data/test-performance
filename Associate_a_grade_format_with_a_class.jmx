@@ -22,7 +22,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;grades&quot;: [&#xd;
     {&#xd;
-      &quot;id&quot;: &quot;c1_default&quot;,&#xd;
+      &quot;id&quot;: &quot;c1_default&quot;&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
@@ -63,7 +63,7 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.entities</stringProp>
+            <stringProp name="JSON_PATH">$.pk</stringProp>
             <stringProp name="EXPECTED_VALUE"></stringProp>
             <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>

@@ -11,35 +11,38 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Update multiple columns of gradebook of a class" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add statements" enabled="true"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update multiple columns of gradebook of a class" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add statements" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;columns&quot;: [&#xd;
-  {&#xd;
-    &quot;column_id&quot;: &quot;${cat1pe2}&quot;,&#xd;
-    &quot;type&quot;: &quot;product&quot;,&#xd;
-    &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
-    &quot;bundle-codes&quot;: [&#xd;
-      &quot;${cat1b2}&quot;&#xd;
+    &quot;actor&quot;: {&#xd;
+      &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
+    },&#xd;
+    &quot;platform&quot;: {&#xd;
+      &quot;ua&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36&quot;&#xd;
+    },&#xd;
+    &quot;entities&quot;: [&#xd;
+      {&#xd;
+        &quot;verb&quot;: &quot;settings-updated&quot;,&#xd;
+    &quot;item-code&quot;: &quot;hideTOCOnLaunch&quot;,&#xd;
+        &quot;timestamp&quot;: ${__time()},&#xd;
+        &quot;user_data&quot;: {&#xd;
+              &quot;type&quot;: &quot;settings-updated&quot;,&#xd;
+              &quot;action&quot;: &quot;create&quot;,&#xd;
+              &quot;folderid&quot;: &quot;settings/product/${multiproduct1}/prefs&quot;,&#xd;
+              &quot;documentid&quot;: &quot;hideTOCOnLaunch&quot;,&#xd;
+              &quot;payload&quot;: &quot;{\&quot;value\&quot;:true}&quot;&#xd;
+&#xd;
+         }&#xd;
+      }&#xd;
     ],&#xd;
-    &quot;productcode&quot;: &quot;${cat1pe2}&quot;&#xd;
-  },&#xd;
-  {&#xd;
-    &quot;column_id&quot;: &quot;${cat1pe3}&quot;,&#xd;
-    &quot;type&quot;: &quot;product&quot;,&#xd;
-    &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
-    &quot;bundle-codes&quot;: [&#xd;
-      &quot;${cat1b2}&quot;&#xd;
-    ],&#xd;
-    &quot;productcode&quot;: &quot;${cat1pe3}&quot;&#xd;
-  }&#xd;
-]}</stringProp>
+    &quot;space_key&quot;: &quot;${spacekeySharedOrg}&quot;&#xd;
+  }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -48,8 +51,8 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/gradebooks/${gradebook_id}/columns</stringProp>
-          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-xapi/${orgid}/statements</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -62,40 +65,28 @@
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">content-type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.name">authorization</stringProp>
                 <stringProp name="Header.value">${access_token}</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">accept </stringProp>
+                <stringProp name="Header.name">Content-Type</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">test-perf-id</stringProp>
+                <stringProp name="Header.value">${date}</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.success</stringProp>
-            <stringProp name="EXPECTED_VALUE"></stringProp>
-            <boolProp name="JSONVALIDATION">false</boolProp>
+            <stringProp name="JSON_PATH">$.actor.uuid</stringProp>
+            <stringProp name="EXPECTED_VALUE">${userid}</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">documentid</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].documentid</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
-            <stringProp name="JSONPostProcessor.referenceNames">folderid</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[0].folderid</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
