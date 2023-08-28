@@ -149,13 +149,13 @@
               <stringProp name="ForeachController.endIndex">15</stringProp>
             </ForeachController>
             <hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
-                <stringProp name="IncludeController.includepath">class_pending_submissions.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
@@ -182,18 +182,6 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">10000</stringProp>
-                  <stringProp name="RandomTimer.range">20000</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
             </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
@@ -214,18 +202,6 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">10000</stringProp>
-                  <stringProp name="RandomTimer.range">20000</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
             </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
@@ -246,18 +222,6 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">10000</stringProp>
-                  <stringProp name="RandomTimer.range">20000</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
             </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
@@ -278,18 +242,6 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">0</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">10000</stringProp>
-                  <stringProp name="RandomTimer.range">20000</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
             </hashTree>
           </hashTree>
         </hashTree>
