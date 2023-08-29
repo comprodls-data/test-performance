@@ -22,9 +22,9 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;scheduleid&quot;: &quot;${ruleid}_&quot;,&#xd;
   &quot;orgid&quot;: &quot;perf-test1-alpha&quot;,&#xd;
-  &quot;actorid&quot;: &quot;b459cadcae42471abbe10c9b2e93e3d6&quot;,&#xd;
-  &quot;classid&quot;: &quot;180354fb-74bb-44bd-bc77-94aa5591a936&quot;,&#xd;
-  &quot;productcode&quot;: &quot;evpel1&quot;,&#xd;
+  &quot;actorid&quot;: &quot;${userid}&quot;,&#xd;
+  &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
+  &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
   &quot;category&quot;: &quot;CUSTOM_NOTIFICATION&quot;,&#xd;
   &quot;data&quot;: {&#xd;
     &quot;eventType&quot;: &quot;content-access&quot;&#xd;

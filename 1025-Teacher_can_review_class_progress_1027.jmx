@@ -52,7 +52,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_classes_of_an_user.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_classes_of_an_user_tch.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get_members_of_a_class" enabled="true">
