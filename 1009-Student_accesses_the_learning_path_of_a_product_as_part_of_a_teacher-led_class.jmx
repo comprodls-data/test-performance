@@ -190,7 +190,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for the learner in a class in case of groups enabled product" enabled="false">
