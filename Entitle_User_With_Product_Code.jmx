@@ -28,7 +28,6 @@
   &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_role&quot;: &quot;student&quot;,&#xd;
   &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
-  &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
   &quot;ref_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_product_meta&quot;: {&#xd;
     &quot;startdate&quot;: ${startDate},&#xd;

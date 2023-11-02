@@ -30,7 +30,7 @@
           <stringProp name="IncludeController.includepath">Get_classes_of_an_user_institution.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product items and their progress analytic (default)" enabled="true">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product items and their progress analytic (default)" enabled="false">
           <stringProp name="IncludeController.includepath">Product_items_and_their_progress_analytic_default.jmx</stringProp>
         </IncludeController>
         <hashTree/>
