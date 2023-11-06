@@ -1218,7 +1218,7 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Create default gradebook and add columns in a class" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Create default gradebook and add columns in a class" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1275,7 +1275,7 @@
             <stringProp name="IncludeController.includepath">Create_a_gradebook_in_a_class.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="false"/>
           <hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
@@ -4226,7 +4226,7 @@ out.close();
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1011: Student works/studies  on the learning path  (teacher-led) &amp; views their grades and scores" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1011: Student works/studies  on the learning path  (teacher-led) &amp; views their grades and scores" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
