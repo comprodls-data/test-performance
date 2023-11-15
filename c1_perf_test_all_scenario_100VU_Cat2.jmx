@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="ComproDLS Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -13534,7 +13534,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all assigned paths of a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class_no_assignments.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class.jmx</stringProp>
             <stringProp name="TestPlan.comments">1039</stringProp>
           </IncludeController>
           <hashTree/>
