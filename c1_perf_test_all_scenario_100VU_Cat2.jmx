@@ -1300,10 +1300,35 @@
               <stringProp name="Argument.value">perfprod17</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="perfbundle21pe1" elementType="Argument">
+              <stringProp name="Argument.name">perfbundle21pe1</stringProp>
+              <stringProp name="Argument.value">perfprod81</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="perfbundle21pe2" elementType="Argument">
+              <stringProp name="Argument.name">perfbundle21pe2</stringProp>
+              <stringProp name="Argument.value">perfprod82</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="perfbundle21pe3" elementType="Argument">
+              <stringProp name="Argument.name">perfbundle21pe3</stringProp>
+              <stringProp name="Argument.value">perfprod83</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="perfbundle21pe4" elementType="Argument">
+              <stringProp name="Argument.name">perfbundle21pe4</stringProp>
+              <stringProp name="Argument.value">perfprod84</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="perfbundle21pe5" elementType="Argument">
+              <stringProp name="Argument.name">perfbundle21pe5</stringProp>
+              <stringProp name="Argument.value">perfprod85</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1001: Student registers using a access code (and access default or first time dashboard) - New Users" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1001: Student registers using a access code (and access default or first time dashboard) - New Users" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
@@ -1330,12 +1355,12 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="productcode" elementType="Argument">
                 <stringProp name="Argument.name">productcode</stringProp>
-                <stringProp name="Argument.value">perfprod21</stringProp>
+                <stringProp name="Argument.value">perfprod9</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="bundle-code" elementType="Argument">
                 <stringProp name="Argument.name">bundle-code</stringProp>
-                <stringProp name="Argument.value">perf_bundle_8</stringProp>
+                <stringProp name="Argument.value">perf_bundle_19</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1376,7 +1401,7 @@
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Join_Spaces_with_product_code and_class_code_private_1001" enabled="true">
-              <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code_private_bundle8_1001.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Join_Spaces_with_product_code_and_class_code_private_bundle19_1001.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
@@ -1408,11 +1433,11 @@
             </IncludeController>
             <hashTree/>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat1pe</stringProp>
+              <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
-              <stringProp name="ForeachController.startIndex">3</stringProp>
-              <stringProp name="ForeachController.endIndex">8</stringProp>
+              <stringProp name="ForeachController.startIndex">6</stringProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product Items and their Progress Analytics (default)" enabled="true">
@@ -1500,7 +1525,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -1521,12 +1546,12 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="productcode" elementType="Argument">
                 <stringProp name="Argument.name">productcode</stringProp>
-                <stringProp name="Argument.value">perfprod21</stringProp>
+                <stringProp name="Argument.value">perfprod9</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="bundle-code" elementType="Argument">
                 <stringProp name="Argument.name">bundle-code</stringProp>
-                <stringProp name="Argument.value">perf_bundle_8</stringProp>
+                <stringProp name="Argument.value">perf_bundle_19</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1709,7 +1734,7 @@
                 <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
                 <stringProp name="ForeachController.returnVal">productcode</stringProp>
                 <boolProp name="ForeachController.useSeparator">false</boolProp>
-                <stringProp name="ForeachController.startIndex">5</stringProp>
+                <stringProp name="ForeachController.startIndex">6</stringProp>
                 <stringProp name="ForeachController.endIndex">10</stringProp>
               </ForeachController>
               <hashTree>
@@ -2005,7 +2030,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -2037,12 +2062,12 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="productcode" elementType="Argument">
                 <stringProp name="Argument.name">productcode</stringProp>
-                <stringProp name="Argument.value">perfprod74</stringProp>
+                <stringProp name="Argument.value">perfprod81</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="bundle-code" elementType="Argument">
                 <stringProp name="Argument.name">bundle-code</stringProp>
-                <stringProp name="Argument.value">perf_bundle_16</stringProp>
+                <stringProp name="Argument.value">perf_bundle_21</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -2201,11 +2226,11 @@
           </IncludeController>
           <hashTree/>
           <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-            <stringProp name="ForeachController.inputVal">cat6pe</stringProp>
+            <stringProp name="ForeachController.inputVal">perfbundle21pe</stringProp>
             <stringProp name="ForeachController.returnVal">productcode</stringProp>
             <boolProp name="ForeachController.useSeparator">false</boolProp>
             <stringProp name="ForeachController.startIndex">0</stringProp>
-            <stringProp name="ForeachController.endIndex">4</stringProp>
+            <stringProp name="ForeachController.endIndex">5</stringProp>
           </ForeachController>
           <hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
@@ -3670,7 +3695,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1009: Group Student accesses the learning path of a product as part of a teacher-led class " enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1009: Group Student accesses the learning path of a product as part of a teacher-led class " enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -3874,7 +3899,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1010: Student works/studies  on the learning path  (self-paced)" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1010: Student works/studies  on the learning path  (self-paced)" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -3914,15 +3939,15 @@
             <hashTree/>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1008: Student accesses the learning path of a product (self-paced or private learning)" enabled="true">
-            <stringProp name="IncludeController.includepath">1008-Student_accesses_the_learning_path_of_a_product_self-paced_1010_100VU.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">1008-Student_accesses_the_learning_path_of_a_product_self-paced_1010_Cat2_100VU.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-            <stringProp name="ForeachController.inputVal">cat1pe</stringProp>
+            <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
             <stringProp name="ForeachController.returnVal">productcode</stringProp>
             <boolProp name="ForeachController.useSeparator">false</boolProp>
-            <stringProp name="ForeachController.startIndex">3</stringProp>
-            <stringProp name="ForeachController.endIndex">8</stringProp>
+            <stringProp name="ForeachController.startIndex">6</stringProp>
+            <stringProp name="ForeachController.endIndex">10</stringProp>
           </ForeachController>
           <hashTree>
             <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="A Student simulating reading (Multiple pages) and post the statements" enabled="true">
@@ -3931,7 +3956,7 @@
             </LoopController>
             <hashTree>
               <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-                <stringProp name="filename">p_cat1.csv</stringProp>
+                <stringProp name="filename">p_cat2.csv</stringProp>
                 <stringProp name="fileEncoding"></stringProp>
                 <stringProp name="variableNames">task,verb</stringProp>
                 <boolProp name="ignoreFirstLine">false</boolProp>
@@ -5991,7 +6016,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>25.0</value>
+            <value>26.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -7124,7 +7149,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1050: Student activates collaborative product" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1050: Student activates collaborative product" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -7288,7 +7313,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit group ps activities" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit group ps activities" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -7432,7 +7457,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit group collab activities" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1055: Student can attempt and submit group collab activities" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -7916,7 +7941,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Updated 1062: NEW IELTS Student joins space, select skills and launches new test, views My Progress and then submits a test and views results with pay link " enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Updated 1062: NEW IELTS Student joins space, select skills and launches new test, views My Progress and then submits a test and views results with pay link " enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
@@ -8293,7 +8318,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1069: Class student launches an ebook and do page navigation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1069: Class student launches an ebook and do page navigation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -10477,7 +10502,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -10527,8 +10552,8 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             <stringProp name="TestPlan.comments">1019</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Associate a product with a class - perfBundle6" enabled="true">
-            <stringProp name="IncludeController.includepath">associate_a_product_with_a_class_perfbundle6.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Associate a product with a class - perfBundle21" enabled="true">
+            <stringProp name="IncludeController.includepath">associate_a_product_with_a_class_perfbundle21.jmx</stringProp>
             <stringProp name="TestPlan.comments">1019</stringProp>
           </IncludeController>
           <hashTree/>
@@ -12572,7 +12597,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>5.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -13000,7 +13025,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -13450,7 +13475,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>5.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -14785,7 +14810,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1052: Teacher can add students to the group" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1052: Teacher can add students to the group" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -14909,7 +14934,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1054: Teacher can mark group ps activities" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1054: Teacher can mark group ps activities" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -15043,7 +15068,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063: Teacher Launches an ebook and do page navigation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1063: Teacher Launches an ebook and do page navigation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
