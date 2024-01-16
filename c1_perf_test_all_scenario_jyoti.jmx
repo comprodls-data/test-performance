@@ -585,6 +585,26 @@
               <stringProp name="Argument.value">CustComcode_20230814-172925_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="gradeformatToUnAssociate" elementType="Argument">
+              <stringProp name="Argument.name">gradeformatToUnAssociate</stringProp>
+              <stringProp name="Argument.value">i8NNEUHQLDBh7DBxopUeW</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="gradeformatToAssociate" elementType="Argument">
+              <stringProp name="Argument.name">gradeformatToAssociate</stringProp>
+              <stringProp name="Argument.value">tvp4hFUTXuxba45DjMFq4 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="custCompToAdd" elementType="Argument">
+              <stringProp name="Argument.name">custCompToAdd</stringProp>
+              <stringProp name="Argument.value">CustComcode_20230814-172925_5</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="custCompToDelete" elementType="Argument">
+              <stringProp name="Argument.name">custCompToDelete</stringProp>
+              <stringProp name="Argument.value">CustComcode_20230814-172925_4</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -1218,7 +1238,7 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Create default gradebook and add columns in a class" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Create default gradebook and add columns in a class" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -1691,13 +1711,13 @@ out.close();
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1002: Student registers using a class key &amp; access code  (and access default or first time dashboard) - New Users" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1002: Student registers using a class key &amp; access code  (and access default or first time dashboard) - New Users" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>100.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -15086,11 +15106,6 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             <stringProp name="TestPlan.comments">1039</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get global entitlements of a user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user_no_entitlement.jmx</stringProp>
-            <stringProp name="TestPlan.comments">1039</stringProp>
-          </IncludeController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get grade formats assocaited with a particular class of an org" enabled="true">
             <stringProp name="IncludeController.includepath">Get_grade_formats_assocaited_with_a_particular_class_of_an_org.jmx</stringProp>
             <stringProp name="TestPlan.comments">1039</stringProp>
@@ -17311,6 +17326,421 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             </ResultCollector>
             <hashTree/>
           </hashTree>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1092: Admin assigning weightage to components [For Class]" enabled="false">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">1</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>100.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">1092.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">extuserid,classid,category</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all custom components" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_custom_components.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get gradeformats of an org" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_grade_formats_of_an_org.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the rules" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_the_rules_orgLevel.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create a gradebook in a class" enabled="false">
+            <stringProp name="IncludeController.includepath">Create_a_gradebook_in_a_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Get classrecord" enabled="true"/>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat1pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">8</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                  <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1025</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat2}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">10</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                  <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_med.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1025</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat3}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat3pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">15</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                  <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_med.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1025</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat4}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat4pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">15</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                  <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_high.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1025</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Add columns to a particular gradebook of a class" enabled="false"/>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add columns to a particular gradebook of a class for category 1" enabled="true">
+                <stringProp name="IncludeController.includepath">Add_columns_to_a_particular_gradebook_of_a_class_with_custom_components_cat1_admin.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat2}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add columns to a particular gradebook of a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Add_columns_to_a_particular_gradebook_of_a_class_with_custom_components_cat2.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat3}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add columns to a particular gradebook of a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Add_columns_to_a_particular_gradebook_of_a_class_with_custom_components_cat3.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat4}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add columns to a particular gradebook of a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Add_columns_to_a_particular_gradebook_of_a_class_with_custom_components_cat4.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Delete one or more columns from gradebook of a class" enabled="false"/>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete one or more columns from gradebook of a class for category 1" enabled="true">
+                <stringProp name="IncludeController.includepath">Delete_one_or_more_columns_from_gradebook_of_a_class_cat1.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat2}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete one or more columns from gradebook of a class for category 2" enabled="true">
+                <stringProp name="IncludeController.includepath">Delete_one_or_more_columns_from_gradebook_of_a_class_cat2.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat3}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete one or more columns from gradebook of a class for category 3" enabled="true">
+                <stringProp name="IncludeController.includepath">Delete_one_or_more_columns_from_gradebook_of_a_class_cat3.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat4}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete one or more columns from gradebook of a class for category 4" enabled="true">
+                <stringProp name="IncludeController.includepath">Delete_one_or_more_columns_from_gradebook_of_a_class_cat4.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Associate a gradeformat with a class" enabled="false">
+            <stringProp name="IncludeController.includepath">Associate_a_grade_format3_with_a_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Unassociate a gradeformat from a class" enabled="false">
+            <stringProp name="IncludeController.includepath">Unassociate_a_gradeformat_from_a_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update class gradeformat association" enabled="false">
+            <stringProp name="IncludeController.includepath">Update_class_gradeformat_association.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all the custom component analytics of each user for each item in a class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_all_the_customcomponent_analytics_of_each_user_for_each_item_in_a_class.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get global entitlements of a user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_global_entitlements_of_a_user_no_entitlement.jmx</stringProp>
+            <stringProp name="TestPlan.comments">1093</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Get product details" enabled="true">
+            <stringProp name="TestPlan.comments">1093</stringProp>
+          </GenericController>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat1pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">8</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1093</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat2}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">10</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1093</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat3}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat3pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">15</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1093</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat4}&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">cat4pe</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">15</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                  <stringProp name="TestPlan.comments">1093</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get gradebooks metadata of a class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_gradebooks_metadata_of_a_class.jmx</stringProp>
+            <stringProp name="TestPlan.comments">1093</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get gardeformat associated with a particular class of an org" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_grade_formats_assocaited_with_a_particular_class_of_an_org.jmx</stringProp>
+            <stringProp name="TestPlan.comments">1093</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_details_for_a_specific_class.jmx</stringProp>
+            <stringProp name="TestPlan.comments">1093</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get columns of gradebook of a class" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_columns_of_gradebook_of_a_class.jmx</stringProp>
+            <stringProp name="TestPlan.comments">1093</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create a custom component" enabled="false">
+            <stringProp name="IncludeController.includepath">Create_a_custom_component.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>

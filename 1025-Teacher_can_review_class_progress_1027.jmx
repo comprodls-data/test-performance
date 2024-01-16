@@ -61,38 +61,63 @@
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Get product details" enabled="true"/>
         <hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L1" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L1&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat1pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l1pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">8</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
-                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat2}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L2" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L2&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l2pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">6</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L3" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L3&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l3pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -100,62 +125,287 @@
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
-                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat3}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L4" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L4&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat3pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l4pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">15</stringProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
-                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat4}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L5" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L5&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat4pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l5pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">15</stringProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_product_by_product_code.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
-                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L6" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L6&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l6pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M1" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M1&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m1pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">11</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M2" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M2&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m2pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">11</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M3" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M3&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m3pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M4" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M4&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m4pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">13</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H1" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H1&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h1pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">7</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H2" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H2&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h2pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">17</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H3" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H3&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h3pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">9</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H4&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h4pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_high.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
@@ -164,13 +414,13 @@
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Class Pending submission" enabled="true"/>
         <hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat1}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L1" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L1&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat1pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l1pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -178,19 +428,19 @@
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
-                <stringProp name="IncludeController.includepath">class_pending_submissions_1027.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat2}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L2" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L2&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat2pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l2pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -198,19 +448,19 @@
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
-                <stringProp name="IncludeController.includepath">class_pending_submissions_1027.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat3}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L3" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L3&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat3pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l3pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -218,19 +468,19 @@
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
-                <stringProp name="IncludeController.includepath">class_pending_submissions_1027.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot;==&quot;${cat4}&quot;</stringProp>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L4" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L4&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">cat4pe</stringProp>
+              <stringProp name="ForeachController.inputVal">l4pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -238,7 +488,207 @@
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
-                <stringProp name="IncludeController.includepath">class_pending_submissions_1027.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L5" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L5&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l5pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L6" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L6&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l6pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M1" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M1&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m1pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M2" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M2&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m2pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M3" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M3&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m3pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M4" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M4&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">m4pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H1" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H1&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h1pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H2" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H2&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h2pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H3" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H3&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h3pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H4&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">h4pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">1</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_1027_high.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>

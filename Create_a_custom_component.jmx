@@ -20,9 +20,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;custom_component_code&quot;: &quot;${customComponentCode}&quot;,&#xd;
+  &quot;custom_component_code&quot;: &quot;customComponentCode${__Random(0000,9999)}&quot;,&#xd;
   &quot;custom_component_type&quot;: &quot;custom&quot;,&#xd;
-  &quot;title&quot;: &quot;${customComponentTitle}&quot;,&#xd;
+  &quot;title&quot;: &quot;customComponentTitle${__Random(0000,9999)}&quot;,&#xd;
   &quot;scoring_type&quot;: &quot;SIMPLE&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
