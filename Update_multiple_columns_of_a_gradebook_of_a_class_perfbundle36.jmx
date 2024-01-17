@@ -22,13 +22,13 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;columns&quot;: [&#xd;
   {&#xd;
-    &quot;column_id&quot;: &quot;perf36_500lo_1&quot;,&#xd;
+    &quot;column_id&quot;: &quot;perf36_630lo_1&quot;,&#xd;
     &quot;type&quot;: &quot;product&quot;,&#xd;
     &quot;weightage&quot;: &quot;undefined&quot;,&#xd;
     &quot;bundle-codes&quot;: [&#xd;
       &quot;perf_bundle_36&quot;&#xd;
     ],&#xd;
-    &quot;productcode&quot;: &quot;perf36_500lo_1&quot;&#xd;
+    &quot;productcode&quot;: &quot;perf36_630lo_1&quot;&#xd;
   },&#xd;
   {&#xd;
     &quot;column_id&quot;: &quot;perf36_500lo_2&quot;,&#xd;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -28,35 +28,14 @@
   &quot;ext_role&quot;: &quot;student&quot;,&#xd;
   &quot;products&quot;: [&#xd;
     {&#xd;
-      &quot;productcode&quot;: &quot;perfprod101&quot;,&#xd;
+      &quot;productcode&quot;: &quot;perfb1pe1&quot;,&#xd;
       &quot;ext_product_meta&quot;: {&#xd;
         &quot;startdate&quot;: ${startDate},&#xd;
         &quot;enddate&quot;: ${endDate}&#xd;
       }&#xd;
     },&#xd;
     {&#xd;
-      &quot;productcode&quot;: &quot;perfprod102&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;productcode&quot;: &quot;perfprod103&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;productcode&quot;: &quot;perfprod104&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;productcode&quot;: &quot;perfprod105&quot;,&#xd;
+      &quot;productcode&quot;: &quot;perfb1pe2&quot;,&#xd;
       &quot;ext_product_meta&quot;: {&#xd;
         &quot;startdate&quot;: ${startDate},&#xd;
         &quot;enddate&quot;: ${endDate}&#xd;

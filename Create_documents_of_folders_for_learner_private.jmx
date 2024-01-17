@@ -4,6 +4,7 @@
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
@@ -11,44 +12,27 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname=" Join Spaces with product_code and class_code_private" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Create documents of folders for learner-item-level" enabled="true"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" Join Spaces with product_code and class_code" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create documents of folders for learner-item-level" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ref_id&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ext_first_name&quot;: &quot;${extuserid}&quot;,&#xd;
-  &quot;ext_last_name&quot;: &quot;Perf Test&quot;,&#xd;
-  &quot;ext_email&quot;: &quot;${extuserid}@yopmail.com&quot;,&#xd;
-  &quot;ext_role&quot;: &quot;student&quot;,&#xd;
-  &quot;products&quot;: [&#xd;
+  &quot;orgid&quot;: &quot;${orgid}&quot;,&#xd;
+  &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
+  &quot;entities&quot;: [&#xd;
     {&#xd;
-      &quot;productcode&quot;: &quot;perf30_300lo_1&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;productcode&quot;: &quot;perf30_300lo_2&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;productcode&quot;: &quot;perf30_100lo_1&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
+       &quot;item_code&quot;: &quot;${npsitemcode}&quot;,&#xd;
+      &quot;folderid&quot;: &quot;activity-state/${orgid}/${productcode}/${npsitemcode}&quot;,&#xd;
+      &quot;documentid&quot;: &quot;lastKnown&quot;,&#xd;
+      &quot;timestamp&quot;: ${startDate},&#xd;
+      &quot;ttl&quot;: 365,&#xd;
+      &quot;data&quot;:{&quot;bookmark&quot;:{&quot;page&quot;:&quot;0&quot;},&quot;timestamp&quot;:${startDate},&quot;suspend_data&quot;:{&quot;interaction_-712743367&quot;:{&quot;items&quot;:[{&quot;items&quot;:[null]}],&quot;status&quot;:&quot;input&quot;,&quot;checkAttempts&quot;:0,&quot;manualCheckAttempts&quot;:0,&quot;solutionHint&quot;:false,&quot;notes&quot;:[],&quot;tc_code&quot;:1}}}&#xd;
     }&#xd;
-]&#xd;
+  ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -58,7 +42,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/lb-auth/accounts/${accountid}/student/provision-spaces</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-drive/accounts/${accountid}/users/${extuserid}/documents/multi</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -72,23 +56,23 @@
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.name">accept</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">test-perf-id</stringProp>
-                <stringProp name="Header.value">${date}</stringProp>
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.entities[0].dls_account_id</stringProp>
-            <stringProp name="EXPECTED_VALUE">${accountid}</stringProp>
-            <boolProp name="JSONVALIDATION">true</boolProp>
+            <stringProp name="JSON_PATH">$.success</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
-            <boolProp name="ISREGEX">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
           </JSONPathAssertion>
           <hashTree/>
         </hashTree>

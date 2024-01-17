@@ -30,7 +30,7 @@
           <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of a user" enabled="true">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of a user" enabled="false">
           <stringProp name="IncludeController.includepath">Get_classes_of_an_user_private.jmx</stringProp>
         </IncludeController>
         <hashTree/>
