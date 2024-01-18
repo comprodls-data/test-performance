@@ -6430,7 +6430,7 @@
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get user&apos;s application state for a product or class (product)" enabled="true">
-            <stringProp name="IncludeController.includepath">C:\Office\GitRepos\performance testing\git\test-performance\Get_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_user_application_state_for_a_product_or_class_product_.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get groups for the learner in a class in case of groups enabled product" enabled="false">
