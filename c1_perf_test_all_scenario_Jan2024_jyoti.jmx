@@ -7222,7 +7222,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1011: Student works/studies  on the learning path  (teacher-led) &amp; views their grades and scores" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1011: Student works/studies  on the learning path  (teacher-led) &amp; views their grades and scores" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -13169,7 +13169,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13179,7 +13179,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13189,7 +13189,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13199,7 +13199,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13209,7 +13209,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13219,7 +13219,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13229,7 +13229,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13239,7 +13239,17 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L9" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L9&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13249,7 +13259,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_med.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13259,7 +13269,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_med.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13269,7 +13279,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_med.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13279,7 +13289,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_med.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13289,7 +13299,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13299,7 +13309,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13309,7 +13319,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13319,7 +13329,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13329,7 +13339,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -13339,7 +13349,7 @@
             </IfController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -14978,7 +14988,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1038: Student views/attempts an assignment-non-pskill" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1038: Student views/attempts an assignment-non-pskill" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -16331,11 +16341,201 @@
             <stringProp name="TestPlan.comments">1038</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class.jmx</stringProp>
-            <stringProp name="TestPlan.comments">1038</stringProp>
-          </IncludeController>
-          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Get assigned paths of a user in a class" enabled="true">
+            <stringProp name="TestPlan.comments">1009</stringProp>
+          </GenericController>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L1" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L1&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L2" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L2&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L3" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L3&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L4" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L4&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L5" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L5&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L6" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L6&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L7" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L7&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L8" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L8&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L9" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L9&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_low_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M1" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M1&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M2" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M2&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M3" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M3&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M4" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M4&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_med_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H1" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H1&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H2" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H2&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H3" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H3&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H4&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H5" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H5&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H6" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H6&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_high_withassignedpathid.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get grade formats assocaited with a particular class of an org" enabled="true">
             <stringProp name="IncludeController.includepath">Get_grade_formats_assocaited_with_a_particular_class_of_an_org.jmx</stringProp>
             <stringProp name="TestPlan.comments">1038</stringProp>
@@ -16357,83 +16557,6 @@
             <stringProp name="TestPlan.comments">1090</stringProp>
           </GenericController>
           <hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L1" enabled="true">
-              <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L1&quot;;</stringProp>
-              <boolProp name="IfController.evaluateAll">false</boolProp>
-            </IfController>
-            <hashTree>
-              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-                <stringProp name="ForeachController.inputVal">l1pe</stringProp>
-                <stringProp name="ForeachController.returnVal">productcode</stringProp>
-                <boolProp name="ForeachController.useSeparator">false</boolProp>
-                <stringProp name="ForeachController.startIndex">0</stringProp>
-                <stringProp name="ForeachController.endIndex">4</stringProp>
-              </ForeachController>
-              <hashTree>
-                <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="A Student simulating reading (Multiple pages) and post the statements" enabled="true">
-                  <boolProp name="LoopController.continue_forever">true</boolProp>
-                  <stringProp name="LoopController.loops">${assignmentlearningprogressscorable}</stringProp>
-                </LoopController>
-                <hashTree>
-                  <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-                    <stringProp name="filename">assignment_itemcode_low.csv</stringProp>
-                    <stringProp name="fileEncoding"></stringProp>
-                    <stringProp name="variableNames">task,verb</stringProp>
-                    <boolProp name="ignoreFirstLine">false</boolProp>
-                    <stringProp name="delimiter">,</stringProp>
-                    <boolProp name="quotedData">false</boolProp>
-                    <boolProp name="recycle">true</boolProp>
-                    <boolProp name="stopThread">false</boolProp>
-                    <stringProp name="shareMode">shareMode.thread</stringProp>
-                  </CSVDataSet>
-                  <hashTree/>
-                  <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="false">
-                    <intProp name="ActionProcessor.action">1</intProp>
-                    <intProp name="ActionProcessor.target">0</intProp>
-                    <stringProp name="ActionProcessor.duration">0</stringProp>
-                  </TestAction>
-                  <hashTree>
-                    <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                      <stringProp name="ConstantTimer.delay">${userProgress_min_1038nps}</stringProp>
-                      <stringProp name="RandomTimer.range">${userProgress_max_1038nps}</stringProp>
-                    </UniformRandomTimer>
-                    <hashTree/>
-                  </hashTree>
-                  <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add a new statement" enabled="true">
-                    <stringProp name="IncludeController.includepath">Add_statements.jmx</stringProp>
-                  </IncludeController>
-                  <hashTree/>
-                  <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on Learning Pathway" enabled="false">
-                    <intProp name="ActionProcessor.action">1</intProp>
-                    <intProp name="ActionProcessor.target">0</intProp>
-                    <stringProp name="ActionProcessor.duration">0</stringProp>
-                  </TestAction>
-                  <hashTree>
-                    <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                      <stringProp name="ConstantTimer.delay">${userProgress_min_1038nps}</stringProp>
-                      <stringProp name="RandomTimer.range">${userProgress_max_1038nps}</stringProp>
-                    </UniformRandomTimer>
-                    <hashTree/>
-                  </hashTree>
-                  <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create documents of a folder for learner item level scorable" enabled="true">
-                    <stringProp name="IncludeController.includepath">Create_documents_of_folders_for_learner_item_level_scorable.jmx</stringProp>
-                  </IncludeController>
-                  <hashTree/>
-                  <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users application state for a product or class(product) with item code" enabled="true">
-                    <stringProp name="IncludeController.includepath">Get_particular_document_of_a_folder_1011.jmx</stringProp>
-                  </IncludeController>
-                  <hashTree/>
-                </hashTree>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete documents of a folder" enabled="true">
-                  <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder_student.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update user&apos;s application state for a product or class (product)" enabled="true">
-                  <stringProp name="IncludeController.includepath">Update_user_application_state_for_a_product_or_class_product_low.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-              </hashTree>
-            </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L1" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L1&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
