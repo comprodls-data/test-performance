@@ -309,6 +309,132 @@
               </hashTree>
             </hashTree>
           </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L7" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L7&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l7pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">10000</stringProp>
+                  <stringProp name="RandomTimer.range">20000</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L8" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L8&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l8pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">10000</stringProp>
+                  <stringProp name="RandomTimer.range">20000</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L9" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L9&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l9pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Analytics for each item over each student in a class with or without hierarchy" enabled="true">
+                <stringProp name="IncludeController.includepath">Analytics_for_each_item_over_each_student_in_a_class_with_or_without_hierarchy_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+                <intProp name="ActionProcessor.action">1</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration">0</stringProp>
+              </TestAction>
+              <hashTree>
+                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                  <stringProp name="ConstantTimer.delay">10000</stringProp>
+                  <stringProp name="RandomTimer.range">20000</stringProp>
+                </UniformRandomTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M1" enabled="true">
             <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M1&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>

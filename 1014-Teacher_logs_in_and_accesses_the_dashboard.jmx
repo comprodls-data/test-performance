@@ -110,7 +110,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">6</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -129,7 +129,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">10</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -148,7 +148,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">10</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -167,7 +167,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">10</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -195,6 +195,63 @@
               <hashTree/>
             </hashTree>
           </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L7" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L7&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l7pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_low.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L8" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L8&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l8pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_low.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - L9" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;L9&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">l9pe</stringProp>
+              <stringProp name="ForeachController.returnVal">productcode</stringProp>
+              <boolProp name="ForeachController.useSeparator">false</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+              <stringProp name="ForeachController.endIndex">4</stringProp>
+            </ForeachController>
+            <hashTree>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+                <stringProp name="IncludeController.includepath">class_pending_submissions_low.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - M1" enabled="true">
             <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;M1&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
@@ -205,7 +262,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">11</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -224,7 +281,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">11</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -262,7 +319,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">13</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -300,7 +357,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">7</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -319,7 +376,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">17</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -338,7 +395,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">9</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -357,7 +414,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">10</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -376,7 +433,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">7</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
@@ -386,7 +443,7 @@
             </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H5" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H5&quot;;</stringProp>
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H6&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
@@ -395,7 +452,7 @@
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
-              <stringProp name="ForeachController.endIndex">10</stringProp>
+              <stringProp name="ForeachController.endIndex">5</stringProp>
             </ForeachController>
             <hashTree>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
