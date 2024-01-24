@@ -85,7 +85,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -127,7 +127,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -169,7 +169,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -211,7 +211,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -253,7 +253,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -295,7 +295,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -337,7 +337,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -379,7 +379,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -421,7 +421,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -463,7 +463,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -505,7 +505,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -547,7 +547,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -589,7 +589,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -631,7 +631,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -673,7 +673,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -715,7 +715,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -757,7 +757,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -799,7 +799,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -841,7 +841,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -883,7 +883,7 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time 10-20sec" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">0</stringProp>
