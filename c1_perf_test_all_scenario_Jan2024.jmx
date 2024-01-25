@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="ComproDLS Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -618,6 +618,16 @@
             <elementProp name="custCompToDelete" elementType="Argument">
               <stringProp name="Argument.name">custCompToDelete</stringProp>
               <stringProp name="Argument.value">CustComcode_20230814-172925_4</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="minWait_1001" elementType="Argument">
+              <stringProp name="Argument.name">minWait_1001</stringProp>
+              <stringProp name="Argument.value">1000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="maxWait_1001" elementType="Argument">
+              <stringProp name="Argument.name">maxWait_1001</stringProp>
+              <stringProp name="Argument.value">2500</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -2891,8 +2901,8 @@
             </TestAction>
             <hashTree>
               <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">${maxWait}</stringProp>
-                <stringProp name="RandomTimer.range">${minWait}</stringProp>
+                <stringProp name="ConstantTimer.delay">${maxWait_1001}</stringProp>
+                <stringProp name="RandomTimer.range">${minWait_1001}</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
@@ -4436,7 +4446,7 @@
             <stringProp name="filename">classcode2_1005.csv</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="delimiter">,</stringProp>
-            <stringProp name="variableNames">teacherextuserid,classtitle,classcode2,category</stringProp>
+            <stringProp name="variableNames">teacherextuserid,classtitle,classcode2,cat</stringProp>
             <boolProp name="randomOrder">true</boolProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="rewindOnTheEndOfList">true</boolProp>
@@ -4452,7 +4462,7 @@
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid</stringProp>
+            <stringProp name="variableNames">extuserid,cc,category</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1003: Student logs in and accesses the dashboard" enabled="true">
@@ -4711,10 +4721,6 @@
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
             <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_classes_of_an_user_institution.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Progress analytics based on category" enabled="true"/>
@@ -5365,6 +5371,10 @@
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1005 - Common calls after entilement" enabled="true">
             <stringProp name="IncludeController.includepath">1005-Common_calls_after_entitlement.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_classes_of_an_user_institution.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
