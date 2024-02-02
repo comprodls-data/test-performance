@@ -23,7 +23,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;entities&quot;: [&#xd;
     {&#xd;
-      &quot;folderid&quot;: &quot;activity-state/${orgid}/${productcode}/${task}&quot;,&#xd;
+      &quot;folderid&quot;: &quot;activity-state/${orgid}/${productcode}/${psitemcode}&quot;,&#xd;
       &quot;documentid&quot;: &quot;lastKnown&quot;&#xd;
     }&#xd;
   ]&#xd;

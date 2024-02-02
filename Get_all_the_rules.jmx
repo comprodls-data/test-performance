@@ -46,7 +46,7 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.entities</stringProp>
+            <stringProp name="JSON_PATH">$.entities[0].version</stringProp>
             <stringProp name="EXPECTED_VALUE"></stringProp>
             <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
@@ -65,7 +65,7 @@
             <stringProp name="JSONPostProcessor.referenceNames">ruleidforupdate</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.entities[1].ruleid</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">RULEID_NOT_FOUND</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">RULEIDFORUPDATE_NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>

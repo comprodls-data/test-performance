@@ -20,7 +20,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;scheduleid&quot;: &quot;${ruleid}_&quot;,&#xd;
+  &quot;scheduleid&quot;: &quot;${scheduleidforUpdate}&quot;,&#xd;
   &quot;orgid&quot;: &quot;${orgid}&quot;,&#xd;
   &quot;actorid&quot;: &quot;${access_token}&quot;,&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
@@ -39,7 +39,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/lb-integrations/accounts/${accountid}/context/${accountid}%23${orgid}%23${classid}%23${productcode}/schedule/${scheduleid}</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-integrations/accounts/${accountid}/context/${accountid}%23${orgid}%23${classid}%23${productcode}/schedule/${scheduleidforUpdate}</stringProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -68,7 +68,7 @@
           </HeaderManager>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">$.pk</stringProp>
+            <stringProp name="JSON_PATH">$.message</stringProp>
             <stringProp name="EXPECTED_VALUE"></stringProp>
             <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>

@@ -20,7 +20,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;scheduleid&quot;: &quot;${ruleid}_&quot;,&#xd;
+  &quot;scheduleid&quot;: &quot;${ruleid}_${randomNo}&quot;,&#xd;
   &quot;orgid&quot;: &quot;perf-test1-alpha&quot;,&#xd;
   &quot;actorid&quot;: &quot;${userid}&quot;,&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
@@ -75,6 +75,13 @@
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">scheduleidforUpdate</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.scheduleid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">SCHEDULE_ID_NOT_FOUND</stringProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
