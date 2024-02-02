@@ -26,8 +26,8 @@
   &quot;productcode&quot;: &quot;${multiproduct2}&quot;,&#xd;
   &quot;entities&quot;: [&#xd;
     {&#xd;
-       &quot;item_code&quot;: &quot;${grouptask}&quot;,&#xd;
-      &quot;folderid&quot;: &quot;activity-state/${orgid}/${multiproduct2}/${grouptask}&quot;,&#xd;
+       &quot;item_code&quot;: &quot;1591701928122/1591701946681/1592291282828&quot;,&#xd;
+      &quot;folderid&quot;: &quot;activity-state/${orgid}/${multiproduct2}/1591701928122/1591701946681/1592291282828&quot;,&#xd;
       &quot;documentid&quot;: &quot;lastKnown&quot;,&#xd;
       &quot;timestamp&quot;: ${startDate},&#xd;
       &quot;ttl&quot;: 365,&#xd;
