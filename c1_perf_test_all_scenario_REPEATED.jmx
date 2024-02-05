@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="ComproDLS Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -27013,7 +27013,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             </IfController>
             <hashTree>
               <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-                <stringProp name="ForeachController.inputVal">l8pe</stringProp>
+                <stringProp name="ForeachController.inputVal">l9pe</stringProp>
                 <stringProp name="ForeachController.returnVal">productcode</stringProp>
                 <boolProp name="ForeachController.useSeparator">false</boolProp>
                 <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -27250,7 +27250,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="false">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H4&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
@@ -27277,7 +27277,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H5" enabled="false">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H5" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H5&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
@@ -27304,7 +27304,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H6" enabled="false">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H6" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H6&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
@@ -28846,7 +28846,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="false">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H4" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H4&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
@@ -28870,7 +28870,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H5" enabled="false">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H5" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H5&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
@@ -28894,7 +28894,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H6" enabled="false">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - H6" enabled="true">
               <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;H6&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
