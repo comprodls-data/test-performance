@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="ComproDLS Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -632,7 +632,7 @@
             </elementProp>
             <elementProp name="userstate_1011" elementType="Argument">
               <stringProp name="Argument.name">userstate_1011</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userstate_1012" elementType="Argument">
@@ -647,7 +647,7 @@
             </elementProp>
             <elementProp name="userstate_1038nps" elementType="Argument">
               <stringProp name="Argument.name">userstate_1038nps</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userstate_1010" elementType="Argument">
@@ -14386,29 +14386,6 @@
                       <stringProp name="ConstantTimer.delay">${userProgress_min_1011}</stringProp>
                       <stringProp name="RandomTimer.range">${userProgress_max_1011}</stringProp>
                     </UniformRandomTimer>
-                    <hashTree/>
-                  </hashTree>
-                  <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
-                    <stringProp name="IfController.condition">${__javaScript(${__counter(FALSE,)}%4 == 0)}</stringProp>
-                    <boolProp name="IfController.evaluateAll">false</boolProp>
-                    <boolProp name="IfController.useExpression">true</boolProp>
-                  </IfController>
-                  <hashTree>
-                    <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create documents of a folder for learner item level scorable" enabled="true">
-                      <stringProp name="IncludeController.includepath">Create_documents_of_folders_for_learner_item_level_scorable.jmx</stringProp>
-                    </IncludeController>
-                    <hashTree/>
-                    <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create documents of a folder for learner item level scorable" enabled="true">
-                      <stringProp name="IncludeController.includepath">Create_documents_of_folders_for_learner_product_level.jmx</stringProp>
-                    </IncludeController>
-                    <hashTree/>
-                    <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get users application state for a product or class(product) with item code" enabled="true">
-                      <stringProp name="IncludeController.includepath">Get_particular_document_of_a_folder_1011.jmx</stringProp>
-                    </IncludeController>
-                    <hashTree/>
-                    <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete documents of a folder" enabled="false">
-                      <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder_student.jmx</stringProp>
-                    </IncludeController>
                     <hashTree/>
                   </hashTree>
                 </hashTree>
@@ -34491,7 +34468,7 @@
               <stringProp name="IncludeController.includepath">Get_particular_document_of_a_folder_group.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="true">
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="false">
               <stringProp name="IncludeController.includepath">Delete_documents_of_folders.jmx</stringProp>
             </IncludeController>
             <hashTree/>
@@ -34669,7 +34646,7 @@
               <stringProp name="IncludeController.includepath">Get_particular_document_of_a_folder_group.jmx</stringProp>
             </IncludeController>
             <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="true">
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="false">
               <stringProp name="IncludeController.includepath">Delete_documents_of_folders.jmx</stringProp>
             </IncludeController>
             <hashTree/>
@@ -49532,7 +49509,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             <stringProp name="IncludeController.includepath">Add_statements_pskill_evaluated_group.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deletes user&apos;s application state for a product or class (product) - By Teacher" enabled="false">
             <stringProp name="IncludeController.includepath">Delete_documents_of_folders.jmx</stringProp>
           </IncludeController>
           <hashTree/>
