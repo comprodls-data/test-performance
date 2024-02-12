@@ -46,7 +46,11 @@
           <stringProp name="IncludeController.includepath">Get_columns_of_gradebook_of_a_class.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Get enrollments of users in a class based on category" enabled="true">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class_low.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Get enrollments of users in a class based on category" enabled="false">
           <stringProp name="TestPlan.comments">
 </stringProp>
         </GenericController>
