@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="1014: Teacher logs in and accesses the dashboard" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -79,8 +79,13 @@
           <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder_training.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross product aggregation record of a class" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="false">
           <stringProp name="IncludeController.includepath">class_group_pending_submissions.jmx</stringProp>
+          <stringProp name="TestPlan.comments">Disabled for SuperP change</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class Group Recent Pending Submission" enabled="false">
