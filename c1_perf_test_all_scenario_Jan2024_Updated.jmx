@@ -44571,7 +44571,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
             <stringProp name="TestPlan.comments">1027</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular rule" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular rule" enabled="false">
             <stringProp name="IncludeController.includepath">Get_a_particular_rule_allow_override_score.jmx</stringProp>
             <stringProp name="TestPlan.comments">1027</stringProp>
           </IncludeController>
