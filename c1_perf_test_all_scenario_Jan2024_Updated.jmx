@@ -39732,7 +39732,7 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
               </UniformRandomTimer>
               <hashTree/>
             </hashTree>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Category Definition" enabled="true">
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Teacher mark Activities" enabled="true">
               <stringProp name="TestPlan.comments">1009</stringProp>
             </GenericController>
             <hashTree>
@@ -39757,12 +39757,6 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                     <stringProp name="ForeachController.endIndex">4</stringProp>
                   </ForeachController>
                   <hashTree>
-                    <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
-                      <boolProp name="displayJMeterProperties">false</boolProp>
-                      <boolProp name="displayJMeterVariables">true</boolProp>
-                      <boolProp name="displaySystemProperties">false</boolProp>
-                    </DebugSampler>
-                    <hashTree/>
                     <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get information of a specific user" enabled="true">
                       <stringProp name="IncludeController.includepath">Get_information_for_a_specific_user.jmx</stringProp>
                     </IncludeController>
@@ -39790,6 +39784,22 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                     <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete documents of a folder" enabled="false">
                       <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder.jmx</stringProp>
                     </IncludeController>
+                    <hashTree/>
+                  </hashTree>
+                  <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                    <boolProp name="LoopController.continue_forever">true</boolProp>
+                    <stringProp name="LoopController.loops">4</stringProp>
+                  </LoopController>
+                  <hashTree>
+                    <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                      <stringProp name="CounterConfig.start">1</stringProp>
+                      <stringProp name="CounterConfig.end">4</stringProp>
+                      <stringProp name="CounterConfig.incr">1</stringProp>
+                      <stringProp name="CounterConfig.name">counter</stringProp>
+                      <stringProp name="CounterConfig.format"></stringProp>
+                      <boolProp name="CounterConfig.per_user">true</boolProp>
+                      <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+                    </CounterConfig>
                     <hashTree/>
                     <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
                       <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
@@ -39855,6 +39865,22 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                       <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder.jmx</stringProp>
                     </IncludeController>
                     <hashTree/>
+                  </hashTree>
+                  <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                    <boolProp name="LoopController.continue_forever">true</boolProp>
+                    <stringProp name="LoopController.loops">4</stringProp>
+                  </LoopController>
+                  <hashTree>
+                    <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                      <stringProp name="CounterConfig.start">1</stringProp>
+                      <stringProp name="CounterConfig.end">4</stringProp>
+                      <stringProp name="CounterConfig.incr">1</stringProp>
+                      <stringProp name="CounterConfig.name">counter</stringProp>
+                      <stringProp name="CounterConfig.format"></stringProp>
+                      <boolProp name="CounterConfig.per_user">true</boolProp>
+                      <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+                    </CounterConfig>
+                    <hashTree/>
                     <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
                       <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
                     </IncludeController>
@@ -39918,6 +39944,22 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                     <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete documents of a folder" enabled="false">
                       <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder.jmx</stringProp>
                     </IncludeController>
+                    <hashTree/>
+                  </hashTree>
+                  <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                    <boolProp name="LoopController.continue_forever">true</boolProp>
+                    <stringProp name="LoopController.loops">4</stringProp>
+                  </LoopController>
+                  <hashTree>
+                    <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                      <stringProp name="CounterConfig.start">1</stringProp>
+                      <stringProp name="CounterConfig.end">4</stringProp>
+                      <stringProp name="CounterConfig.incr">1</stringProp>
+                      <stringProp name="CounterConfig.name">counter</stringProp>
+                      <stringProp name="CounterConfig.format"></stringProp>
+                      <boolProp name="CounterConfig.per_user">true</boolProp>
+                      <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+                    </CounterConfig>
                     <hashTree/>
                     <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
                       <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
@@ -43659,7 +43701,9 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
               </hashTree>
-              <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Category Definition" enabled="true"/>
+              <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Teacher mark Activities" enabled="true">
+                <stringProp name="TestPlan.comments">1009</stringProp>
+              </GenericController>
               <hashTree>
                 <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Low" enabled="true">
                   <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;L&quot;;</stringProp>
@@ -43709,6 +43753,22 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                       <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete documents of a folder" enabled="false">
                         <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder.jmx</stringProp>
                       </IncludeController>
+                      <hashTree/>
+                    </hashTree>
+                    <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                      <boolProp name="LoopController.continue_forever">true</boolProp>
+                      <stringProp name="LoopController.loops">4</stringProp>
+                    </LoopController>
+                    <hashTree>
+                      <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                        <stringProp name="CounterConfig.start">1</stringProp>
+                        <stringProp name="CounterConfig.end">4</stringProp>
+                        <stringProp name="CounterConfig.incr">1</stringProp>
+                        <stringProp name="CounterConfig.name">counter</stringProp>
+                        <stringProp name="CounterConfig.format"></stringProp>
+                        <boolProp name="CounterConfig.per_user">true</boolProp>
+                        <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+                      </CounterConfig>
                       <hashTree/>
                       <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
                         <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
@@ -43774,6 +43834,22 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                         <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder.jmx</stringProp>
                       </IncludeController>
                       <hashTree/>
+                    </hashTree>
+                    <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                      <boolProp name="LoopController.continue_forever">true</boolProp>
+                      <stringProp name="LoopController.loops">4</stringProp>
+                    </LoopController>
+                    <hashTree>
+                      <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                        <stringProp name="CounterConfig.start">1</stringProp>
+                        <stringProp name="CounterConfig.end">4</stringProp>
+                        <stringProp name="CounterConfig.incr">1</stringProp>
+                        <stringProp name="CounterConfig.name">counter</stringProp>
+                        <stringProp name="CounterConfig.format"></stringProp>
+                        <boolProp name="CounterConfig.per_user">true</boolProp>
+                        <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+                      </CounterConfig>
+                      <hashTree/>
                       <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
                         <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
                       </IncludeController>
@@ -43837,6 +43913,22 @@ vars.put (&quot;folderid&quot;, folderid)</stringProp>
                       <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete documents of a folder" enabled="false">
                         <stringProp name="IncludeController.includepath">Delete_documents_of_a_folder.jmx</stringProp>
                       </IncludeController>
+                      <hashTree/>
+                    </hashTree>
+                    <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                      <boolProp name="LoopController.continue_forever">true</boolProp>
+                      <stringProp name="LoopController.loops">4</stringProp>
+                    </LoopController>
+                    <hashTree>
+                      <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                        <stringProp name="CounterConfig.start">1</stringProp>
+                        <stringProp name="CounterConfig.end">4</stringProp>
+                        <stringProp name="CounterConfig.incr">1</stringProp>
+                        <stringProp name="CounterConfig.name">counter</stringProp>
+                        <stringProp name="CounterConfig.format"></stringProp>
+                        <boolProp name="CounterConfig.per_user">true</boolProp>
+                        <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+                      </CounterConfig>
                       <hashTree/>
                       <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Add statement - Draft Evaluated" enabled="true">
                         <stringProp name="IncludeController.includepath">Add_statements_pskill_draft_evaluated_contributesToCompletion.jmx</stringProp>
