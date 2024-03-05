@@ -89,6 +89,39 @@
           <stringProp name="IncludeController.includepath">Group_Pending_Submissions_of_a_Class.jmx</stringProp>
         </IncludeController>
         <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - CrossProdAgg" enabled="true"/>
+        <hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Low" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;L&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross product aggregation record of a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class_low.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Medium" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;M&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross product aggregation record of a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class_med.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
+            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot;;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross product aggregation record of a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class_high.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get a particular document of a folder" enabled="true">
           <stringProp name="IncludeController.includepath">Get_a_particular_document_of_a_folder_training.jmx</stringProp>
         </IncludeController>

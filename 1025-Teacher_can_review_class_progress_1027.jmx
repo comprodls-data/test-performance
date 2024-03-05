@@ -634,12 +634,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross-product-aggregation record for a class" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class.jmx</stringProp>
-          <stringProp name="TestPlan.comments">SuperP - Added</stringProp>
-        </IncludeController>
-        <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller2 - Get product by product code" enabled="true">
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller2 - GetProductDetails, GetCrossProdAgg" enabled="true">
           <stringProp name="TestPlan.comments">SuperP - Added</stringProp>
         </GenericController>
         <hashTree>
@@ -659,6 +654,11 @@
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
                 <stringProp name="IncludeController.includepath">Get_product_by_product_code_low.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross-product-aggregation record for a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class_low.jmx</stringProp>
+                <stringProp name="TestPlan.comments">SuperP - Added</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
@@ -681,6 +681,11 @@
                 <stringProp name="TestPlan.comments">1025</stringProp>
               </IncludeController>
               <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross-product-aggregation record for a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class_med.jmx</stringProp>
+                <stringProp name="TestPlan.comments">SuperP - Added</stringProp>
+              </IncludeController>
+              <hashTree/>
             </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
@@ -699,6 +704,11 @@
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get product by product code" enabled="true">
                 <stringProp name="IncludeController.includepath">Get_product_by_product_code_high.jmx</stringProp>
                 <stringProp name="TestPlan.comments">1025</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get cross-product-aggregation record for a class" enabled="true">
+                <stringProp name="IncludeController.includepath">Get_cross_product_aggregation_record_of_a_class_high.jmx</stringProp>
+                <stringProp name="TestPlan.comments">SuperP - Added</stringProp>
               </IncludeController>
               <hashTree/>
             </hashTree>
