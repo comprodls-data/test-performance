@@ -22,9 +22,21 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;grades&quot;: [&#xd;
     {&#xd;
-      &quot;id&quot;: &quot;${gradeformatToAssociate}&quot;&#xd;
+      &quot;min_threshold&quot;: &quot;56&quot;,&#xd;
+      &quot;max_threshold&quot;: &quot;100&quot;,&#xd;
+      &quot;id&quot;: &quot;highest&quot;,&#xd;
+      &quot;title&quot;: &quot;a&quot;,&#xd;
+      &quot;target&quot;: true&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;min_threshold&quot;: &quot;0&quot;,&#xd;
+      &quot;max_threshold&quot;: &quot;55&quot;,&#xd;
+      &quot;id&quot;: &quot;lowest&quot;,&#xd;
+      &quot;title&quot;: &quot;f&quot;&#xd;
     }&#xd;
-  ]&#xd;
+  ],&#xd;
+  &quot;data&quot;: {&#xd;
+    &quot;title&quot;: &quot;${gradeformatToAssociateTitle}&quot;}&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
