@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -29,7 +29,6 @@
   &quot;products&quot;: [&#xd;
     {&#xd;
       &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
-      &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
       &quot;ext_product_meta&quot;: {&#xd;
         &quot;startdate&quot;: ${startDate},&#xd;
         &quot;enddate&quot;: ${endDate}&#xd;
