@@ -35,7 +35,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Org-Product Entitlement(s) of an org" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_Low.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_High.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey on refid" enabled="true">
