@@ -457,53 +457,14 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true">
-          <stringProp name="TestPlan.comments">1009</stringProp>
-        </GenericController>
-        <hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Low" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;L&quot;;</stringProp>
-            <boolProp name="IfController.evaluateAll">false</boolProp>
-          </IfController>
-          <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class_low.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-          </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Medium" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;M&quot;;</stringProp>
-            <boolProp name="IfController.evaluateAll">false</boolProp>
-          </IfController>
-          <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_med.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class_med.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-          </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot;;</stringProp>
-            <boolProp name="IfController.evaluateAll">false</boolProp>
-          </IfController>
-          <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_high.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class_high.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-          </hashTree>
-        </hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get assigned paths of a user in a class" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_list_of_assignments_assigned_to_a_learner_in_class_progress_true_low.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get enrolments of users in a class" enabled="true">
+          <stringProp name="IncludeController.includepath">Get_enrollments_of_users_in_class_low.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>

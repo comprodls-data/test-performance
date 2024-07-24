@@ -52,7 +52,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Org-Product Entitlement(s) of an org" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_Low.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_High.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
@@ -1038,12 +1038,12 @@
         </GenericController>
         <hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Low" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;L&quot;;</stringProp>
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;1021_schl_L1&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">${pe_category}</stringProp>
+              <stringProp name="ForeachController.inputVal">l1pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -1063,12 +1063,12 @@
             </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Medium" enabled="true">
-            <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;M&quot;;</stringProp>
+            <stringProp name="IfController.condition">&quot;${category}&quot; == &quot;1021_schl_M5&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
             <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-              <stringProp name="ForeachController.inputVal">${pe_category}</stringProp>
+              <stringProp name="ForeachController.inputVal">m5pe</stringProp>
               <stringProp name="ForeachController.returnVal">productcode</stringProp>
               <boolProp name="ForeachController.useSeparator">false</boolProp>
               <stringProp name="ForeachController.startIndex">0</stringProp>
@@ -1087,7 +1087,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="false">
             <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot;;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
