@@ -67,7 +67,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -132,7 +132,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -191,7 +191,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -250,7 +250,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>

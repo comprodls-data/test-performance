@@ -26,12 +26,13 @@
           <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
-          <stringProp name="ForeachController.inputVal">${orgid}_PE</stringProp>
+        <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="false">
+          <stringProp name="ForeachController.inputVal">m2pe</stringProp>
           <stringProp name="ForeachController.returnVal">productcode</stringProp>
           <boolProp name="ForeachController.useSeparator">false</boolProp>
-          <stringProp name="ForeachController.startIndex">0</stringProp>
+          <stringProp name="ForeachController.startIndex">9</stringProp>
           <stringProp name="ForeachController.endIndex">10</stringProp>
+          <stringProp name="TestPlan.comments">this is disabled as School entitled products does not have progress till setup user is called</stringProp>
         </ForeachController>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Product Items and their Progress Analytics (default)" enabled="true">
