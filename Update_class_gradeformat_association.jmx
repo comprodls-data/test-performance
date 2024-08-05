@@ -23,7 +23,8 @@
   &quot;grades&quot;: [&#xd;
     {&#xd;
       &quot;id&quot;: &quot;${gradeformatToAssociate}&quot;,&#xd;
-      &quot;title&quot;: &quot;updated_gradeformat3&quot;&#xd;
+      &quot;title&quot;: &quot;updated_gradeformat3&quot;,&#xd;
+      &quot;target&quot;: true&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
