@@ -272,7 +272,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;56530be6-fe30-42be-b58f-a76e723dbc1c&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;ff94bbe4-c880-489c-8463-275eb1a88683&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -742,7 +742,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiMzcwYmUwY2FmMTU3NmNlYmUyYjQwY2Q5ODk1NmQ1ZDMiLCJpYXQiOjE3MjIzMTcwMzYsImV4cCI6MTcyMjQwMzQzNn0.rAo_T3hajNy2dVZ-vWQvAF6Ha3sJHarBYCRddtBsNmMULxTbMfxIyKCHf9-qcfQc-bZdcITs5RT08yE1SQvn_03Kt3K0nUfFjy29hUVOWQxieF0UMGALQPG2rWy0r7vybpgboAZxtleM-VIrxNeMfCtUfYag1fzVQWPHDWWJEIog_67kBgKdc_SVTinpECzWuseRvqavxb3G21UAMB5sRgZzXj-mYQdiC25KL3W6mAAKGnS7p4AsBNd0tcNy3CFxv4X8HhxEjkazWqrlzZW-ZxFPoCTg3a0S8QIVb1PkokH2571qdz-REfDIhDJE8GibyYG9Z8vzBTwQ4AhLQt4WMQ</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiYmM2NGMzZTM3MDYwNGZiNDVmMmU4YTNkNjUwMjY1M2IiLCJpYXQiOjE3MjI5MjczNjMsImV4cCI6MTcyMzAxMzc2M30.UMprpvtUQ9qI_67CXn8BPF6tkdfEd1rBs9wFFTi348s9ECQ5Sd5ZTRWTt0pn_a97THaMJJ4hX2afnJTm85GsrhgpTp8Pbhs3VzZZidBafjJK3CylLUnTtswgu38hoW2BTik9kLKeqkHHxDMoaQ8ZgTRyGVt751yyIWvSKdTI5G2krkd96vkU3e1Ytb9hbKLLbSGa6GiuFR0BvHya95yWDk7L3qeCg5LXWq5QHjg7sblUosOET0b8KChnAM1gE10KQ4C-IcRhtW5OIBJ7Wa9p2EQG86-mwWQoCcSq2YBFRn171P_Mf-VVav-qKEp94ubsEkabYIraWUNAC0X4bJSxFA</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -5877,7 +5877,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>5.0</value>
+            <value>3.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -29371,7 +29371,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1041: Existing Student joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1041: Existing Student joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -30693,7 +30693,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1042: NEW Student joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1042: NEW Student joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
