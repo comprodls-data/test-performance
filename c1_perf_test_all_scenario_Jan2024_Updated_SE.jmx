@@ -3870,7 +3870,7 @@
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-              <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+              <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_unique.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
@@ -4532,7 +4532,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -4615,7 +4615,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -4698,7 +4698,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -4781,7 +4781,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -6647,7 +6647,7 @@
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_unique.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
@@ -29692,7 +29692,7 @@
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get access token of existing student" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_unique.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Complete invitations of user" enabled="true">
@@ -31022,7 +31022,7 @@
             <hashTree/>
           </hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get access token of new student" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Complete invitations of user" enabled="true">
@@ -32585,7 +32585,7 @@
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_unique.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get MicroEntitlement For A Product" enabled="true">
