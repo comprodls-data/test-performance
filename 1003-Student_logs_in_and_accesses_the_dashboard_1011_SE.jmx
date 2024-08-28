@@ -112,7 +112,7 @@
               <hashTree/>
             </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
-              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot;;</stringProp>
+              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H1&quot; || &quot;${category_type}&quot; == &quot;H2&quot;;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
             </IfController>
             <hashTree>
