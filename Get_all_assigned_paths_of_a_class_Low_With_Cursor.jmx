@@ -13,7 +13,7 @@
     <hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Get all assigned paths of a class" enabled="true"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get all assigned path of a class" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get all assigned path of a class - Low With Pagination" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="classid" elementType="HTTPArgument">
@@ -22,6 +22,13 @@
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">classid</stringProp>
+              </elementProp>
+              <elementProp name="cursor" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${assignment_cursor}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">cursor</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -53,14 +60,36 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - Check atleast one assigned path exist in class" enabled="true">
-            <stringProp name="JSON_PATH">$.entities</stringProp>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - Check atleast one assigned path exist in class" enabled="false">
+            <stringProp name="JSON_PATH">$.entities[0].assigned_path_id</stringProp>
             <stringProp name="EXPECTED_VALUE"></stringProp>
             <boolProp name="JSONVALIDATION">false</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="assignedpathid - Extract ids of all assigned paths" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">assignedpathid</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..assigned_path_id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
+            <boolProp name="JSONPostProcessor.compute_concat">true</boolProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">assigned_path_class_count</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.count</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">vars.put(&quot;assigned_path_class_count&quot;, (vars.get(&quot;apCount&quot;)));</stringProp>
+          </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>

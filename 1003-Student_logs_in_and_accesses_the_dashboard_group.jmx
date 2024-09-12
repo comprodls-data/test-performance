@@ -43,7 +43,7 @@
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Assigned Paths of a user in a class" enabled="true">
-          <stringProp name="IncludeController.includepath">Get_assigned_paths_of_a_user_in_class_noAssignedPaths.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">Get_assigned_paths_of_a_user_in_class_noAssignedPaths_Low.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get columns of gradebook of a class" enabled="true">
