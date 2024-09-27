@@ -11,9 +11,9 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add IELTS statements - Closed" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add notes statement - 250 characters" enabled="true"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add IELTS statements - Closed" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add notes statement - 250 characters" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -21,17 +21,24 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;actor&quot;: {&#xd;
-    &quot;uuid&quot;: &quot;&quot;&#xd;
+    &quot;uuid&quot;: &quot;${userid}&quot;&#xd;
   },&#xd;
  &quot;product&quot;: {&#xd;
-      &quot;code&quot;: &quot;${ielts_productcode}&quot;&#xd;
+      &quot;code&quot;: &quot;${ebookproductcode}&quot;&#xd;
     },&#xd;
   &quot;entities&quot;: [{&#xd;
-    &quot;verb&quot;: &quot;closed&quot;,&#xd;
-    &quot;item-code&quot;: &quot;${ielts_itemcode}&quot;,&#xd;
-    &quot;timestamp&quot;:${__time()}&#xd;
+    &quot;verb&quot;: &quot;annotated&quot;,&#xd;
+    &quot;item-code&quot;: &quot;${documentId}&quot;,&#xd;
+    &quot;timestamp&quot;:${__time()},&#xd;
+    &quot;user_data&quot;: {&#xd;
+        &quot;documentid&quot;: &quot;${documentId}&quot;,&#xd;
+        &quot;folderid&quot;: &quot;${ebookproductcode}/note/p_${pageNum}&quot;,&#xd;
+        &quot;action&quot;: &quot;create&quot;,&#xd;
+        &quot;type&quot;: &quot;note&quot;,&#xd;
+        &quot;payload&quot;: &quot;{\&quot;meta\&quot;:{\&quot;pageLabel\&quot;:${pageNum}},\&quot;data\&quot;:{\&quot;color\&quot;:\&quot;#40D992\&quot;,\&quot;text\&quot;:\&quot;test note ${__time()} - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu\&quot;}}&quot;&#xd;
+      }&#xd;
  		 }],&#xd;
-    &quot;space_key&quot;: &quot;user_${extuserid}&quot;&#xd;
+  &quot;space_key&quot;: &quot;org_${orgid}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -71,7 +78,7 @@
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
             <stringProp name="JSON_PATH">$.product.code</stringProp>
-            <stringProp name="EXPECTED_VALUE">${ielts_productcode}</stringProp>
+            <stringProp name="EXPECTED_VALUE">${ebookproductcode}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
