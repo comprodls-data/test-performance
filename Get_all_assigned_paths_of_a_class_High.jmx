@@ -91,6 +91,14 @@
             <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="assignedpathid products - Extract products of all assigned paths" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">assignmentproductcode</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..items[0].dls_product_code</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
+            <boolProp name="JSONPostProcessor.compute_concat">true</boolProp>
+          </JSONPostProcessor>
+          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>

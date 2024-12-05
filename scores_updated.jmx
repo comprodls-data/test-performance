@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Scores" enabled="true"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Scores" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/testId&quot;: &quot;${testId_Comp}&quot;,&#xd;
+  &quot;userId&quot;: &quot;${extuserid}&quot;,&#xd;
+  &quot;scoreGiven&quot;: ${scoreGiven},&#xd;
+  &quot;scoreMaximum&quot;: ${scoreMaximum},&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/totalTimeTaken&quot;: 62925,&#xd;
+  &quot;comment&quot;: &quot;&quot;,&#xd;
+  &quot;timestamp&quot;: &quot;${timestamp}Z&quot;,&#xd;
+  &quot;activityProgress&quot;: &quot;Completed&quot;,&#xd;
+  &quot;gradingProgress&quot;: &quot;FullyGraded&quot;,&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/testInstanceId&quot;: ${__time()},&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/items/result&quot;: {&#xd;
+    &quot;parts&quot;: [&#xd;
+      {&#xd;
+        &quot;id&quot;: &quot;Reading&quot;,&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;score&quot;: 0,&#xd;
+        &quot;maxScore&quot;: 0,&#xd;
+        &quot;items&quot;: [&#xd;
+          {&#xd;
+            &quot;id&quot;: &quot;EQTP-LDA2RM002_US&quot;,&#xd;
+            &quot;interactions&quot;: [&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-75a08203-06da-4d2d-aae7-e08db8f32915&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-f1fb1d83-daea-4ed9-b0f7-1a46943de8aa&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-33dd04b2-76f7-4e5f-92a8-fd05271a1117&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-71e56aca-2a9e-4689-923b-f660ce6ac5fb&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-ae222ef4-bfb6-4eff-a9f0-ddbfba5a5018&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              }&#xd;
+            ],&#xd;
+            &quot;version&quot;: 1&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;id&quot;: &quot;EQTP-LDA2RMCS001_US&quot;,&#xd;
+            &quot;interactions&quot;: [&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-0f7319c3-ebe1-41d3-a839-7455ac46881a&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-73a139de-6cd2-4485-b233-45e8bc1f6b7f&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-e37d448f-9e88-49ee-81f8-6f53d7cc6321&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-acd7fd4e-303b-4be4-a926-8196c1e85f5f&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-00fd71ae-3f4e-4be0-81dc-6aad3d7d6827&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              }&#xd;
+            ],&#xd;
+            &quot;version&quot;: 1&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;id&quot;: &quot;EQTP-LDA2RMC002_US&quot;,&#xd;
+            &quot;interactions&quot;: [&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-2fa045bd-ad6e-494d-ae60-da4070953994&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-9437db97-f70b-4cc2-890a-00df59ef3cfd&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-512c332e-4c51-4abb-8b3e-5050370330aa&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-15fc0edd-9167-42fc-9792-5b8f81a7d633&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-75cf6073-63d6-481c-8a85-b78b17aee1cc&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              }&#xd;
+            ],&#xd;
+            &quot;version&quot;: 1&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;id&quot;: &quot;EQTP-LDA2MCC001_US&quot;,&#xd;
+            &quot;interactions&quot;: [&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-608841ed-9eda-491f-ba7c-f71533505ef1&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-36973887-ca01-46bc-ae55-1d4ae7bd6eb8&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-3965a572-2f61-41cf-a8ca-969dad021667&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-df02e0cd-598e-4400-946e-47735313b00a&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-2ae2bd11-fd0c-441a-9eba-2e71aa9b65f7&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              }&#xd;
+            ],&#xd;
+            &quot;version&quot;: 1&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;id&quot;: &quot;EQTP-LDA2OC001_US&quot;,&#xd;
+            &quot;interactions&quot;: [&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-968fa561-6505-4bc8-855b-f4e7453efdd9&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-7e70e9e2-479e-405a-b9dd-f807cb168b95&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-8372b05e-3e80-4209-baa0-a6b785321fd8&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-b94279ee-52ce-455e-9d0a-3e5ce59dd208&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;id&quot;: &quot;EQTP-ddc09f0c-afca-484f-9210-c8dd69e935ce&quot;,&#xd;
+                &quot;response&quot;: &quot;&quot;,&#xd;
+                &quot;score&quot;: 0,&#xd;
+                &quot;maxScore&quot;: 1&#xd;
+              }&#xd;
+            ],&#xd;
+            &quot;version&quot;: 1&#xd;
+          }&#xd;
+        ]&#xd;
+      }&#xd;
+    ],&#xd;
+    &quot;scores&quot;: [&#xd;
+      {&#xd;
+        &quot;aggregations&quot;: [],&#xd;
+        &quot;feedback&quot;: &quot;&quot;,&#xd;
+        &quot;grade&quot;: &quot;&quot;,&#xd;
+        &quot;score&quot;: 0,&#xd;
+        &quot;hintsUsed&quot;: &quot;no&quot;,&#xd;
+        &quot;maxScore&quot;: 100,&#xd;
+        &quot;scoreType&quot;: &quot;ability&quot;,&#xd;
+        &quot;totalTimeTaken&quot;: 62925&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;aggregations&quot;: [],&#xd;
+        &quot;feedback&quot;: &quot;&quot;,&#xd;
+        &quot;grade&quot;: &quot;&quot;,&#xd;
+        &quot;score&quot;: 0,&#xd;
+        &quot;hintsUsed&quot;: &quot;no&quot;,&#xd;
+        &quot;maxScore&quot;: 25,&#xd;
+        &quot;scoreType&quot;: &quot;raw&quot;,&#xd;
+        &quot;totalTimeTaken&quot;: 62925&#xd;
+      }&#xd;
+    ]&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${host_url_lti}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/lti/platforms/${platformId}/contexts/oi${orgid}__siorg_${orgid}__ci${classid}/lineitems/pcperfprodct11__ic1631184898880___1631184945407__an1__ai${attemptid}__lsGX5YsSbSOaCFw3Th/scores</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${access-token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Message Assertion" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="1859946287">Scores saved successfully.</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.custom_message">Could not get correct Response!</stringProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">2</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+        <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <stringProp name="JSON_PATH">$.message</stringProp>
+          <stringProp name="EXPECTED_VALUE"></stringProp>
+          <boolProp name="JSONVALIDATION">false</boolProp>
+          <boolProp name="EXPECT_NULL">false</boolProp>
+          <boolProp name="INVERT">true</boolProp>
+          <boolProp name="ISREGEX">true</boolProp>
+        </JSONPathAssertion>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
