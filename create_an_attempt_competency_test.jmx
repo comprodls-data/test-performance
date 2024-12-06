@@ -21,7 +21,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;max_allowed&quot;: 100,&#xd;
-  &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
+  &quot;productcode&quot;: &quot;perfprodct11&quot;,&#xd;
   &quot;itemcode&quot;: &quot;${itemcode}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -32,7 +32,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/lb-attempts/org/${orgid}/user/${extuserid}/activities/${productcode}___${itemcodeEncoded}/attempts</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-attempts/org/${orgid}/user/${extuserid}/activities/perfprodct11___${itemcodeEncoded}/attempts</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
