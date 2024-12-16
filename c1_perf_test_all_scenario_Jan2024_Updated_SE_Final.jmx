@@ -757,7 +757,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiNjIxYzQ5Nzk5ODI2ZDg5YjEzNGMxZmIzNzczZDRmMmIiLCJpYXQiOjE3Mjg1NTUxNzEsImV4cCI6MTcyODY0MTU3MX0.IR3_jgPNzKxCkodmUI7fcL9RYjDr5oEJIZ9nHFdjTaz2K2nVvD0lW2gjXXcpeeNybUmBz3OOjeGS6HAI2LqMgswbQO30fGcYg08-CUznJXPGyGimEOAoMYDn3SCyR5_27Ufz-enioZ7osEpg5DduHQQl5vG30_py0c_RLlGUL-1rm6MV2txOi1Mz_UymWIEDoMvewG77_Xdo51aenYnXhkc2wtjILn_dy0Gvg_AG7ibV26JLeoISgpBQHpbJBYGRwK01Ey_x1lYpaq3QSh8zQhVkUZhXzNqWvfc5yCQGc6eyrqlRB4hqS0q21okjF0kye6-1D9U8kMwuRoXyNmosPQ</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiNjcyNmFiZDRmNDUxMmVmMmQ0ZjExZDI3ZjBhNmI4MmYiLCJpYXQiOjE3MzQzMjc4NjQsImV4cCI6MTczNDQxNDI2NH0.cXh5C-UCrC3OaA_QjdYYQRrzFdvu8B1krGSdAUhLRjVVceTTUH1pLcpMaKj-guuR1r4Z9Zm5wzCvjvM4eltt-AZTMAzWby3BRpREUPacxf4ff7f8R8xJonSaYg9YNGJgOywx-7LtjNGmDJ0w2VpnxkquWLTNrAnu3jj1NUYFU1H0OD0DlRtw5sNEIMCvWE7_j8zWVl1fNC1ICL3fAIHsO4nP1U7kDMTHdTDPneLOmViUtHSLkoz3SeSyswPCrMd1pdpSLnd7OOFvXMNk41PJ6AroiYFXh9eNjjCF1pcl4-lZEDjggm9QR9-YUj9s5wtAmP8Uhll8WRtN-uXJgkby0w</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -6299,7 +6299,7 @@
             </hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI APIs: Submit a Test" enabled="true"/>
             <hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Generate Oauth Token" enabled="false">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Generate Oauth Token" enabled="true">
                 <stringProp name="IfController.condition">((${__time} - ${currentTime}) &gt; 1800000) &amp;&amp; (&quot;${isReset}&quot; == &quot;False&quot;)</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
               </IfController>
@@ -6358,7 +6358,7 @@
                 </ResultCollector>
                 <hashTree/>
               </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Generate Oauth Token" enabled="true">
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Generate Oauth Token" enabled="false">
                 <stringProp name="IncludeController.includepath">token.jmx</stringProp>
               </IncludeController>
               <hashTree/>
@@ -6568,7 +6568,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
               <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">users_BB_LTI_stress_test.csv</stringProp>
+              <stringProp name="filename">users_BB_LTI_stress_test1.csv</stringProp>
               <boolProp name="ignoreFirstLine">true</boolProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">true</boolProp>
@@ -7232,7 +7232,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI APIs: Submit a Test" enabled="true"/>
             <hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Generate Oauth Token" enabled="false">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Generate Oauth Token" enabled="true">
                 <stringProp name="IfController.condition">((${__time} - ${currentTime}) &gt; 1800000) &amp;&amp; (&quot;${isReset}&quot; == &quot;False&quot;)</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
               </IfController>
@@ -7291,7 +7291,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 </ResultCollector>
                 <hashTree/>
               </hashTree>
-              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Generate Oauth Token" enabled="true">
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Generate Oauth Token" enabled="false">
                 <stringProp name="IncludeController.includepath">token.jmx</stringProp>
               </IncludeController>
               <hashTree/>
@@ -7501,7 +7501,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
               <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">users_BB_LTI_stress_test.csv</stringProp>
+              <stringProp name="filename">users_BB_LTI_stress_test2.csv</stringProp>
               <boolProp name="ignoreFirstLine">true</boolProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">true</boolProp>
@@ -21682,8 +21682,233 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="LTI GW Tool - Scenario 1: A student/teacher launches C1 resource links (Practice Extra, Resource Bank, eBooks) " enabled="false">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">2</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>2.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">users_BB_LTI_scenario1.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">user_id,resource_id</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Login Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">login_get.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Token Generation" enabled="true">
+            <stringProp name="IncludeController.includepath">id_token.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Launch" enabled="true">
+            <stringProp name="IncludeController.includepath">launch_post.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for JWKS" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${JwksWaitTime}</stringProp>
+              <stringProp name="RandomTimer.range">0</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="AWS Signature" enabled="true">
+            <stringProp name="IncludeController.includepath">aws.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Info Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">info.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Performing the Test" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${performDurationTestS1}</stringProp>
+              <stringProp name="RandomTimer.range">0</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="LTI GW Tool - Scenario 2: A teacher can launch C1 for adding the content links (DeepLinking)" enabled="false">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">2</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>2.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">users_BB_LTI_scenario2.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">user_id,resource_id</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Login Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">login_get_scenario2.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Token Generation" enabled="true">
+            <stringProp name="IncludeController.includepath">id_token_scenario2.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Launch" enabled="true">
+            <stringProp name="IncludeController.includepath">launch_post.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for JWKS" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${JwksWaitTime}</stringProp>
+              <stringProp name="RandomTimer.range">0</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="AWS Signature" enabled="true">
+            <stringProp name="IncludeController.includepath">aws.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Info Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">info.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="AWS Deeplink Signature" enabled="true">
+            <stringProp name="IncludeController.includepath">aws_deeplink_signature.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Deeplink Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">deeplink.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="JWKS Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">jwks1.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Teacher to add Links" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${performDurationTestS2}</stringProp>
+              <stringProp name="RandomTimer.range">0</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="LTI GW Tool - Scenario 3: A student can submit score  for a unit to Platform" enabled="false">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">2</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>2.0</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+          <stringProp name="TestPlan.comments">This is getting triggered from LTI GB Item Sync Send Score request</stringProp>
+        </ThroughputController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">users_BB_LTI_scenario3.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">user_id,resource_id</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Login Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">login_get.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Token Generation" enabled="true">
+            <stringProp name="IncludeController.includepath">id_token.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Launch" enabled="true">
+            <stringProp name="IncludeController.includepath">launch_post.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for JWKS" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${JwksWaitTime}</stringProp>
+              <stringProp name="RandomTimer.range">0</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="AWS Signature" enabled="true">
+            <stringProp name="IncludeController.includepath">aws.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Info Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">info.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="AWS sendScore Signature" enabled="true">
+            <stringProp name="IncludeController.includepath">aws_sendScore_signature.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="sendScore Endpoint" enabled="true">
+            <stringProp name="IncludeController.includepath">sendScore.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Student to Submit  the Test" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${performDurationTestS3}</stringProp>
+              <stringProp name="RandomTimer.range">0</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
       </hashTree>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -21756,7 +21981,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
         <boolProp name="useGroupName">true</boolProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
