@@ -4236,7 +4236,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -4245,6 +4245,10 @@
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
                   <stringProp name="IncludeController.includepath">Get_classes_of_an_user_institution_no_classes.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Org-Product Entitlement(s) of an org" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_Low.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
@@ -4323,7 +4327,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -4332,6 +4336,10 @@
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
                   <stringProp name="IncludeController.includepath">Get_classes_of_an_user_institution_no_classes.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Org-Product Entitlement(s) of an org" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_Low.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
@@ -4410,7 +4418,7 @@
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get an access token for an external user" enabled="true">
-                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution.jmx</stringProp>
+                  <stringProp name="IncludeController.includepath">Get_an_access_token_for_an_external_user_institution_unique.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get details for a specific class" enabled="true">
@@ -4419,6 +4427,10 @@
                 <hashTree/>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get classes of an user" enabled="true">
                   <stringProp name="IncludeController.includepath">Get_classes_of_an_user_institution_no_classes.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Org-Product Entitlement(s) of an org" enabled="true">
+                  <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_Low.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
                 <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
