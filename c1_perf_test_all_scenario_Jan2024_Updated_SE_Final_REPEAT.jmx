@@ -90,7 +90,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">900</stringProp>
@@ -2980,6 +2980,56 @@
               <stringProp name="Argument.value">perfprodct11</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="h7pe1" elementType="Argument">
+              <stringProp name="Argument.name">h7pe1</stringProp>
+              <stringProp name="Argument.value">perf35_400lo_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe2" elementType="Argument">
+              <stringProp name="Argument.name">h7pe2</stringProp>
+              <stringProp name="Argument.value">perf35_500lo_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe3" elementType="Argument">
+              <stringProp name="Argument.name">h7pe3</stringProp>
+              <stringProp name="Argument.value">perfprod3</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe4" elementType="Argument">
+              <stringProp name="Argument.name">h7pe4</stringProp>
+              <stringProp name="Argument.value">perfprod4</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe5" elementType="Argument">
+              <stringProp name="Argument.name">h7pe5</stringProp>
+              <stringProp name="Argument.value">perf38_300lo_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe6" elementType="Argument">
+              <stringProp name="Argument.name">h7pe6</stringProp>
+              <stringProp name="Argument.value">perf38_630lo_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe7" elementType="Argument">
+              <stringProp name="Argument.name">h7pe7</stringProp>
+              <stringProp name="Argument.value">perf38_630lo_2</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe8" elementType="Argument">
+              <stringProp name="Argument.name">h7pe8</stringProp>
+              <stringProp name="Argument.value">perf40_630lo_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe9" elementType="Argument">
+              <stringProp name="Argument.name">h7pe9</stringProp>
+              <stringProp name="Argument.value">perf40_630lo_2</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="h7pe10" elementType="Argument">
+              <stringProp name="Argument.name">h7pe10</stringProp>
+              <stringProp name="Argument.value">perf35_100lo_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -3908,6 +3958,126 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="UDV - School Entitlement - 1009_SE details" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="StdCat2_1009_orgId1" elementType="Argument">
+              <stringProp name="Argument.name">StdCat2_1009_orgId1</stringProp>
+              <stringProp name="Argument.value">perf-test4-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat2_1009_orgId2" elementType="Argument">
+              <stringProp name="Argument.name">StdCat2_1009_orgId2</stringProp>
+              <stringProp name="Argument.value">perf-test3-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat3_1009_orgId1" elementType="Argument">
+              <stringProp name="Argument.name">StdCat3_1009_orgId1</stringProp>
+              <stringProp name="Argument.value">perf-test4-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat3_1009_orgId2" elementType="Argument">
+              <stringProp name="Argument.name">StdCat3_1009_orgId2</stringProp>
+              <stringProp name="Argument.value">perf-test3-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat3_1009_orgId3" elementType="Argument">
+              <stringProp name="Argument.name">StdCat3_1009_orgId3</stringProp>
+              <stringProp name="Argument.value">perf-test5-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat3_1009_orgId4" elementType="Argument">
+              <stringProp name="Argument.name">StdCat3_1009_orgId4</stringProp>
+              <stringProp name="Argument.value">perf-test6-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat3_1009_orgId5" elementType="Argument">
+              <stringProp name="Argument.name">StdCat3_1009_orgId5</stringProp>
+              <stringProp name="Argument.value">perf-test7-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat4_1009_orgId1" elementType="Argument">
+              <stringProp name="Argument.name">StdCat4_1009_orgId1</stringProp>
+              <stringProp name="Argument.value">perf-test9-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat4_1009_orgId2" elementType="Argument">
+              <stringProp name="Argument.name">StdCat4_1009_orgId2</stringProp>
+              <stringProp name="Argument.value">perf-test8-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat4_1009_orgId3" elementType="Argument">
+              <stringProp name="Argument.name">StdCat4_1009_orgId3</stringProp>
+              <stringProp name="Argument.value">perf-test10-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat4_1009_orgId4" elementType="Argument">
+              <stringProp name="Argument.name">StdCat4_1009_orgId4</stringProp>
+              <stringProp name="Argument.value">perf-test11-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat4_1009_orgId5" elementType="Argument">
+              <stringProp name="Argument.name">StdCat4_1009_orgId5</stringProp>
+              <stringProp name="Argument.value">perf-test12-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat4_1009_orgId6" elementType="Argument">
+              <stringProp name="Argument.name">StdCat4_1009_orgId6</stringProp>
+              <stringProp name="Argument.value">perf-test13-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId1" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId1</stringProp>
+              <stringProp name="Argument.value">perf-test9-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId2" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId2</stringProp>
+              <stringProp name="Argument.value">perf-test8-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId3" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId3</stringProp>
+              <stringProp name="Argument.value">perf-test10-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId4" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId4</stringProp>
+              <stringProp name="Argument.value">perf-test11-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId5" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId5</stringProp>
+              <stringProp name="Argument.value">perf-test12-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId6" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId6</stringProp>
+              <stringProp name="Argument.value">perf-test13-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId7" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId7</stringProp>
+              <stringProp name="Argument.value">perf-test14-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId8" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId8</stringProp>
+              <stringProp name="Argument.value">perf-test15-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId9" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId9</stringProp>
+              <stringProp name="Argument.value">perf-test16-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="StdCat5_1009_orgId10" elementType="Argument">
+              <stringProp name="Argument.name">StdCat5_1009_orgId10</stringProp>
+              <stringProp name="Argument.value">perf-test17-alpha</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1001: Student registers using a access code (and access default or first time dashboard) - New Users" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
@@ -4580,6 +4750,10 @@
             <stringProp name="IncludeController.includepath">validate_classcode2.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Org-Product Entitlement(s) of an org" enabled="true">
+            <stringProp name="IncludeController.includepath">Get_org_product_entitlements_of_an_org_Low.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Category Distribution" enabled="true">
             <stringProp name="TestPlan.comments">1009</stringProp>
           </GenericController>
@@ -5084,7 +5258,7 @@
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Pre-requisite - 1003: Student logs in and accesses the dashboard" enabled="true">
-            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_1011_SE.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">1003-Student_logs_in_and_accesses_the_dashboard_1009_SE.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait time on dashboard" enabled="true">
@@ -21672,6 +21846,10 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <stringProp name="IncludeController.includepath">invoke_updated.jmx</stringProp>
               </IncludeController>
               <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Invoke Launch Endpoint" enabled="true">
+                <stringProp name="IncludeController.includepath">invoke_updated.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="OIDC Launch Endpoint" enabled="true">
                 <stringProp name="IncludeController.includepath">oidc_updated.jmx</stringProp>
               </IncludeController>
@@ -21848,6 +22026,10 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Token Generation" enabled="true">
               <stringProp name="IncludeController.includepath">id_token_scenario2.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Launch" enabled="true">
+              <stringProp name="IncludeController.includepath">launch_post.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Launch" enabled="true">
