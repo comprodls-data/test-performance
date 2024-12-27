@@ -10247,7 +10247,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid,classname,classname2,classcode,classidtodelete</stringProp>
+            <stringProp name="variableNames">extuserid,classname,classcode,classidtodelete</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
