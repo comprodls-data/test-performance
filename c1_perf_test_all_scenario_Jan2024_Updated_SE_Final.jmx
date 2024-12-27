@@ -272,7 +272,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;ff94bbe4-c880-489c-8463-275eb1a88683&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;f3284f19-61e6-43ad-aeec-291cf1cd4548&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -757,7 +757,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiODgzNDQ2N2Q3MjNlY2NlODVlOTMyMjViYzgyNjYwMGYiLCJpYXQiOjE3MzQ2NzQxNjIsImV4cCI6MTczNDc2MDU2Mn0.jzHLGjfcN61AumGmyqcCBU_HI5JeMLyFgeYK4kvlA_Pbv1fQS2Xqtq8XA08dgPNiL6LeWK8jPfi4d0-MW_7LOuG1cjSNICa3Y4-Fts15DScC7IsUNUJNHPYEF5ozFj8QMsWBRT7ZfmpOqr3-EizWTMGruv7h-_6Oy0RKVaKPWbfe-ZxPeadMAs9I7QqEqLx15kN2NE8rmvmQZV95bNdIImWUsq5__XG2rCG2R3aO7DmWZLB20gmpTAi7dv_U6WUk3ucBO1m1OiryerKD5D6pzrViFR8lzKqLVZc_y_CclI_mprgsixf6zuXHJbtzzTxVxMcgAwBUf2tjPpyvS7vHgg</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiMDY4MzFlZTkyNTg4NzJhZWMwMzVjMmQ4NWZhMTQ5NjAiLCJpYXQiOjE3MzUyODA5OTIsImV4cCI6MTczNTM2NzM5Mn0.BFZtlSbU_3Jtb_AhTyXZ8t-B2zSnDmAYo2AQ4gEMzhe2P-T1eLSEFwsEBeC5p9KTS1620hiEJouPAJsLg_RjwBRAb8HB-8czJH8F5QxzFOTkkFcZmugqQBfHTG9iW8urr9dz-IPeVehpvxaz0vhIagtUKMe8-WrxpVZleavIfsna9vYQLUktXWITi51Hm0B5faFozVTY0cNT8SvO5jB7qd4S3Qjey9z2xmhMufezKWzWSX3wRFtI1ZpLwrOSuwB1CLtHszhJsRXgMYFMn_mnIZCiRitZVYm2OUaeZpoQpnSY5eYEtn9h-KpU8xCHtFSqqTV6CeQ3Bopr0_sS31GoNg</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -7359,37 +7359,6 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </IncludeController>
             <hashTree/>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Teacher to add Links" enabled="false">
-              <intProp name="ActionProcessor.action">1</intProp>
-              <intProp name="ActionProcessor.target">0</intProp>
-              <stringProp name="ActionProcessor.duration">0</stringProp>
-            </TestAction>
-            <hashTree>
-              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                <stringProp name="ConstantTimer.delay">1000</stringProp>
-                <stringProp name="RandomTimer.range">0</stringProp>
-              </UniformRandomTimer>
-              <hashTree/>
-            </hashTree>
-          </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LTI GB Item Sync" enabled="false"/>
-          <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-              <stringProp name="delimiter">,</stringProp>
-              <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">users_BB_LTI_stress_test2.csv</stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <stringProp name="shareMode">shareMode.group</stringProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="variableNames">user_id,resource_id,orgID,extuser_id,productcode,classID,unitcode</stringProp>
-            </CSVDataSet>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="SendScores Endpoint" enabled="true">
-              <stringProp name="IncludeController.includepath">send_scores.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Performing the Test" enabled="false">
               <intProp name="ActionProcessor.action">1</intProp>
               <intProp name="ActionProcessor.target">0</intProp>
               <stringProp name="ActionProcessor.duration">0</stringProp>
@@ -21854,6 +21823,14 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <stringProp name="IncludeController.includepath">oidc_updated.jmx</stringProp>
               </IncludeController>
               <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="OIDC Launch Endpoint" enabled="true">
+                <stringProp name="IncludeController.includepath">oidc_updated.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Keyset Launch Endpoint" enabled="true">
+                <stringProp name="IncludeController.includepath">keyset.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
               <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Keyset Launch Endpoint" enabled="true">
                 <stringProp name="IncludeController.includepath">keyset.jmx</stringProp>
               </IncludeController>
@@ -22024,6 +22001,10 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <stringProp name="IncludeController.includepath">login_get_scenario2.jmx</stringProp>
             </IncludeController>
             <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Login Endpoint" enabled="true">
+              <stringProp name="IncludeController.includepath">login_get_scenario2.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Token Generation" enabled="true">
               <stringProp name="IncludeController.includepath">id_token_scenario2.jmx</stringProp>
             </IncludeController>
@@ -22050,6 +22031,10 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="AWS Signature" enabled="true">
               <stringProp name="IncludeController.includepath">aws.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Info Endpoint" enabled="true">
+              <stringProp name="IncludeController.includepath">info.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Info Endpoint" enabled="true">
