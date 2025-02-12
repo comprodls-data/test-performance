@@ -4300,6 +4300,11 @@
                 <stringProp name="Argument.value">perf_bundle_19</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
+              <elementProp name="orgid" elementType="Argument">
+                <stringProp name="Argument.name">orgid</stringProp>
+                <stringProp name="Argument.value">perf-test1-alpha</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
             </collectionProp>
           </Arguments>
           <hashTree/>
