@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Update an assigned path in a class"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update an assigned path in a class_High">
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/assigned-paths/${assignedpathid}</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;title&quot;: &quot;${assignmenttitle}_Updated&quot;,&#xd;
+  &quot;duedate&quot;: ${endDate},&#xd;
+  &quot;scope&quot;: &quot;users&quot;,&#xd;
+  &quot;items&quot;: [&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544592286221/1544592623523/1544592695775&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524359136&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544521486954/1544521700309/1544521716919&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544592857014/1544593703192/1544593783453&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	    {&#xd;
+      &quot;item-code&quot;: &quot;1544521486954/1544521507623/1544521675219&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524012478/1544524057691&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524012478/1544524030068&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544525043137/1544525058289/1544525097148&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544591751639/1544592145731/1544592236677&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544525043137/1544525058289/1544525137957&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544522366063/1544522377911/1544522473310&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524324762&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544522366063/1544522377911/1544522402777&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544591751639/1544591989858/1544592139063&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	    {&#xd;
+      &quot;item-code&quot;: &quot;1544525043137/1544525058289/1544525090848&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544522366063/1544522528807/1544522568979&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524012478/1544524071582&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524341184&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;item-code&quot;: &quot;1544521486954/1544521507623/1544521662149&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544525043137/1544525058289/1544525125172&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544522366063/1544522528807/1544522579684&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524313700&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544521486954/1544521700309/1544521782572&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544526345845/1544526961740/1544527585431&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524012478/1544524084276&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544526345845/1544528319371/1544528402616&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524387792&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544522366063/1544522377911/1544522454993&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    },&#xd;
+	{&#xd;
+      &quot;item-code&quot;: &quot;1544524003551/1544524012478/1544524099346&quot;,&#xd;
+      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
+      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;startdate&quot;: ${startDate}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">accept</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">${access_token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">test-perf-id</stringProp>
+                <stringProp name="Header.value">${date}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.assigned_path_id</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
