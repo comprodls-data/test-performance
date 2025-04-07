@@ -18651,12 +18651,12 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class_Low.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
                 <boolProp name="LoopController.continue_forever">true</boolProp>
                 <stringProp name="LoopController.loops">${assigned_path_class_count}</stringProp>
               </LoopController>
               <hashTree>
-                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter">
+                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
                   <stringProp name="CounterConfig.start">1</stringProp>
                   <stringProp name="CounterConfig.end">${assigned_path_class_count}</stringProp>
                   <stringProp name="CounterConfig.incr">1</stringProp>
@@ -18683,12 +18683,12 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class_Med.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
                 <boolProp name="LoopController.continue_forever">true</boolProp>
                 <stringProp name="LoopController.loops">${assigned_path_class_count}</stringProp>
               </LoopController>
               <hashTree>
-                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter">
+                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
                   <stringProp name="CounterConfig.start">1</stringProp>
                   <stringProp name="CounterConfig.end">${assigned_path_class_count}</stringProp>
                   <stringProp name="CounterConfig.incr">1</stringProp>
@@ -18715,12 +18715,12 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <stringProp name="IncludeController.includepath">Get_all_assigned_paths_of_a_class_High.jmx</stringProp>
               </IncludeController>
               <hashTree/>
-              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
                 <boolProp name="LoopController.continue_forever">true</boolProp>
                 <stringProp name="LoopController.loops">${assigned_path_class_count}</stringProp>
               </LoopController>
               <hashTree>
-                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter">
+                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
                   <stringProp name="CounterConfig.start">1</stringProp>
                   <stringProp name="CounterConfig.end">${assigned_path_class_count}</stringProp>
                   <stringProp name="CounterConfig.incr">1</stringProp>
@@ -18735,7 +18735,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 </IncludeController>
                 <hashTree/>
               </hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
                 <stringProp name="IfController.condition">&quot;${cursor_value}&quot; == &quot;High_Cursor&quot;;</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">false</boolProp>
@@ -18850,8 +18850,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
-              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot;;</stringProp>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High">
+              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot; &amp;&amp; &quot;${category}&quot; != &quot;H4&quot; ;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">false</boolProp>
             </IfController>
@@ -18889,11 +18889,11 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Teacher submits feedback for pskill activity" enabled="true">
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Teacher submits feedback for pskill activity">
             <stringProp name="TestPlan.comments">1028</stringProp>
           </GenericController>
           <hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller">
               <stringProp name="IfController.condition">&quot;${studentuserid1}&quot; != &quot;NO_PENDING REQUESTS1&quot;</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">false</boolProp>
@@ -19482,8 +19482,8 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                     </hashTree>
                   </hashTree>
                 </hashTree>
-                <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
-                  <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot;;</stringProp>
+                <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High">
+                  <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot; &amp;&amp; &quot;${category}&quot; != &quot;H4&quot; ;</stringProp>
                   <boolProp name="IfController.evaluateAll">false</boolProp>
                   <boolProp name="IfController.useExpression">false</boolProp>
                 </IfController>
