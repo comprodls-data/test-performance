@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -11,9 +11,13 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Create an assigned path in a class" enabled="true"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Create an assigned path in a class"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create an assigned path in a class" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create an assigned path in a class_low">
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
+          <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/assigned-paths</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -22,6 +26,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;title&quot;: &quot;${assignmenttitle}&quot;,&#xd;
   &quot;duedate&quot;: ${endDate},&#xd;
+  &quot;scope&quot;: &quot;users&quot;,&#xd;
   &quot;items&quot;: [&#xd;
     {&#xd;
       &quot;item-code&quot;: &quot;1544522366063/1544522528807/1544522585734&quot;,&#xd;
@@ -72,56 +77,6 @@
       &quot;item-code&quot;: &quot;1544591751639/1544592145731/1544592236677&quot;,&#xd;
       &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
       &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-	{&#xd;
-      &quot;item-code&quot;: &quot;1544525043137/1544525058289/1544525137957&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544522366063/1544522377911/1544522473310&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524324762&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544522366063/1544522377911/1544522402777&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544591751639/1544591989858/1544592139063&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-	    {&#xd;
-      &quot;item-code&quot;: &quot;1544525043137/1544525058289/1544525090848&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544522366063/1544522528807/1544522568979&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544524003551/1544524012478/1544524071582&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544524003551/1544524304922/1544524341184&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;item-code&quot;: &quot;1544521486954/1544521507623/1544521662149&quot;,&#xd;
-      &quot;item_type&quot;: &quot;dls-internal&quot;,&#xd;
-      &quot;dls_product_code&quot;: &quot;${productcode}&quot;&#xd;
     }&#xd;
   ],&#xd;
   &quot;startdate&quot;: ${startDate},&#xd;
@@ -133,19 +88,6 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/lb-auth/org/${orgid}/classes/${classid}/assigned-paths</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -177,6 +119,14 @@
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">false</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="assignedpathid extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">assignedpathid</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.assigned_path_id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
+            <boolProp name="JSONPostProcessor.compute_concat">true</boolProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
