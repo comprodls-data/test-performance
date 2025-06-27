@@ -200,14 +200,6 @@
         &quot;startdate&quot;: ${startDate},&#xd;
         &quot;enddate&quot;: ${endDate}&#xd;
       }&#xd;
-    },&#xd;
-	{&#xd;
-	&#xd;
-	  &quot;productcode&quot;: &quot;perfrb7&quot;,&#xd;
-      &quot;ext_product_meta&quot;: {&#xd;
-        &quot;startdate&quot;: ${startDate},&#xd;
-        &quot;enddate&quot;: ${endDate}&#xd;
-      }&#xd;
     }&#xd;
 ]&#xd;
 }</stringProp>
