@@ -6186,7 +6186,7 @@
                 <stringProp name="ForeachController.returnVal">productcode</stringProp>
                 <boolProp name="ForeachController.useSeparator">false</boolProp>
                 <stringProp name="ForeachController.startIndex">0</stringProp>
-                <stringProp name="ForeachController.endIndex">2</stringProp>
+                <stringProp name="ForeachController.endIndex">10</stringProp>
               </ForeachController>
               <hashTree>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
