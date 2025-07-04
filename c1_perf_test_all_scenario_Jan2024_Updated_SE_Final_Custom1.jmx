@@ -672,7 +672,7 @@
             </elementProp>
             <elementProp name="classCode25Components" elementType="Argument">
               <stringProp name="Argument.name">classCode25Components</stringProp>
-              <stringProp name="Argument.value">A6xz-rwi9</stringProp>
+              <stringProp name="Argument.value">W48L-98o3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -6186,7 +6186,7 @@
                 <stringProp name="ForeachController.returnVal">productcode</stringProp>
                 <boolProp name="ForeachController.useSeparator">false</boolProp>
                 <stringProp name="ForeachController.startIndex">0</stringProp>
-                <stringProp name="ForeachController.endIndex">10</stringProp>
+                <stringProp name="ForeachController.endIndex">6</stringProp>
               </ForeachController>
               <hashTree>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Entitle User With Product Code" enabled="true">
