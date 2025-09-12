@@ -20,7 +20,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;max_allowed&quot;: 100,&#xd;
+  &quot;max_allowed&quot;: 500,&#xd;
   &quot;productcode&quot;: &quot;perfprodct11&quot;,&#xd;
   &quot;itemcode&quot;: &quot;${itemcode}&quot;&#xd;
 }</stringProp>
