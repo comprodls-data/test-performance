@@ -85,8 +85,8 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="comproDLS- new data" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">100</stringProp>
         <stringProp name="ThreadGroup.duration">900</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -673,6 +673,11 @@
             <elementProp name="classCode25Components" elementType="Argument">
               <stringProp name="Argument.name">classCode25Components</stringProp>
               <stringProp name="Argument.value">rNv8-isfu</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="classType" elementType="Argument">
+              <stringProp name="Argument.name">classType</stringProp>
+              <stringProp name="Argument.value">normal</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -2927,37 +2932,37 @@
             </elementProp>
             <elementProp name="h5pe1" elementType="Argument">
               <stringProp name="Argument.name">h5pe1</stringProp>
-              <stringProp name="Argument.value">evpel1</stringProp>
+              <stringProp name="Argument.value">perf41_400lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h5pe2" elementType="Argument">
               <stringProp name="Argument.name">h5pe2</stringProp>
-              <stringProp name="Argument.value">perf41_400lo_1</stringProp>
+              <stringProp name="Argument.value">perf41_500lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h5pe3" elementType="Argument">
               <stringProp name="Argument.name">h5pe3</stringProp>
-              <stringProp name="Argument.value">perf41_500lo_1</stringProp>
+              <stringProp name="Argument.value">perf34_400lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h5pe4" elementType="Argument">
               <stringProp name="Argument.name">h5pe4</stringProp>
-              <stringProp name="Argument.value">perf38_300lo_1</stringProp>
+              <stringProp name="Argument.value">perf37_300lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h5pe5" elementType="Argument">
               <stringProp name="Argument.name">h5pe5</stringProp>
-              <stringProp name="Argument.value">perf38_630lo_1</stringProp>
+              <stringProp name="Argument.value">perf37_300lo_2</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h5pe6" elementType="Argument">
               <stringProp name="Argument.name">h5pe6</stringProp>
-              <stringProp name="Argument.value">perf38_630lo_2</stringProp>
+              <stringProp name="Argument.value">perf37_400lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h5pe7" elementType="Argument">
               <stringProp name="Argument.name">h5pe7</stringProp>
-              <stringProp name="Argument.value">perf34_400lo_1</stringProp>
+              <stringProp name="Argument.value">perf37_400lo_2</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h6pe1" elementType="Argument">
@@ -3117,42 +3122,42 @@
             </elementProp>
             <elementProp name="h7pe3" elementType="Argument">
               <stringProp name="Argument.name">h7pe3</stringProp>
-              <stringProp name="Argument.value">perfprod3</stringProp>
+              <stringProp name="Argument.value">perf38_300lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe4" elementType="Argument">
               <stringProp name="Argument.name">h7pe4</stringProp>
-              <stringProp name="Argument.value">perfprod4</stringProp>
+              <stringProp name="Argument.value">perf38_630lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe5" elementType="Argument">
               <stringProp name="Argument.name">h7pe5</stringProp>
-              <stringProp name="Argument.value">perf38_300lo_1</stringProp>
+              <stringProp name="Argument.value">perf38_630lo_2</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe6" elementType="Argument">
               <stringProp name="Argument.name">h7pe6</stringProp>
-              <stringProp name="Argument.value">perf38_630lo_1</stringProp>
+              <stringProp name="Argument.value">perf40_630lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe7" elementType="Argument">
               <stringProp name="Argument.name">h7pe7</stringProp>
-              <stringProp name="Argument.value">perf38_630lo_2</stringProp>
+              <stringProp name="Argument.value">perf40_630lo_2</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe8" elementType="Argument">
               <stringProp name="Argument.name">h7pe8</stringProp>
-              <stringProp name="Argument.value">perf40_630lo_1</stringProp>
+              <stringProp name="Argument.value">perf35_100lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe9" elementType="Argument">
               <stringProp name="Argument.name">h7pe9</stringProp>
-              <stringProp name="Argument.value">perf40_630lo_2</stringProp>
+              <stringProp name="Argument.value">perf35_400lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="h7pe10" elementType="Argument">
               <stringProp name="Argument.name">h7pe10</stringProp>
-              <stringProp name="Argument.value">perf35_100lo_1</stringProp>
+              <stringProp name="Argument.value">perf35_500lo_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -7243,7 +7248,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">1012.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">extuserid,cc,category,pe_category,attempt_end_index,category_type</stringProp>
+            <stringProp name="variableNames">extuserid,cc,category,pe_category,attempt_end_index,category_type,classType</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -7541,7 +7546,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">1038ps.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">extuserid,cc,category,pe_category,attempt_end_index,category_type</stringProp>
+            <stringProp name="variableNames">extuserid,cc,category,pe_category,attempt_end_index,category_type,classType</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -7996,7 +8001,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">1038nps_1.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">extuserid,cc,category,pe_category,pe_end_index,attempt_end_index,category_type</stringProp>
+            <stringProp name="variableNames">extuserid,cc,category,pe_category,pe_end_index,attempt_end_index,category_type,classType</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
@@ -11757,7 +11762,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <boolProp name="recycle">true</boolProp>
             <stringProp name="shareMode">shareMode.group</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">extuserid,b,c,category,pe_category,category_type,d,assignment_category,cursor_value</stringProp>
+            <stringProp name="variableNames">extuserid,b,c,category,pe_category,category_type,d,assignment_category,cursor_value,classType</stringProp>
           </CSVDataSet>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
@@ -13454,7 +13459,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
