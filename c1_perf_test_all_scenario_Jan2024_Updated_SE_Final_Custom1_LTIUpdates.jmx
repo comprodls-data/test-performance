@@ -767,7 +767,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiOTI4NGVmZGExZTEwZjg4MzlkMWNiZmZkYTRkNTYzZGUiLCJpYXQiOjE3NTg3ODYxNTYsImV4cCI6MTc1ODg3MjU1Nn0.Lp-EAYFojcgsxPq5o8DITTv32H2HzXALv2XnjvN3dDV5jRS1VBHCJ2eLfpTEuC8KQrUw5IsVDQC5G247QMfa8zT1PFoDoWEP96YUs9cNKBDQJuT-J8dpYuFYNhRiVgXGmlU_VWHFTj6Cai__2zuSXhrC4rdsqzxz1megOy-gNhS9mKK-BIu8z3491lOGM0wX_M1ORIlhF_FlVFYOI2vSFf6yZEOxNDYrK0mqnDLVjmXiqMjplSrqGf0xEir7JKxmTGgOUDSizgKeN7VE6l8btsgG0FcspjVgDU1ZA4Pk-zLk4rfI2023-c_L4BMB81wa44LdLUl8-1sSZhyNMAforA</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiNDdjYTFiMDJkMjlhYmE5MmUwMmUyOTVmYzhiNGM2YzYiLCJpYXQiOjE3NTkyMjg5MTksImV4cCI6MTc1OTMxNTMxOX0.Vf8pVxj6s9DKoJsBkAx9CA25AzGUvc1spjCMR8e_KLcePexBS174w9ySeVLyUqHOr_8GgJTeE-_SqvFyg8dCxjmLK4jEb_jEoZJSHSLgY6ZPXs8kz1NIh8FW-hbZx-AC1zNOyzFmLDpL-8kYeznI2JlkfXBNENbzRfBL5qNKcgQjU-xc_7vrxIMg9kwLDAwOYgx7p1kTM9KPvOFdsRZfIm7gs3ilPhCXzMJGMyzeaHdcTBhA_g8kIrRcEM0f94BymHphcKSq8dyEvM8SX9j2uOdckvo8eWso3nwxn8a73kmTVsMboNMuQYOgHj0xdWRn2A2rlnf8vyvpZI3jJcRgzw</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -5219,7 +5219,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>6.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -5851,7 +5851,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1005: Student already present in a class now enrolls into a new class using class key &amp; activates all products of a bundle in that new class - New Users" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1005: Student already present in a class now enrolls into a new class using class key &amp; activates all products of a bundle in that new class - New Users" enabled="false">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
