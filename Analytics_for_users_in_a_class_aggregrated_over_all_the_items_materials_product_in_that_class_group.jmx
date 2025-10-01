@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Analytics_for_users_in_a_class_aggregrated_over_all_the_items_&amp;_materials_(product)_in_that_class" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
