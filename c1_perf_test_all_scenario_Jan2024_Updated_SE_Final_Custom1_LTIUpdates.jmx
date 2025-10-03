@@ -167,7 +167,7 @@
             </elementProp>
             <elementProp name="assignmentlearningprogressscorable" elementType="Argument">
               <stringProp name="Argument.name">assignmentlearningprogressscorable</stringProp>
-              <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.value">16</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assignmentlearningprogress" elementType="Argument">
@@ -767,7 +767,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiNDdjYTFiMDJkMjlhYmE5MmUwMmUyOTVmYzhiNGM2YzYiLCJpYXQiOjE3NTkyMjg5MTksImV4cCI6MTc1OTMxNTMxOX0.Vf8pVxj6s9DKoJsBkAx9CA25AzGUvc1spjCMR8e_KLcePexBS174w9ySeVLyUqHOr_8GgJTeE-_SqvFyg8dCxjmLK4jEb_jEoZJSHSLgY6ZPXs8kz1NIh8FW-hbZx-AC1zNOyzFmLDpL-8kYeznI2JlkfXBNENbzRfBL5qNKcgQjU-xc_7vrxIMg9kwLDAwOYgx7p1kTM9KPvOFdsRZfIm7gs3ilPhCXzMJGMyzeaHdcTBhA_g8kIrRcEM0f94BymHphcKSq8dyEvM8SX9j2uOdckvo8eWso3nwxn8a73kmTVsMboNMuQYOgHj0xdWRn2A2rlnf8vyvpZI3jJcRgzw</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiMTgyNzBiYWU1MWRiMDU2YThmNzVmYmJkYjRmZDdmMmYiLCJpYXQiOjE3NTkzMDQxNzYsImV4cCI6MTc1OTM5MDU3Nn0.duvS1hn_x34bu6JpJ1bF5fNQgm3N8xDVql_nbvCXOXI6V8XkFbWIUAMZOLWTMRcDhJl91cHSS_OHtIOSvPhA8dC6J_RQ6y1lJTEke37vHwTV0-bbIgEw3lh3aotFW_cS-75luzMkcFQw42cmirSmX-RRmk6nTYXxXpJ319Uc_-cXJ2x60tEA0oJ0GXb4MdZSmXrzP4qb8jogqp_ufQ5zvpWmmYSRkkRa7egEk5hOW_DVTXLA7diwY4JBoPyOFXwFfThUwynq1zvWEElcIzk1dRzsY365xbhbkQBFymVkYscqJRN1i45zI1OdW9D0OPJfnOXtS2H3pntBDqCMVUkjdQ</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -5219,7 +5219,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>6.0</value>
+            <value>4.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -7978,7 +7978,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>26.0</value>
+            <value>28.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
