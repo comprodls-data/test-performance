@@ -20,7 +20,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;scheduleid&quot;: &quot;${ruleidforupdate}_${randomNo}_${__time()}&quot;,&#xd;
+  &quot;scheduleid&quot;: &quot;${ruleidforupdate}_${randomNo}&quot;,&#xd;
   &quot;orgid&quot;: &quot;perf-test1-alpha&quot;,&#xd;
   &quot;actorid&quot;: &quot;${userid}&quot;,&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
@@ -91,7 +91,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;scheduleid&quot;: &quot;${ruleid}_${__time()}_BEFORE-START-DATE&quot;,&#xd;
+  &quot;scheduleid&quot;: &quot;${ruleid}_BEFORE-START-DATE&quot;,&#xd;
   &quot;orgid&quot;: &quot;perf-test1-alpha&quot;,&#xd;
   &quot;actorid&quot;: &quot;${userid}&quot;,&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
@@ -155,7 +155,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;scheduleid&quot;: &quot;${ruleid}_${__time()}_START-DATE&quot;,&#xd;
+  &quot;scheduleid&quot;: &quot;${ruleid}_START-DATE&quot;,&#xd;
   &quot;orgid&quot;: &quot;perf-test1-alpha&quot;,&#xd;
   &quot;actorid&quot;: &quot;${userid}&quot;,&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
@@ -219,7 +219,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;scheduleid&quot;: &quot;${ruleid}_${__time()}_BEFORE-END-DATE&quot;,&#xd;
+  &quot;scheduleid&quot;: &quot;${ruleid}_BEFORE-END-DATE&quot;,&#xd;
   &quot;orgid&quot;: &quot;perf-test1-alpha&quot;,&#xd;
   &quot;actorid&quot;: &quot;${userid}&quot;,&#xd;
   &quot;classid&quot;: &quot;${classid}&quot;,&#xd;
