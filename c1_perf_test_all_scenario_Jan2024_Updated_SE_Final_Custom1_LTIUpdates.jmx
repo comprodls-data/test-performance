@@ -172,7 +172,7 @@
             </elementProp>
             <elementProp name="assignmentlearningprogress" elementType="Argument">
               <stringProp name="Argument.name">assignmentlearningprogress</stringProp>
-              <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.value">8</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="assigned_path_class_count" elementType="Argument">
@@ -272,7 +272,7 @@
             </elementProp>
             <elementProp name="multipleUsersForEnrollment" elementType="Argument">
               <stringProp name="Argument.name">multipleUsersForEnrollment</stringProp>
-              <stringProp name="Argument.value">${__P(userset,&quot;ff5d905e-a6dd-48b2-8f7d-5067a6f5ed91&quot;)}</stringProp>
+              <stringProp name="Argument.value">${__P(userset,&quot;e43d0f65-4c48-463b-8a8b-b87bfadbeedb&quot;)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pinstance" elementType="Argument">
@@ -522,7 +522,7 @@
             </elementProp>
             <elementProp name="userProgress_min_1038nps" elementType="Argument">
               <stringProp name="Argument.name">userProgress_min_1038nps</stringProp>
-              <stringProp name="Argument.value">850</stringProp>
+              <stringProp name="Argument.value">350</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="userProgress_max_1038nps" elementType="Argument">
@@ -767,7 +767,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiYTM1NDIyM2Q0NjZiZDcwYmMzODJlMjAxMDgxZTM2OTkiLCJpYXQiOjE3NTk4MzA3NDksImV4cCI6MTc1OTkxNzE0OX0.EAAVYL-ADpjw7JSjzwHMIf9QHWw5jA0WNpTS1yM32WaXOTgSvbGAzKgBbCGKh0O2kIpEp8O_FEwWymLlIwDZgeMu0PNkVQCiGWIyw7LcbihfzdUWX9tu3HiTCJo92x4pgxNZbik_zdOZC8phuo_cPptLqiTSRI31wj7tngvlsEWt-MOlYq3zJ-EOkU8GH5Jt4cO5I75UhkH9JBpsYqCvT3rNUfK9VJUP0FeHqmpv533hGNHO9Np1n121jlmSg1vYB2uGTk4lhF6rJQLSkH8B4-oiW3iYK5moZy8xDPTS9GpfYyTYnxuhiLLrDoZ-3MuwxxKfJ01vYUnJ8DswsIl-vw</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiODNkOTg2MTRmYjlmZWNiYzdkMDI3ODgzNDkwZmNlN2EiLCJpYXQiOjE3NTk5ODg2NDQsImV4cCI6MTc2MDA3NTA0NH0.NO-IWZL5_muDYudBfCy6bfxZ2Q-sko_9K4rcfa_LoXQydAeUaRGD0f4AuZFD4K1twTs55a8ojUKiEG5xlXAWmRgxt_NNETwnZntILL_X82ioTkOAbhUCKI3lanCwZ4ZFI8kJIRcHfwJIXZbewJe49GNp492AXKk7wpE0vJGAdNxuAY5RRDzw3EQ5PB-V0zRg6PJn12jh5i6x9YKZYACvdIxM6eaQ4hsPBp0t8lIlr4B5EExEKjueC8Dpv8-bUKSrmHEO4kci1ljnginSMJDyswgnRyWCvZP6AswQypGIr79CDabS8G39nUhyCUibzB8wbPQ9IeD2PwM2vQlE9YQjiw</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -11159,7 +11159,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>3.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
           <stringProp name="TestPlan.comments">1026</stringProp>
@@ -11293,7 +11293,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -11747,7 +11747,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>5.0</value>
+            <value>3.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
           <stringProp name="TestPlan.comments">1100 - Rules scenario merged</stringProp>
