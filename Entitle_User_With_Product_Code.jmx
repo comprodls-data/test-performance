@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -28,7 +28,6 @@
   &quot;ext_user_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_role&quot;: &quot;student&quot;,&#xd;
   &quot;productcode&quot;: &quot;${productcode}&quot;,&#xd;
-  &quot;ext_product_id&quot;: &quot;${ext_product_id}&quot;,&#xd;
   &quot;ref_id&quot;: &quot;${extuserid}&quot;,&#xd;
   &quot;ext_product_meta&quot;: {&#xd;
     &quot;startdate&quot;: ${startDate},&#xd;
@@ -68,7 +67,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -133,7 +132,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -192,7 +191,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -251,7 +250,7 @@
             </HeaderManager>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$.entities[0].ext_user_id</stringProp>
+              <stringProp name="JSON_PATH">$.ext_user_id</stringProp>
               <stringProp name="EXPECTED_VALUE">${extuserid}</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
