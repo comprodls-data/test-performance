@@ -12,8 +12,8 @@
     </TestPlan>
     <hashTree>
       <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group" enabled="false">
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -85,8 +85,8 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="comproDLS- new data" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">100</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <stringProp name="ThreadGroup.duration">900</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -5219,7 +5219,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>4.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -5851,7 +5851,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1005: Student already present in a class now enrolls into a new class using class key &amp; activates all products of a bundle in that new class - New Users" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1005: Student already present in a class now enrolls into a new class using class key &amp; activates all products of a bundle in that new class - New Users" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -6317,7 +6317,7 @@
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>7.0</value>
+            <value>1.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -6797,7 +6797,7 @@
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>5.0</value>
+            <value>7.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -7030,7 +7030,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>15.0</value>
+            <value>12.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -7240,7 +7240,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>9.0</value>
+            <value>7.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -7538,7 +7538,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>9.0</value>
+            <value>7.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -7978,7 +7978,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>26.0</value>
+            <value>23.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -8245,7 +8245,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </hashTree>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1041: Existing Student joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1041: Existing Student joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -8520,7 +8520,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </hashTree>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1042: NEW Student joins space by invitation" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1042: NEW Student joins space by invitation" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -8768,7 +8768,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </hashTree>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1050: Student activates collaborative product" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1050: Student activates collaborative product" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -9609,7 +9609,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>5.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
           <stringProp name="TestPlan.comments">1018</stringProp>
@@ -9676,8 +9676,53 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">update_details_of_class_class_soft_deletion.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+              <stringProp name="delimiter">,</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="filename">1018_2.csv</stringProp>
+              <boolProp name="ignoreFirstLine">false</boolProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <stringProp name="shareMode">shareMode.group</stringProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="variableNames">extuserid,classname,classcode</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="gradebookid" elementType="Argument">
+                  <stringProp name="Argument.name">gradebookid</stringProp>
+                  <stringProp name="Argument.value">default-gradebook</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </Arguments>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
+              <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard_1018.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get all my membership by path" enabled="true">
+              <stringProp name="IncludeController.includepath">Get_all_my_memberships_by_path_1018.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Unassociate a gradeformat from a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Unassociate_a_gradeformat_from_a_class_default.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete the gradebook metadata of a class" enabled="true">
+              <stringProp name="IncludeController.includepath">Delete_the_gradebook_metadata_of_a_class.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete an empty class" enabled="true">
+              <stringProp name="IncludeController.includepath">Delete_an_empty_class.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+          </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1021: Teacher changes materials (product) associated with class" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1021: Teacher changes materials (product) associated with class" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -11159,7 +11204,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
           <stringProp name="TestPlan.comments">1026</stringProp>
@@ -11286,6 +11331,105 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="IncludeController.includepath">Get_submissions_of_user_on_an_item_of_custom_component.jmx</stringProp>
           </IncludeController>
           <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get members of a class" enabled="true">
+            <stringProp name="TestPlan.comments">1039</stringProp>
+            <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher_extractAllextuserids.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Create and update assignments" enabled="true"/>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Low" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;L&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">${pe_category}</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">1</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
+                  <stringProp name="TestPlan.comments">1039</stringProp>
+                  <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class_low.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
+                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_low.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update an assigned path in a class" enabled="true">
+                  <stringProp name="TestPlan.comments">1039</stringProp>
+                  <stringProp name="IncludeController.includepath">Update_an_assigned_path_in_a_class_low.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Medium" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;M&quot;;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">${pe_category}</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">1</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
+                  <stringProp name="TestPlan.comments">1039</stringProp>
+                  <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class_med.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
+                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_med.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update an assigned path in a class" enabled="true">
+                  <stringProp name="TestPlan.comments">1039</stringProp>
+                  <stringProp name="IncludeController.includepath">Update_an_assigned_path_in_a_class_med.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
+              <stringProp name="IfController.condition">&quot;${category_type}&quot; == &quot;H&quot; &amp;&amp; &quot;${category}&quot; != &quot;H4&quot; ;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="ForeachController.inputVal">${pe_category}</stringProp>
+                <stringProp name="ForeachController.returnVal">productcode</stringProp>
+                <boolProp name="ForeachController.useSeparator">false</boolProp>
+                <stringProp name="ForeachController.startIndex">0</stringProp>
+                <stringProp name="ForeachController.endIndex">1</stringProp>
+              </ForeachController>
+              <hashTree>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
+                  <stringProp name="TestPlan.comments">1039</stringProp>
+                  <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class_high.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
+                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_high_50users.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
+                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_high_25users.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update an assigned path in a class" enabled="true">
+                  <stringProp name="TestPlan.comments">1039</stringProp>
+                  <stringProp name="IncludeController.includepath">Update_an_assigned_path_in_a_class_high.jmx</stringProp>
+                </IncludeController>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
         </hashTree>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1028: Teacher can draft/save/submit feedback on productive skills" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
@@ -11747,7 +11891,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>3.0</value>
+            <value>2.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
           <stringProp name="TestPlan.comments">1100 - Rules scenario merged</stringProp>
@@ -11933,11 +12077,6 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get members of a class" enabled="true">
-            <stringProp name="TestPlan.comments">1039</stringProp>
-            <stringProp name="IncludeController.includepath">Get_members_of_a_class_teacher_extractAllextuserids.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Class pending submission" enabled="true">
             <stringProp name="TestPlan.comments">Extra call for getting userids of pending submissions in a class</stringProp>
           </GenericController>
@@ -11959,20 +12098,6 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                   <stringProp name="IncludeController.includepath">class_pending_submissions_1027_low.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
-                  <stringProp name="TestPlan.comments">1039</stringProp>
-                  <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class_low.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
-                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_low.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update an assigned path in a class" enabled="true">
-                  <stringProp name="TestPlan.comments">1039</stringProp>
-                  <stringProp name="IncludeController.includepath">Update_an_assigned_path_in_a_class_low.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
               </hashTree>
             </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - Medium" enabled="true">
@@ -11992,20 +12117,6 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
                   <stringProp name="IncludeController.includepath">class_pending_submissions_1027_med.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
-                  <stringProp name="TestPlan.comments">1039</stringProp>
-                  <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class_med.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
-                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_med.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update an assigned path in a class" enabled="true">
-                  <stringProp name="TestPlan.comments">1039</stringProp>
-                  <stringProp name="IncludeController.includepath">Update_an_assigned_path_in_a_class_med.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
               </hashTree>
             </hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller - High" enabled="true">
@@ -12023,24 +12134,6 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <hashTree>
                 <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Class pending submissions" enabled="true">
                   <stringProp name="IncludeController.includepath">class_pending_submissions_1027_high.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create an assigned path in a class" enabled="true">
-                  <stringProp name="TestPlan.comments">1039</stringProp>
-                  <stringProp name="IncludeController.includepath">Create_an_assigned_path_in_a_class_high.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
-                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_high_50users.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Enroll one or multiple users with particular Assigned Path" enabled="true">
-                  <stringProp name="IncludeController.includepath">Enroll_one_or_multiple_users_with_an_assigned_path_high_25users.jmx</stringProp>
-                </IncludeController>
-                <hashTree/>
-                <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Update an assigned path in a class" enabled="true">
-                  <stringProp name="TestPlan.comments">1039</stringProp>
-                  <stringProp name="IncludeController.includepath">Update_an_assigned_path_in_a_class_high.jmx</stringProp>
                 </IncludeController>
                 <hashTree/>
               </hashTree>
@@ -12378,7 +12471,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1052: Teacher can add students to the group" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1052: Teacher can add students to the group" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -12434,7 +12527,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1054: Teacher can mark group ps activities" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1054: Teacher can mark group ps activities" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -12604,7 +12697,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>1.0</value>
+            <value>3.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -13056,7 +13149,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1092: Admin assigning weightage to components [For Class]" enabled="false">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1092: Admin assigning weightage to components [For Class]" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -13180,7 +13273,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <intProp name="ThroughputController.maxThroughput">2</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>2.0</value>
+            <value>7.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
@@ -13459,7 +13552,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
