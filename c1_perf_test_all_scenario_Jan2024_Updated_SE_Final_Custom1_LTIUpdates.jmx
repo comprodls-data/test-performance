@@ -9766,6 +9766,18 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
             <stringProp name="variableNames">extuserid,b,c,category,category_type</stringProp>
           </CSVDataSet>
           <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">teacher_newextuserid.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">newextuserid</stringProp>
+          </CSVDataSet>
+          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="1014 - Teacher logs in (and accesses dashboard)" enabled="true">
             <stringProp name="TestPlan.comments">1019</stringProp>
             <stringProp name="IncludeController.includepath">1014-Teacher_logs_in_and_accesses_the_dashboard.jmx</stringProp>
@@ -9779,6 +9791,10 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="API to grant authkey" enabled="true">
             <stringProp name="TestPlan.comments">1019</stringProp>
             <stringProp name="IncludeController.includepath">API_to_grant_authkey_orgid.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Join Private Space - Teacher" enabled="true">
+            <stringProp name="IncludeController.includepath">Join_Spaces_private_teacher.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller - Associate a product" enabled="true"/>
@@ -10959,6 +10975,10 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
               <hashTree/>
             </hashTree>
           </hashTree>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname=" Entitle Teacher With Free Trial Product Code" enabled="true">
+            <stringProp name="IncludeController.includepath">Entitle_Teacher_With_Free_Trial_Product_Code.jmx</stringProp>
+          </IncludeController>
+          <hashTree/>
         </hashTree>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="1024: Teacher changes/edits date &amp; metadata of the class and enrolls and removes other teachers from the class" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
